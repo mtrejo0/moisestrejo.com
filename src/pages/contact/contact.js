@@ -38,6 +38,15 @@ class Contact extends React.Component {
                         </Card.Text>
                     </Card.Body>
                 </Card>
+                    <Card className="text-center" border="primary" style={{ width: '18rem' }}>
+                        <Card.Header>YouTube</Card.Header>
+                        <Card.Body>
+                            <Card.Title><a href="https://www.youtube.com/channel/UCL0ZwHaWI6mSfFXm7Lb-NCw" target="_blank" rel="noopener noreferrer">The IT Channel</a></Card.Title>
+                            <Card.Text>
+                                Watch my CS videos!
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
                 </CardDeck>
             </div>
         )

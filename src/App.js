@@ -9,6 +9,7 @@ import Resume from "./pages/resume/resume";
 import Projects from "./pages/projects/projects";
 import Education from "./pages/education/education";
 import Contact from "./pages/contact/contact";
+import Webapps from "./pages/webapps/webapps";
 
 function App() {
 
@@ -25,6 +26,8 @@ function App() {
                     <Route path="/projects" component={Projects} />
                     <Route path="/education" component={Education} />
                     <Route path="/contact" component={Contact} />
+                    <Route path="/webapps" component={() => <Webapps show={true} /> } />
+
                 </div>
             </BrowserRouter>
         </div>

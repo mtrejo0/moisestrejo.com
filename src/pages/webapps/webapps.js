@@ -2,19 +2,21 @@ import React from 'react'
 import './webapps.scss'
 import {shuffle} from '../../util'
 
-import {Card,CardColumns} from "react-bootstrap";
+import reactWebApps from './reacrWebApps.json';
+
+import {Card, CardColumns, Button} from "react-bootstrap";
 
 class Webapp {
-    constructor(name, description, img, id, component) {
+    constructor(name, description, img, id, path) {
         this.name = name;
         this.img = img;
         this.description = description;
         this.id = id;
-        this.component = component;
+        this.path = path;
     }
 }
 
-var webapps = [
+var p5WebApps = [
     new Webapp("Genetic Path Finding",
         "Generates lots of agents with random moves. The ones with the best fitness are used to " +
         "generate more agents to learn a path.",
@@ -99,8 +101,10 @@ var webapps = [
     new Webapp("Calculator",
         "Simple arithmetic calculator",
         "https://lh3.googleusercontent.com/QAbgeoipkdI1ledZ4jnZ1PICpPGZWbN6NH0Yr47FbJ_9vGDncitvHtGoaqKQRfB9RLVMKgWPlsaBR2CUbIE-I2U3_SJ3oYlM3ro5ifQk5fnGghG4zfWCMV686AwKdx2UvWUvvGE3BKRFhfRz2lxVODCAPuSuLPWw33DM-xquCzoFJhBPwu7j5NPc7XaQJGghzwFI0FOvAHgYvcVtOYml8Xssj63grl_Tqg0-Uf8AMP4bxa9oY_tHpGZQYKDlTsqpP5IIb5-WQ8HPFP0hafJEmBfhhW6HCshNbk5QA8nBW92AFCvfue8gn0WrIYSjHOmmC6kfrjj7zsTZmS7PrawiyCavgEcdbzD-iz8gO598WdoQOUg6y5arSpx9ih8J1hiXbNQHEUvqo-c53UaVA_-9VvPASMcSj9OaRmeEfvKN9gOdJPeizGVv02u9NFZ1tD6ZfV-5MMtIzRb-zHzwkw-gki0JVfcPBo5XZn2PlUNU0frIlazxFMWT9LI2-PGo89WpTYt8CXOP7YC5KUC3Fat3ZX7_JY1xSgwucLxqDHGuOqidD-rg-37RC3vE_9MoqYZNaFXPCF19OFXAaLtHWViotwtPylrk2tGfd52OveRJnsMX0zG1SqenDYcY6q7CoP70i2v6SmSAay-KqQJbiYWXo7mMwqtc-YgNyMqq7VT2z1KshX1B5ItPXaXO_lawwTI=w1895-h879-no?authuser=0",
-        "calculator",),
+        "calculator",)
 ]
+
+
 
 
 class Webapps extends React.Component {
@@ -108,12 +112,12 @@ class Webapps extends React.Component {
 
     constructor() {
         super();
-        shuffle(webapps);
+        shuffle(p5WebApps);
     }
     render() {
         return <div>
             <CardColumns style={{padding: 16}}>
-                {webapps.map((webapp, index) =>
+                {p5WebApps.map((webapp, index) =>
                     <Card key={index}>
                         <Card.Img variant="top" src={webapp.img} />
                         <Card.Body>
@@ -122,12 +126,27 @@ class Webapps extends React.Component {
                                 {webapp.description}
                                 <br/>
                                 <br/>
-                                <a href={"https://moisesp5js.s3.us-east-2.amazonaws.com/javascriptProjects/"+webapp.id+"/index.html"}>Link</a>
+                                <Button variant={'outline-primary'} href={"https://moisesp5js.s3.us-east-2.amazonaws.com/javascriptProjects/"+webapp.id+"/index.html"}>Link</Button>
                             </Card.Text>
                         </Card.Body>
 
                     </Card>
                 )}
+                {reactWebApps.map((webapp, index) =>
+                    <Card key={index}>
+                        <Card.Img variant="top" src={webapp.img} />
+                        <Card.Body>
+                            <Card.Title>{webapp.name}</Card.Title>
+                            <Card.Text>
+                                {webapp.description}
+                                <br/>
+                                <br/>
+                                <Button variant={'outline-primary'} href={webapp.path}>Link</Button>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                )}
+
             </CardColumns>
 
         </div>

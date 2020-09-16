@@ -18,7 +18,6 @@ class Home extends React.Component {
         try {
             const response = await fetch('https://2r2wddk4i6.execute-api.us-east-2.amazonaws.com/test');
             let responseJson = await response.json();
-            console.log(responseJson)
             this.setState(
                 {
                     isLoading: false,
@@ -54,8 +53,6 @@ class Home extends React.Component {
                 <Display flip={true}title={"MIT class of 2022"} body={"I am a rising junior at MIT studying computer science. I am part of SHPE and MAES on campus and I am interested in earning my Masters of Engineering"} src={'https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201810/MIT-Computer-Announce-01_0.jpg?itok=VCOJMCvN'}></Display>
                 <Display title={"Mexicano 🇲🇽"} body={"My parents are from Zacatecas, Mexico and I am very proud of my heritage"} src={'https://lh3.googleusercontent.com/OmbLgUYRWou9Y-msI5dQkGaGyBq73F6d_e7cz4emO60a_rnGuqhrJn5UmdItWelRefUpVr94WJ16-B5FMcklonxhr-f9saUniWms7ZFVEtU44ffeNnEXOIGBjH_VTP2HJiHNXZYKlAI=w2400'}></Display>
                 <Display flip={true}title={"FGLI"} body={"FLGI stands for first generation low income student. I am first generation American and first generation college student and I am very proud of this."} src={'https://lh3.googleusercontent.com/6gyaHSsuHm-ag8To8hoYXRBDsbAuUOXVXhlMD31QjZQuBwCGP9ok29QnQjYqADCub6JXTLSxhIMUXkjz9N0d_AxVEmXFfIwMf0I3zGcU44QqERnRUPsFJeaS3n0XCcU3AsI6li8nh0E=w2400'}></Display>
-
-
 
                 </div>
         );

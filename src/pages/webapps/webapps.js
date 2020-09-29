@@ -132,7 +132,7 @@ class Webapps extends React.Component {
 
                     </Card>
                 )}
-                {reactWebApps.map((webapp, index) =>
+                {/* {reactWebApps.map((webapp, index) =>
                     <Card key={index}>
                         <Card.Img variant="top" src={webapp.img} />
                         <Card.Body>
@@ -145,7 +145,7 @@ class Webapps extends React.Component {
                             </Card.Text>
                         </Card.Body>
                     </Card>
-                )}
+                )} */}
 
             </CardColumns>
 

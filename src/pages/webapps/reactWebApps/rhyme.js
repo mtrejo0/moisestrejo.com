@@ -28,7 +28,7 @@ class Contact extends React.Component {
                 {this.state.lyrics.map((word,index) => <p style={{padding: '8px',background: this.state.colorDictionary[word]}}>{word+' '+this.state.colorDictionary[word]} </p>)}
             </div>
         )
-    }
+    }q
 
     handleSubmit(event) {
         console.log(this.state.songName)
@@ -39,7 +39,7 @@ class Contact extends React.Component {
 
 
     handleChange(event){
-        this.setState({...this.state,songName: event.target.value});
+        this.setState({...this.state, songName: event.target.value});
     }
 
 

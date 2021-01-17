@@ -11,10 +11,6 @@ import Education from "./pages/education/education";
 import Contact from "./pages/contact/contact";
 import Webapps from "./pages/webapps/webapps";
 
-// webapps
-import Rhyme from './pages/webapps/reactWebApps/rhyme'
-
-import reactWebApps from '../src/pages/webapps/reacrWebApps.json'
 
 function App() {
 
@@ -30,12 +26,10 @@ function App() {
                     <Route path="/resume" component={Resume} />
                     <Route path="/projects" component={Projects} />
                     <Route path="/education" component={Education} />
+                    <Route path="/webapps" component={Webapps} />
                     <Route path="/contact" component={Contact} />
-                    <Route path="/webapps" component={() => <Webapps show={true} /> } />
-                    {reactWebApps.map((webapp, index) => {
-                            return < Route key={index} path = {"/"+webapp.path} component = {Rhyme}/>
-                        }
-                    )}
+                    
+                   
                 </div>
             </BrowserRouter>
         </div>

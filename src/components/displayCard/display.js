@@ -3,26 +3,15 @@ import './display.scss'
 
 class Display extends React.Component {
 
+
     render() {
         return(
             <div className={'display'}>
-                {this.props.flip ?
-                    <>
-                        <div className={'description'}>
-                            <h4 className={'title'}>{this.props.title}</h4>
-                            <p>{this.props.body}</p>
-                        </div>
-                        <img className={'image'} src={this.props.src} alt={this.props.src}/>
-                    </>
-                    :
-                    <>
-                        <img className={'image'} src={this.props.src} alt={this.props.src}/>
-                        <div className={'description'}>
-                            <h4 className={'title'}>{this.props.title}</h4>
-                            <p>{this.props.body}</p>
-                        </div>
-                    </>
-                }
+                <div className={'description'}>
+                    <h4 className={'title'}>{this.props.item.header}</h4>
+                    <p>{this.props.item.description}</p>
+                </div>
+                <img className={'image'} src={process.env.PUBLIC_URL + `/aboutMe/${this.props.item.img}.jpg`} alt={this.props.item.img}/>
             </div>
         )
     }

@@ -1,11 +1,21 @@
 import React from 'react'
+import axios from 'axios'
 
 import "./home.scss";
-import Display from "../../components/displayCard/display";
+
+const ListItem = ({info, img, small = false}) => {
+    return <div class="list-item">
+        <p>{info}</p>
+        {
+            img ? 
+            <img class={small? "small-image" : "image"} src={process.env.PUBLIC_URL + `/images/${img}.jpg`} alt={img}></img>
+            : null
+        }
+    </div>
+};
 
 class Home extends React.Component {
     
-
     constructor(props) {
         super(props);
         this.state = {
@@ -16,68 +26,63 @@ class Home extends React.Component {
     }
 
     async componentDidMount() {
-        // try {
-        //     const response = await fetch('https://2r2wddk4i6.execute-api.us-east-2.amazonaws.com/test');
-        //     let responseJson = await response.json();
-        //     this.setState(
-        //         {
-        //             isLoading: false,
-        //             users: responseJson.body.userCount,
-        //         },
-        //         function() {}
-        //     );
-        // } catch (error) {
-        //     this.setState({
-        //         isLoading: true,
-        //         error: true,
-        //         users: 0
-        //     });
-        // }
+        axios.get(`https://2r2wddk4i6.execute-api.us-east-2.amazonaws.com/test`)
+        .then(res => {
+            this.setState({
+                isLoading: false,
+                users: res.data.body.userCount
+            })
+        })
+        .catch(err => {
+            console.log(err);
+        })
     }
 
     render() {
         const { isLoading, users  } = this.state;
-
-        let aboutMe = [
-            {
-                "header": "Texas 🤠",
-                "description": "Born and raised in Dallas, Texas where I went to the School of Science and Engineering Magnet High School",
-                "img": "facebook"
-            },
-            {
-                "header": "MIT class of 2022",
-                "description": "I am a rising junior at MIT studying computer science. I am part of SHPE and MAES on campus and I am interested in earning my Masters of Engineering",
-                "img": "mit"
-            },
-            {
-                "header": "Mexicano 🇲🇽",
-                "description": "My parents are from Zacatecas, Mexico and I am very proud of my heritage",
-                "img": "mexico"
-            },
-            {
-                "header": "MIT class of 2022",
-                "description": "FLGI stands for first generation low income student. I am first generation American and first generation college student and I am very extremely proud of this",
-                "img": "fam"
-            }
-        ]
-
+        
         return (
-            <div>
+            <div class="center">
                 <div className={'paragraph'}>
-                    <h3 className={'header'}>Hi! Im Moises</h3>
-                    {/* <p>You are the {isLoading?'Loading...':users}th person to visit this site!</p> */}
+                    <h1 class="title">Hey I'm Moises!</h1>
+                    <p>You are the {isLoading?'Loading...':users}th person to visit this site!</p>
                 </div>
                 <div className={'paragraph'}>
-                    I am currently a junior at MIT studying Computer Science. Through my coursework and experience, I've developed skills in Android Development, Embedded Systems, Web Development, Back-End Development, and Unity Development. I'm always looking for new experiences to learn and grow!
+                    I am currently a junior at MIT studying Computer Science. I am passionate about using technology to give everyone the same opportinity to live happy and succeed. 
+                    I have a Shiba Inu named Mango 🥭. I love cooking, basketball, skateboarding, and philosophy.
                 </div>
 
-                <h3>About Me</h3>
+                <h1 class="title">About Me</h1>
                 <br/>
 
-                {aboutMe.map( item => <Display item={item}></Display>)}
+                <div class="columns">
+                    <div>
+                        <ListItem info={"Born and raised in Dallas, TX 🤠"} img="dallas"/>
+                        <ListItem info={<p>Roots from <a href="https://www.google.com/search?q=tlaltenango+zacatecas" target="_blank" rel="noopener noreferrer">Tlaltenango, Zacatecas 🇲🇽</a></p>} img="mexico"/>
+                        <ListItem info={<p>FGLI - First generation low income student</p>} img="fam"/>
+                    </div>
+                    <div>
+                        <ListItem info={"Junior at MIT BS 21' MS 22'"} img="mit"/>
+                        <ListItem 
+                            info={
+                                <div>
+                                    <p>Undergraduate Researcher in the <a href="https://lids.mit.edu/" target="_blank" rel="noopener noreferrer">LIDS</a> Group</p>
+                                    <br/>
+                                    <p>Under Sarah Cen <a href="https://lids.mit.edu/news-and-events/events/regulating-algorithmic-filtering-social-media" target="_blank" rel="noopener noreferrer">Regulating Social Media</a></p>
+                                </div>
+                                } 
+                            img="lids" small={true} />
+                        <ListItem info={"Twitter 2021"} img="twitter"/>
+                        <ListItem info={<p>President of <a href="http://maes.mit.edu" target="_blank" rel="noopener noreferrer">MAES</a></p>} img="maes"/>
+                        <ListItem info={<p>Vice President of <a href="http://shpe.mit.edu" target="_blank" rel="noopener noreferrer">SHPE</a></p>} img="shpe"/>
+                        <ListItem info={<p>Brother of <a href="http://sigmanu.mit.edu" target="_blank" rel="noopener noreferrer">Sigma Nu</a></p>} img="sigmanu" small={true}/>
+                    </div>
+                </div>
                 </div>
         );
     }
 }
+
+
 
 export default Home;

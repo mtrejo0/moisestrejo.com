@@ -11,7 +11,7 @@ class Display extends React.Component {
                     <h4 className={'title'}>{this.props.item.header}</h4>
                     <p>{this.props.item.description}</p>
                 </div>
-                <img className={'image'} src={process.env.PUBLIC_URL + `/aboutMe/${this.props.item.img}.jpg`} alt={this.props.item.img}/>
+                <img className={'image'} src={process.env.PUBLIC_URL + `/images/${this.props.item.img}.jpg`} alt={this.props.item.img}/>
             </div>
         )
     }

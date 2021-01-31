@@ -1,5 +1,9 @@
+p {
+  text-align: center;
+}
+
 .paragraph{
-  width: 70%;
+  width: 700px;
   margin: auto;
   text-align: center;
 }
@@ -7,12 +11,47 @@
   padding: 32px;
   text-align: center;
 }
-p{
-  text-align: center;
+
+.list-item {
+  padding: 32px;
+  border-radius: 32px;
+  box-shadow: 0px 0px 12px 6px #eee;
+  margin: 16px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.terminal{
-  width: 70%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.text {
+  margin-bottom: 32px;
+}
+.image {
+  width: 400px;
+}
+.small-image {
+  width: 200px;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .columns {
+    display: block;
+  }
+  .list-item {
+    width: 80%;
+    margin: 16px auto;
+  }
+  .image {
+    width: 100%;
+  }
+  .paragraph{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
 }

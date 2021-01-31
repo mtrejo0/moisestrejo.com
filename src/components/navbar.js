@@ -14,7 +14,6 @@ class NavbarWeb extends React.Component {
                             <Nav.Link href="/home">Home</Nav.Link>
                             <Nav.Link href="/resume">Resume</Nav.Link>
                             <Nav.Link href="/projects">Projects</Nav.Link>
-                            <Nav.Link href="/education">Education</Nav.Link>
                             <Nav.Link href="/webapps">Web Apps</Nav.Link>
                             <Nav.Link href="/contact">Contact</Nav.Link>
                         </Nav>

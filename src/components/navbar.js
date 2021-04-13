@@ -1,26 +1,25 @@
 import React from 'react'
-import {Nav, Navbar} from "react-bootstrap";
 
-class NavbarWeb extends React.Component {
+import {NavLink} from 'react-router-dom'
 
-    render() {
-        return(
-            <div>
-                <Navbar bg="light" expand="lg">
-                    <Navbar.Brand href="/home">Moises Trejo</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mr-auto">
-                            <Nav.Link href="/home">Home</Nav.Link>
-                            <Nav.Link href="/resume">Resume</Nav.Link>
-                            <Nav.Link href="/projects">Projects</Nav.Link>
-                            <Nav.Link href="/webapps">Web Apps</Nav.Link>
-                            <Nav.Link href="/contact">Contact</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Navbar>
-            </div>
-        )
+import '../styles/navbar.css'
+
+class NavigationBar extends React.Component {
+
+
+    render(){
+
+        return <div>
+            <ul className="nav-ul">
+                <li className="nav-li"><NavLink to='/home'>Home</NavLink></li>
+                <li className="nav-li"><NavLink to='/resume'>Resume</NavLink></li>
+                <li className="nav-li"><NavLink to='/projects'>Projects</NavLink></li>
+                <li className="nav-li"><NavLink to='/webapps'>Web Apps</NavLink></li>
+                <li className="nav-li"><NavLink to='/contact'>Contact</NavLink></li>
+            </ul>
+        </div>
     }
+
 }
-export default NavbarWeb;
+
+export default NavigationBar;

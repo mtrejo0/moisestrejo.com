@@ -1,8 +1,8 @@
 import React from 'react'
 
-import './projects.scss'
+import '../styles/projects.css'
 
-import projects from './projects.json'
+import projects from '../information/projects.json'
 
 const ProjectItem = ({project}) => {
     return <div class="list-item center">

@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 
-import "./home.scss";
+import "../styles/home.css";
 
 const ListItem = ({info, img, small = false}) => {
     return <div class="list-item">
@@ -48,8 +48,8 @@ class Home extends React.Component {
                     <p>You are the {isLoading?'Loading...':users}th person to visit this site!</p>
                 </div>
                 <div className={'paragraph'}>
-                    I am currently a junior at MIT studying Computer Science. I am passionate about using technology to give everyone the same opportinity to live happy and succeed. 
-                    I have a Shiba Inu named Mango 🥭. I love cooking, basketball, skateboarding, and philosophy.
+                    <p>I am currently a junior at MIT studying Computer Science. I am passionate about using technology to give everyone the same opportinity to live happy and succeed. 
+                    I have a Shiba Inu named Mango <span role="img" aria-label='mango'>🥭</span>. I love cooking, basketball, skateboarding, and philosophy. </p>
                 </div>
 
                 <h1 class="title">About Me</h1>
@@ -57,8 +57,8 @@ class Home extends React.Component {
 
                 <div class="columns">
                     <div>
-                        <ListItem info={"Born and raised in Dallas, TX 🤠"} img="dallas"/>
-                        <ListItem info={<p>Roots from <a href="https://www.google.com/search?q=tlaltenango+zacatecas" target="_blank" rel="noopener noreferrer">Tlaltenango, Zacatecas 🇲🇽</a></p>} img="mexico"/>
+                        <ListItem info={<p>Born and raised in Dallas, TX <span role="img" aria-label='tex'>🤠</span></p>} img="dallas"/>
+                        <ListItem info={<p>Roots from <a href="https://www.google.com/search?q=tlaltenango+zacatecas" target="_blank" rel="noopener noreferrer">Tlaltenango, Zacatecas <span role="img" aria-label='mex'>🇲🇽</span></a></p>} img="mexico"/>
                         <ListItem info={<p>FGLI - First generation low income student</p>} img="fam"/>
                     </div>
                     <div>
@@ -68,7 +68,7 @@ class Home extends React.Component {
                                 <div>
                                     <p>Undergraduate Researcher in the <a href="https://lids.mit.edu/" target="_blank" rel="noopener noreferrer">LIDS</a> Group</p>
                                     <br/>
-                                    <p>Under Sarah Cen <a href="https://lids.mit.edu/news-and-events/events/regulating-algorithmic-filtering-social-media" target="_blank" rel="noopener noreferrer">Regulating Social Media</a></p>
+                                    <p><a href="https://superurop.mit.edu/scholars/moises-trejo/" target="_blank" rel="noopener noreferrer">Regulating Social Media</a></p>
                                 </div>
                                 } 
                             img="lids" small={true} />

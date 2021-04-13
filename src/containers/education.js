@@ -1,8 +1,8 @@
 import React from 'react'
 
-import './education.scss'
+import '../styles/education.css'
 
-import classes from './classes.json'
+import classes from '../information/classes.json'
 
 const EducationItem = ({education}) => {
     return <div class="education-item  center">

@@ -1,0 +1,12 @@
+.pdf{
+  display: block;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 900px;
+}
+
+.download-button {
+  margin: 32px
+}

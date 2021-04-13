@@ -3,21 +3,21 @@ import React from 'react';
 import { Route, Redirect, BrowserRouter} from 'react-router-dom'
 
 import './App.css';
-import NavbarWeb from "./components/navbar";
-import Home from "./pages/home/home";
-import Resume from "./pages/resume/resume";
-import Projects from "./pages/projects/projects";
-import Contact from "./pages/contact/contact";
-import Webapps from "./pages/webapps/webapps";
+import NavigationBar from "./components/navbar";
+import Home from "./containers/home";
+import Resume from "./containers/resume";
+import Projects from "./containers/projects";
+import Contact from "./containers/contact";
+import Webapps from "./containers/webapps/webapps";
 
-import webapps from "./pages/webapps/webapps.json"
+import webapps from "./containers/webapps/webapps.json"
 
 
 function App() {
     return (
         <div>
-            <NavbarWeb></NavbarWeb>
             <BrowserRouter>
+                <NavigationBar></NavigationBar>
                 <Route exact path="/" render={() => (
                     <Redirect to="/home"/>
                 )}/>

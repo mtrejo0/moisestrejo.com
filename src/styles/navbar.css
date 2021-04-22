@@ -6,6 +6,7 @@
     background-image: linear-gradient(to right, #cc66ff , #6666ff);
     font-size: 18px;
     font-weight: 700;
+    width: 100vw;;
     
 }
 
@@ -22,4 +23,11 @@
     background-color: #cc99ff;
     color: white !important;
 }
+
+@media (max-width: 1100px) {
+    .nav-ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 

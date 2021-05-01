@@ -1,5 +1,11 @@
 [
     {
+        "name" : "The Indian poor*",
+        "description" : "Data visualization to show the complex expenditure patterns of the extremely poor in India. We compare your guesses for how they spend to reality.",
+        "link" : "https://6859-sp21.github.io/a4-akshit-lucas-moises/",
+        "img": "indian_poor.png"
+    },
+    {
         "name" : "Vaccine Finder",
         "description" : "Vaccine finder allows users to find vaccine locations near them, create an account, save personal vaccines, and learn about public health",
         "link" : "https://github.com/6170-fa20/final-project-bowlers",

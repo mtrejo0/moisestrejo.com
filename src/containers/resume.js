@@ -2,13 +2,13 @@ import React from 'react'
 
 import '../styles/resume.css'
 
-import pdf from '../information/Moises_Trejo_Resume.pdf';
+import pdf from "../information/Resume.pdf";
 import Education from './education';
 
 class Resume extends React.Component {
 
     render() {
-        let id = "1kF2FEqdvBEcCksgv8rMmDxnlfD3vDUaL"
+        let id = "17BKQrfpLi5IcTNLteQFf-x9ryXTra822";
         let src = `https://drive.google.com/file/d/${id}/preview`
         return (
             <div class = "center">

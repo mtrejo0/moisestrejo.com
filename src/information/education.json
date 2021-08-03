@@ -152,6 +152,7 @@
         "description": [
             "The Summer Academy for Math and Science (SAMS) provides opportunities for students from underrepresented communities to explore STEM-related fields"
         ],
+        "icon": "cmu.png",
         "tags": [
             "education"
         ]
@@ -163,6 +164,7 @@
         "description": [
             "1 Week Summer program to learn more about UT School of Computing"
         ],
+        "icon": "ut.png",
         "tags": [
             "education"
         ]
@@ -170,9 +172,11 @@
     {
         "name": "School of Science and Engineering Magnet High School",
         "year": "Spring 2020",
+        "link": "https://www.semagnet.org/",
         "description": [
             "I loved High School"
         ],
+        "icon": "sem.jpg",
         "tags": [
             "education"
         ]

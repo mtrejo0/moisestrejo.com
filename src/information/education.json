@@ -11,7 +11,7 @@
         "icon": "mit.png",
         "sub_items": [
             {
-                "name": "6.859 - Data Visualization",
+                "name": "6.859 - Data Visualization - Graduate",
                 "description": [
                     "Provides design-focused instruction on how to build software applications. Design topics include classic human-computer interaction (HCI) design tactics (need finding, heuristic evaluation, prototyping, user testing), conceptual design (modeling and evaluating constituent concepts), abstract data modeling, and visual design. Implementation topics include functional programming in Javascript, reactive front-ends, web services, and databases. Students work in teams on term-long projects in which they construct applications of social value."
                 ],
@@ -23,7 +23,7 @@
                 ]
             },
             {
-                "name": "18.065 - Matrix Mathematics",
+                "name": "18.065 - Matrix Methods in Data Analysis & Signal Processing - Graduate",
                 "description": [
                     "Provides design-focused instruction on how to build software applications. Design topics include classic human-computer interaction (HCI) design tactics (need finding, heuristic evaluation, prototyping, user testing), conceptual design (modeling and evaluating constituent concepts), abstract data modeling, and visual design. Implementation topics include functional programming in Javascript, reactive front-ends, web services, and databases. Students work in teams on term-long projects in which they construct applications of social value."
                 ],
@@ -175,6 +175,35 @@
         ],
         "tags": [
             "education"
+        ]
+    },
+    {
+        "name": "Decompiling Data Visualizations from Images - 6.859 Final Project",
+        "description": [
+            "Abstract: Creating static visualizations is a lossy process, a user’s codeand data is compiled in the form of a static image.  Theseimages are the default form of data visualizations, and areubiquitous across both social media and academia. As visual-ization researchers, this lossy compilation into images makesit very challenging to experiment and tweak with design deci-sions of the original author. In this work, we present a noveldeep-learning based algorithm that candecompilean imagevisualization, allowing researchers to easily edit and inspectits visual design. Our method and domain-specific languageis more general than previous approaches and is extensible tomore types of data visualizations without the need for expert-tuned heuristics."
+        ],
+        "pdf": {
+            "name": "Decompiling Data Visualizations from Images PDF",
+            "link": "https://drive.google.com/file/d/1fWRGP0TCktx1DLG7bcBXkLL1l4UyupfZ/view?usp=sharing"
+        },
+        "link": "http://vis.csail.mit.edu/classes/6.894/",
+        "year": "Spring 2021",
+        "tags": [
+            "research"
+        ]
+    },
+    {
+        "name": "Who’s That Pokemon? - 6.859 Final Project",
+        "description": [
+            "Provides design-focused instruction on how to build software applications. Design topics include classic human-computer interaction (HCI) design tactics (need finding, heuristic evaluation, prototyping, user testing), conceptual design (modeling and evaluating constituent concepts), abstract data modeling, and visual design. Implementation topics include functional programming in Javascript, reactive front-ends, web services, and databases. Students work in teams on term-long projects in which they construct applications of social value."
+        ],
+        "pdf": {
+            "name": "Who’s That Pokemon? PDF",
+            "link": "https://drive.google.com/file/d/192ObTkvq8h8qRylK-1Hqqx2P2cIIAcrZ/view?usp=sharing"
+        },
+        "year": "Spring 2021",
+        "tags": [
+            "research"
         ]
     }
 ]

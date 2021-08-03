@@ -13,15 +13,16 @@
         ]
     },
     {
-        "name": "SuperUROP - Regulating Social Media",
+        "name": "SuperUROP - Responsible Regulating Social Media",
         "year": "May 2020 - May 2021",
         "description": [
             "Developed a policy that can test and quantify the effect of content curation on user learning",
             "Built a recommendation system using content filtering and matrix factorization algorithms",
-            "Created learning agents to track the effect of different recommending systems on decision making"
+            "Created learning agents to track the effect of different recommending systems on decision making",
+            "Abstract: Social Media Platforms (SMPs) use recommendations to provide userswith content [1].  Some standard recommendation techniques can nega-tively affect the way users learn and how much SMPs can profit.  Plat-forms can to have a greedy approach when recommending content to users,which can negatively affect learning and profits.  We align the platform’sgoals with gaining more money and user’s goals to learn freely by modify-ing how recommendation systems estimate and recommend to their users.We introduce a new approach for estimating user interests for topics tointroduce diversity and treat users as a learning agent rather than a staticuser.  We found a way that a SMP can focus on these goals to improveusers’ learning experiences and make more profit than current approaches"
         ],
         "pdf": {
-            "name": "Regulating Social Media PDF",
+            "name": "Responsible Regulating Social Media PDF",
             "link": "https://drive.google.com/file/d/15iwvnPyylNGwLkDqHr37FQsH4W7KADlL/view?usp=sharing"
         },
         "icon": "lids.jpg",

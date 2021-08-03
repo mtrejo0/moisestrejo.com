@@ -2,7 +2,6 @@ import React from 'react'
 
 import {NavLink} from 'react-router-dom'
 
-import '../styles/navbar.css'
 
 class NavigationBar extends React.Component {
 

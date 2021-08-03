@@ -1,16 +1,12 @@
 import React from 'react'
 
-import '../styles/contact.css'
-
-
 class Contact extends React.Component {
 
     render() {
         return(
             <div class="center">
                 <h1 class="title">Lets talk!</h1>
-                <div class="columns">
-                <div class="col">
+                <div class="contact-grid">
                     <div class="contact-item">
                     <a href="mailto:moisest@mit.edu" target="_blank" rel="noopener noreferrer">moisest@mit.edu</a>
                     <p>Send me an email</p>
@@ -27,8 +23,6 @@ class Contact extends React.Component {
                     <a href=" https://www.instagram.com/moises.trejo0/" target="_blank" rel="noopener noreferrer">Instagram</a>
                     <p>Follow me</p>
                     </div>
-                </div>
-                <div>
                     <div class="contact-item">
                     <a href="https://github.com/mtrejo0" target="_blank" rel="noopener noreferrer">Github</a>
                     <p>Checkout past projects</p>
@@ -37,7 +31,6 @@ class Contact extends React.Component {
                     <a href="https://devpost.com/mtrejo" target="_blank" rel="noopener noreferrer">Devpost</a>
                     <p>Checkout past hackathons</p>
                     </div>
-                </div>
                 </div>
             </div>
         )

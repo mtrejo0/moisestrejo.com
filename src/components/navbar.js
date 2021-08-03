@@ -6,18 +6,28 @@ import '../styles/navbar.css'
 
 class NavigationBar extends React.Component {
 
-
     render(){
-
-        return <div>
+        return (
+          <div>
             <ul className="nav-ul">
-                <li className="nav-li"><NavLink to='/home'>Home</NavLink></li>
-                <li className="nav-li"><NavLink to='/resume'>Resume</NavLink></li>
-                <li className="nav-li"><NavLink to='/projects'>Projects</NavLink></li>
-                <li className="nav-li"><NavLink to='/webapps'>Web Apps</NavLink></li>
-                <li className="nav-li"><NavLink to='/contact'>Contact</NavLink></li>
+              <li className="nav-li">
+                <NavLink to="/home">Home</NavLink>
+              </li>
+              <li className="nav-li">
+                <NavLink to="/resume">Resume</NavLink>
+              </li>
+              <li className="nav-li">
+                <NavLink to="/resume++">Resume ++</NavLink>
+              </li>
+              <li className="nav-li">
+                <NavLink to="/webapps">Web Apps</NavLink>
+              </li>
+              <li className="nav-li">
+                <NavLink to="/contact">Contact</NavLink>
+              </li>
             </ul>
-        </div>
+          </div>
+        );
     }
 
 }

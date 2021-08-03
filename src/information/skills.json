@@ -1,0 +1,65 @@
+[
+    {
+        "name": "React.JS / Vue.JS / Angular.JS",
+        "description": [
+            "I make cool apps"
+        ],
+        "tags": [
+            "skills"
+        ]
+    },
+    {
+        "name": "Python",
+        "description": [
+            "I make cool apps"
+        ],
+        "tags": [
+            "skills"
+        ]
+    },
+    {
+        "name": "Java/Scala",
+        "description": [
+            "I make cool apps"
+        ],
+        "tags": [
+            "skills"
+        ]
+    },
+    {
+        "name": "AWS / GCP",
+        "description": [
+            "I am good at cloud services"
+        ],
+        "tags": [
+            "skills"
+        ]
+    },
+    {
+        "name": "C++",
+        "description": [
+            "ESP 32"
+        ],
+        "tags": [
+            "skills"
+        ]
+    },
+    {
+        "name": "Unity / C#",
+        "description": [
+            "I make cool apps"
+        ],
+        "tags": [
+            "skills"
+        ]
+    },
+    {
+        "name": "Microcontrollers: Arduino, ESP32, RaspberryPy",
+        "description": [
+            "I am good at cloud services"
+        ],
+        "tags": [
+            "skills"
+        ]
+    }
+]

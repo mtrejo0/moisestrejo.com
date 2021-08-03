@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Twitter SWE",
+        "year": "June 2021 - Present",
+        "description": [
+            "Introduced Zipkin tracing to sample live SQL operations and save them for access in BigQuery",
+            "Developed scheduled job that finds how often each graph/partition are hit and the popular queries under each",
+            "Built dashboard for engineers to identify pain points and trends in partition/graph load"
+        ],
+        "icon": "twitter.jpg",
+        "tags": [
+            "work"
+        ]
+    },
+    {
+        "name": "SuperUROP - Regulating Social Media",
+        "year": "May 2020 - May 2021",
+        "description": [
+            "Developed a policy that can test and quantify the effect of content curation on user learning",
+            "Built a recommendation system using content filtering and matrix factorization algorithms",
+            "Created learning agents to track the effect of different recommending systems on decision making"
+        ],
+        "pdf": {
+            "name": "Regulating Social Media PDF",
+            "link": "https://drive.google.com/file/d/15iwvnPyylNGwLkDqHr37FQsH4W7KADlL/view?usp=sharing"
+        },
+        "icon": "lids.jpg",
+        "tags": [
+            "work",
+            "research"
+        ]
+    },
+    {
+        "name": "Facebook SWE ",
+        "year": "June 2020 - August 2020",
+        "description": [
+            "Created internal tool to load B2C chat plugin for debugging and E2E + snapshot testing",
+            "Refactored existing web controller to use class-based evaluator for whitelisting and privacy rules",
+            "Updated the on boarding flow for the chat plugin to allow businesses to add and customize newly introduced features"
+        ],
+        "icon": "facebook.png",
+        "tags": [
+            "work"
+        ]
+    },
+    {
+        "name": "TownSq",
+        "year": "January 2020",
+        "description": [
+            "Constructed front end dashboard displaying average feedback, reviews, and payment churn for HOA managers toimprove resident experiences",
+            "Participated in Data Lab with AWS to develop data lake + warehouse for HOA resident feedback and payment metrics"
+        ],
+        "link": "https://townsq.io/",
+        "tags": [
+            "work"
+        ]
+    },
+    {
+        "name": "HKN Algorithms Tutor",
+        "year": "January 2019 - January 2020",
+        "description": [
+            "Mentored and taught 2 students each semester in Introduction to Algorithms and Data Structures 6.006. Topics included Master Theorem, Insertion + Selection + Merge + In Place Merge + Radix Sort, dynamic arrays, BSTs, AVLs, Heaps, Hash Maps, BFS, DFS, Dijkstras, Johnsons, Bellman Ford, Dynamic Programming, Subset Sum & Pseudo-polynomial, P, NP, Hardness, Completeness"
+        ],
+        "tags": [
+            "work"
+        ]
+    },
+    {
+        "name": "Facebook University ",
+        "year": "June 2019 - August 2019",
+        "description": [
+            "Developed an Android application called Skillshop that allows users to post workshops they want to teach and theability to sign up for public workshops connecting them to teachers and other students in the class"
+        ],
+        "icon": "facebook.png",
+        "tags": [
+            "work"
+        ]
+    },
+    {
+        "name": "Whataburger",
+        "year": "Spring 2018",
+        "description": [
+            "Exceptional drive-thru personel 🍔. I always gave extra spicy ketchup."
+        ],
+        "icon": "whataburger.png",
+        "tags": [
+            "work"
+        ]
+    }
+]

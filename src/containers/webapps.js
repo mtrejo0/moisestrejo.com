@@ -5,7 +5,7 @@ import webapps from "../information/webapps.json";
 const WebbappItem = ({ webapp }) => {
   let link = `https://moisesp5js.s3.us-east-2.amazonaws.com/${webapp.id}/index.html`;
   return (
-    <div class="list-item center">
+    <div class="nice-border center">
       <a href={link}>
         <h3>{webapp.name}</h3>
       </a>

@@ -3,14 +3,18 @@ import axios from 'axios'
 
 
 const ListItem = ({info, img, small = false}) => {
-    return <div class="list-item">
+    return (
+      <div class="nice-border">
         <p>{info}</p>
-        {
-            img ? 
-            <img class={small? "small-image" : "image"} src={process.env.PUBLIC_URL + `/images/${img}.jpg`} alt={img}></img>
-            : null
-        }
-    </div>
+        {img ? (
+          <img
+            class={small ? "small-image" : "image"}
+            src={process.env.PUBLIC_URL + `/images/${img}.jpg`}
+            alt={img}
+          ></img>
+        ) : null}
+      </div>
+    );
 };
 
 class Home extends React.Component {

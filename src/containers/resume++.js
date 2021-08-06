@@ -102,7 +102,7 @@ const ResumeItem = ({ item }) => {
       <div className="resume-top">
         <div>
           {item.link ? (
-            <a href={item.link}>
+            <a href={item.link} target='_blank' rel="noopener noreferrer">
               <h3>{item.name}</h3>
             </a>
           ) : (

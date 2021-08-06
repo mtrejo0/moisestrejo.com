@@ -2,8 +2,9 @@
     {
         "name": "MIT Albert G. Hill Prize",
         "description": [
-            "Provides design-focused instruction on how to build software applications. Design topics include classic human-computer interaction (HCI) design tactics (need finding, heuristic evaluation, prototyping, user testing), conceptual design (modeling and evaluating constituent concepts), abstract data modeling, and visual design. Implementation topics include functional programming in Javascript, reactive front-ends, web services, and databases. Students work in teams on term-long projects in which they construct applications of social value."
+            "The Albert G. Hill Prize is awarded to juniors or seniors from underrepresented minority backgrounds who have maintained high academic standards and have made continued contributions to improving diversity, equity, and inclusion at MIT."
         ],
+        "link": "https://awards.mit.edu/awards/albert-g-hill-prize",
         "year": "Spring 2021",
         "tags": [
             "award"

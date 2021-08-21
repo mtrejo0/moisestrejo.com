@@ -55,7 +55,7 @@ class ResumePlusPlus extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeTab: tabs[0],
+      activeTab: tabs[(Math.random() * tabs.length) | 0],
     };
     this.selectTab = this.selectTab.bind(this);
   }
@@ -79,7 +79,7 @@ class ResumePlusPlus extends React.Component {
                     ? "resume-li active-resume-tab"
                     : "resume-li"
                 }
-                onClick={() => this.selectTab(tab.tag)}
+                onMouseOver={() => this.selectTab(tab.tag)}
               >
                 {tab.name}
               </li>
@@ -95,64 +95,87 @@ class ResumePlusPlus extends React.Component {
     );
   }
 }
-
-const ResumeItem = ({ item }) => {
-  let text = (
-    <div>
-      <div className="resume-top">
-        <div>
-          {item.link ? (
-            <a href={item.link} target='_blank' rel="noopener noreferrer">
-              <h3>{item.name}</h3>
-            </a>
-          ) : (
-            <h3>{item.name}</h3>
-          )}
-          <ul>
-            {item.description.map((each) => {
-              return <li>{each}</li>;
-            })}
-          </ul>
-          <a href={item?.pdf?.link}>{item?.pdf?.name}</a>
-        </div>
-        <div className="resume-item-right">
-          <strong>
-            <p>{item.year}</p>
-          </strong>
-          {item.icon ? (
-            <img
-              class="resume-icon"
-              src={process.env.PUBLIC_URL + `/images/${item.icon}`}
-              alt={item.icon}
-            />
-          ) : null}
-        </div>
+class ResumeItem extends React.Component {
+  render() {
+    let title = (
+      <div>
+        {this.props.type === "sub-item" ? (
+          <h5>{this.props.item.name}</h5>
+        ) : (
+          <h3>{this.props.item.name}</h3>
+        )}
       </div>
-      {item.sub_items
-        ? item.sub_items.map((each) => <ResumeItem item={each}></ResumeItem>)
-        : null}
-    </div>
-  );
-  return (
-    <div className="nice-border">
-      {item.img ? (
-        <div className="resume-item-image">
-          <div className="resume-item-image-left">{text}</div>
-          <div className="resume-item-image-right">
-            <a href={item.link}>
-              <img
-                class="resume-image"
-                src={process.env.PUBLIC_URL + `/images/${item.img}`}
-                alt={item.img}
-              />
+    );
+    let text = (
+      <div>
+        <div className="resume-top">
+          <div>
+            {this.props.item.link ? (
+              <a
+                href={this.props.item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {title}
+              </a>
+            ) : (
+              title
+            )}
+            <ul>
+              {this.props.item.description.map((each) => {
+                return <li>{each}</li>;
+              })}
+            </ul>
+            <a href={this.props.item?.pdf?.link}>
+              {this.props.item?.pdf?.name}
             </a>
           </div>
+          <div className="resume-item-right">
+            <strong>
+              <p>{this.props.item.year}</p>
+            </strong>
+            {this.props.item.icon ? (
+              <img
+                class="resume-icon"
+                src={process.env.PUBLIC_URL + `/images/${this.props.item.icon}`}
+                alt={this.props.item.icon}
+              />
+            ) : null}
+          </div>
         </div>
-      ) : (
-        <div className="resume-item">{text}</div>
-      )}
-    </div>
-  );
+
+        {this.props.item.sub_items ? (
+          <div>
+            {this.props.item.sub_items.map((each) => (
+              <ResumeItem item={each} type="sub-item"></ResumeItem>
+            ))}
+          </div>
+        ) : null}
+      </div>
+    );
+    return (
+      <div className="nice-border">
+        {this.props.item.img ? (
+          <div className="resume-item-image">
+            <div className="resume-item-image-left">{text}</div>
+            <div className="resume-item-image-right">
+              <a href={this.props.item.link}>
+                <img
+                  class="resume-image"
+                  src={
+                    process.env.PUBLIC_URL + `/images/${this.props.item.img}`
+                  }
+                  alt={this.props.item.img}
+                />
+              </a>
+            </div>
+          </div>
+        ) : (
+          <div className="resume-item">{text}</div>
+        )}
+      </div>
+    );
+  }
 };
 
 export default ResumePlusPlus;

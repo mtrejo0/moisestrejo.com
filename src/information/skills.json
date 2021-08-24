@@ -2,7 +2,7 @@
     {
         "name": "React.JS / Vue.JS / Angular.JS",
         "description": [
-            "I make cool apps"
+            "I have made over 20 front end applications using these JS frameworks. ~4 years of expereince. ~15000 lines of code."
         ],
         "tags": [
             "skills"
@@ -11,7 +11,7 @@
     {
         "name": "Python",
         "description": [
-            "I make cool apps"
+            "I have taken over 4 MIT courses in python. I can build anything from an api server, to a poker bot, and even an ML model. ~4 years of expereince. ~10000 lines of code."
         ],
         "tags": [
             "skills"
@@ -20,7 +20,7 @@
     {
         "name": "Java/Scala",
         "description": [
-            "I make cool apps"
+            "Best langauge to use because of static checking and speed IMO. ~2 years of experience. ~3000 lines of code."
         ],
         "tags": [
             "skills"
@@ -38,7 +38,7 @@
     {
         "name": "C++",
         "description": [
-            "ESP 32"
+            "I have written scripts for microcontrollers like Arduinos and ESP32. ~1 year of experience. ~2000 lines of code."
         ],
         "tags": [
             "skills"
@@ -54,9 +54,9 @@
         ]
     },
     {
-        "name": "Microcontrollers: Arduino, ESP32, RaspberryPy",
+        "name": "IOT / Microcontrollers: Arduino, ESP32, RaspberryPy",
         "description": [
-            "I am good at cloud services"
+            "I have built lazer tag, weather detectors, step counters, and more!"
         ],
         "tags": [
             "skills"

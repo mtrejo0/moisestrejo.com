@@ -1,5 +1,16 @@
 [
     {
+        "name": "Interfraternity Council (IFC) - Risk Management Consultant",
+        "year": "Fall 2021",
+        "description": [
+            "Encouraged Social and Risk Management Policies. Helped hosts spot policy violations and advising them on how to mitigate risk."
+        ],
+        "link": "https://www.mitifc.com/risk-handbook/",
+        "tags": [
+            "work"
+        ]
+    },
+    {
         "name": "Twitter SWE",
         "year": "June 2021 - Present",
         "description": [
@@ -45,7 +56,18 @@
         ]
     },
     {
-        "name": "TownSq",
+        "name": "Interfraternity Council (IFC) - Risk Management Consultant",
+        "year": "Spring 2020",
+        "description": [
+            "Encouraged Social and Risk Management Policies. Helped hosts spot policy violations and advising them on how to mitigate risk."
+        ],
+        "link": "https://www.mitifc.com/risk-handbook/",
+        "tags": [
+            "work"
+        ]
+    },
+    {
+        "name": "TownSq SWE",
         "year": "January 2020",
         "description": [
             "Constructed front end dashboard displaying average feedback, reviews, and payment churn for HOA managers toimprove resident experiences",
@@ -67,7 +89,7 @@
         ]
     },
     {
-        "name": "Facebook University ",
+        "name": "Facebook University SWE",
         "year": "June 2019 - August 2019",
         "description": [
             "Developed an Android application called Skillshop that allows users to post workshops they want to teach and theability to sign up for public workshops connecting them to teachers and other students in the class"

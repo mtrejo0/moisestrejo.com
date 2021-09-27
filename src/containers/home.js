@@ -55,7 +55,7 @@ class Home extends React.Component {
             </div>
             <div className={"paragraph"}>
               <p>
-                I am currently a junior at MIT studying Computer Science. I am
+                I am currently a senior at MIT studying Computer Science. I am
                 passionate about using technology to give everyone the same
                 opportinity to live happy and succeed. I have a Shiba Inu named
                 Mango{" "}
@@ -81,7 +81,7 @@ class Home extends React.Component {
                 }
                 img="dallas"
               />
-              <ListItem info={"Junior at MIT BS 22'"} img="mit_dome" />
+              <ListItem info={"Senior at MIT BS 22'"} img="mit_dome" />
               <ListItem
                 info={
                   <p>

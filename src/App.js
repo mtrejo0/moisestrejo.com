@@ -27,7 +27,6 @@ function App() {
           <Route path="/webapps" component={Webapps} />
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
-          <Route path="*" component={Error} />
           <Route
             path="/egg"
             render={() =>
@@ -43,11 +42,43 @@ function App() {
             }
           />
           <Route
+            path="/facebook"
+            render={() =>
+              (window.location.href =
+                "https://www.facebook.com/moises.trejo.773")
+            }
+          />
+          <Route
             path="/ig"
             render={() =>
               (window.location.href =
                 "https://www.instagram.com/moises.trejo0/")
             }
+          />
+          <Route
+            path="/instagram"
+            render={() =>
+              (window.location.href =
+                "https://www.instagram.com/moises.trejo0/")
+            }
+          />
+          <Route
+            path="/linkedin"
+            render={() =>
+              (window.location.href =
+                "https://www.linkedin.com/in/moisestrejo/")
+            }
+          />
+          <Route
+            path="/li"
+            render={() =>
+              (window.location.href =
+                "https://www.linkedin.com/in/moisestrejo/")
+            }
+          />
+          <Route
+            path="/github"
+            render={() => (window.location.href = "https://github.com/mtrejo0")}
           />
           {webapps.map((webapp) => {
             return (
@@ -59,6 +90,7 @@ function App() {
               />
             );
           })}
+          <Route path="*" component={Error} />
         </Switch>
       </BrowserRouter>
     </div>

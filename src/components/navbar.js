@@ -22,6 +22,9 @@ class NavigationBar extends React.Component {
                 <NavLink to="/webapps">Web Apps</NavLink>
               </li>
               <li className="nav-li">
+                <NavLink to="/blog">Blog</NavLink>
+              </li>
+              <li className="nav-li">
                 <NavLink to="/contact">Contact</NavLink>
               </li>
             </ul>

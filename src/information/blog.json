@@ -1,0 +1,16 @@
+[
+    {
+        "text": "I thought it was a pretty cool idea to make a blog on my own website. I now want to make a video of how to make a simple blog. All I do to add a new entry is add to a .json file full of blog posts. Its kind of cool!",
+        "date": "October 4th, 2021",
+        "tags": [
+            "motivation, just do it"
+        ]
+    },
+    {
+        "text": "Hello World!",
+        "date": "October 4th, 2021",
+        "tags": [
+            "start"
+        ]
+    }
+]

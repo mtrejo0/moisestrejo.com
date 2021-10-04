@@ -384,3 +384,13 @@ p {
     width: 100%;
   }
 }
+
+.blog-item {
+  width: 50vw;
+}
+
+.blog-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

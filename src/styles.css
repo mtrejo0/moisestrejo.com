@@ -385,8 +385,16 @@ p {
   }
 }
 
+
+
 .blog-item {
   width: 50vw;
+}
+
+@media (max-width: 1100px) {
+  .blog-item {
+    width: 100%;
+  }
 }
 
 .blog-bottom {

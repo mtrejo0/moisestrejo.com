@@ -110,25 +110,25 @@ class ResumeItem extends React.Component {
       <div>
         <div className="resume-top">
           <div>
-            {this.props.item.link ? (
-              <a
-                href={this.props.item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {title}
-              </a>
-            ) : (
-              title
-            )}
+            {title}
             <ul>
               {this.props.item.description.map((each) => {
                 return <li>{each}</li>;
               })}
+              {this.props.item.links?.map((each) => {
+                return (
+                  <li>
+                    <a
+                      href={each.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {each.name}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
-            <a href={this.props.item?.pdf?.link}>
-              {this.props.item?.pdf?.name}
-            </a>
           </div>
           <div className="resume-item-right">
             <strong>

@@ -1,39 +1,46 @@
 import React from 'react'
 
-class Contact extends React.Component {
+import contact from "../information/contact.json";
 
-    render() {
-        return(
-            <div class="center">
-                <h1 class="title">Lets talk!</h1>
-                <div class="contact-grid">
-                    <div class="nice-border">
-                    <a href="mailto:moisest@mit.edu" target="_blank" rel="noopener noreferrer">moisest@mit.edu</a>
-                    <p>Send me an email</p>
-                    </div>
-                    <div class="nice-border">
-                    <a href="https://calendly.com/moisestrejo/15min" target="_blank" rel="noopener noreferrer">Calendly</a>
-                    <p>Schedule some time with me</p>
-                    </div>
-                    <div class="nice-border">
-                    <a href="https://www.linkedin.com/in/moisestrejo/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <p>Connect with me</p>
-                    </div>
-                    <div class="nice-border">
-                    <a href=" https://www.instagram.com/moises.trejo0/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                    <p>Follow me</p>
-                    </div>
-                    <div class="nice-border">
-                    <a href="https://github.com/mtrejo0" target="_blank" rel="noopener noreferrer">Github</a>
-                    <p>Checkout past projects</p>
-                    </div>
-                    <div class="nice-border">
-                    <a href="https://devpost.com/mtrejo" target="_blank" rel="noopener noreferrer">Devpost</a>
-                    <p>Checkout past hackathons</p>
-                    </div>
-                </div>
-            </div>
-        )
-    }
+import links from "../information/links.json";
+
+class Contact extends React.Component {
+  render() {
+    return (
+      <div class="center">
+        <h1 class="title">Lets talk!</h1>
+        <div class="contact-grid">
+          {contact.map((item) => {
+            return (
+              <div class="nice-border">
+                {item.link ? (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    {item.name}
+                  </a>
+                ) : (
+                  <p>{item.name}</p>
+                )}
+                <p>{item.description}</p>
+              </div>
+            );
+          })}
+        </div>
+        <h1 class="title">Quick Links</h1>
+        <ul>
+          {links.map((link) =>
+            link.ids.map((id) => {
+              return (
+                <li>
+                  <a href={link.link} target="_blank" rel="noopener noreferrer">
+                    moisestrejo.com/{id}
+                  </a>
+                </li>
+              );
+            })
+          )}
+        </ul>
+      </div>
+    );
+  }
 }
 export default Contact;

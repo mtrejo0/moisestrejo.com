@@ -3,7 +3,12 @@
         "name": "Society of Hispanic Professional Engineers - (SHPE)",
         "year": "Fall 2018 - Present",
         "ongoing": true,
-        "link": "http://shpe.mit.edu",
+        "links": [
+            {
+                "name": "MIT SHPE",
+                "link": "http://shpe.mit.edu"
+            }
+        ],
         "description": [
             "SHPE provides community and resources to its members through collaborative coprotate, profesional development events and so much more!"
         ],
@@ -50,7 +55,12 @@
     {
         "name": "Latinos in Science and Engineering - (MAES)",
         "year": "Spring 2018 - Present",
-        "link": "http://maes.mit.edu",
+        "links": [
+            {
+                "name": "MIT MAES",
+                "link": "http://maes.mit.edu"
+            }
+        ],
         "ongoing": true,
         "description": [
             "MAES's mission is to promote, cultivate, and honor excellence in education and leadership among Latino engineers and scientists."
@@ -91,7 +101,12 @@
     {
         "name": "Sigma Nu",
         "year": "May 2021 - Present",
-        "link": "http://sigmanu.mit.edu",
+        "links": [
+            {
+                "name": "MIT Sigma Nu",
+                "link": "http://sigmanu.mit.edu"
+            }
+        ],
         "ongoing": true,
         "description": [
             "To develop ethical leaders inspired by the principles of Love, Honor, and Truth. To foster the personal growth of each man’s mind, heart, and character. To perpetuate lifelong friendships and commitment to the Fraternity."
@@ -133,7 +148,7 @@
                 "name": "Chaplain",
                 "year": "January 2020 - May 2020",
                 "description": [
-                    "Organized brotherhood boniding events and planned retreat"
+                    "Organized brotherhood bonding events and planned retreat"
                 ]
             },
             {
@@ -155,6 +170,11 @@
         "tags": [
             "leadership"
         ],
-        "link": "https://ome.mit.edu/programs-services/standard"
+        "links": [
+            {
+                "name": "The Standard",
+            "link": "https://ome.mit.edu/programs-services/standard"
+        }
+    ]
     }
 ]

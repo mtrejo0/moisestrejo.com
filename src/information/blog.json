@@ -1,5 +1,19 @@
 [
     {
+        "text": "I added multiple links per page but I think it clutters the space a little. Anyways I added my youtube page because I want to make more content and get good at creating! :0",
+        "date": "October 14th, 2021",
+        "tags": [
+            "create create create"
+        ]
+    },
+    {
+        "text": "I want to make a github template for people to clone and make a website just like this one just my throwaway thoughts",
+        "date": "October 7th, 2021",
+        "tags": [
+            "git clone"
+        ]
+    },
+    {
         "text": "I thought it was a pretty cool idea to make a blog on my own website. I now want to make a video of how to make a simple blog. All I do to add a new entry is add to a .json file full of blog posts. Its kind of cool!",
         "date": "October 4th, 2021",
         "tags": [

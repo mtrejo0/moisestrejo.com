@@ -29,7 +29,7 @@
     {
         "name": "AWS / GCP",
         "description": [
-            "I am good at cloud services"
+            "This website was made using Amplify and Route 53. I count visitors using DynamoDB and AWS endpoint. I ve worked with GCP while at Twitter to process and store graph metrics."
         ],
         "tags": [
             "skills"
@@ -44,19 +44,20 @@
             "skills"
         ]
     },
+    
     {
-        "name": "Unity / C#",
+        "name": "IOT / Microcontrollers: Arduino, ESP32, RaspberryPy",
         "description": [
-            "I make cool apps"
+            "I have built lazer tag, weather detectors, step counters, and more!"
         ],
         "tags": [
             "skills"
         ]
     },
     {
-        "name": "IOT / Microcontrollers: Arduino, ESP32, RaspberryPy",
+        "name": "Unity / C#",
         "description": [
-            "I have built lazer tag, weather detectors, step counters, and more!"
+            "I made a unity game for HackMIT 2018!"
         ],
         "tags": [
             "skills"

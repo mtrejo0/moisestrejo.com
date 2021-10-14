@@ -15,7 +15,12 @@
                 "description": [
                     "Provides design-focused instruction on how to build software applications. Design topics include classic human-computer interaction (HCI) design tactics (need finding, heuristic evaluation, prototyping, user testing), conceptual design (modeling and evaluating constituent concepts), abstract data modeling, and visual design. Implementation topics include functional programming in Javascript, reactive front-ends, web services, and databases. Students work in teams on term-long projects in which they construct applications of social value."
                 ],
-                "link": "http://vis.csail.mit.edu/classes/6.894/",
+                "links": [
+                    {
+                        "name": "Class Website",
+                        "link": "http: //vis.csail.mit.edu/classes/6.894/"
+                    }
+                ],
                 "year": "Spring 2021",
                 "tags": [
                     "education",
@@ -147,7 +152,12 @@
     },
     {
         "name": "Summer Academy of Math and Science (SAMS) - Carnegie Mellon University",
-        "link": "https://www.cmu.edu/pre-college/academic-programs/sams.html",
+        "links": [
+            {
+                "name": " Program Website",
+                "link": "https://www.cmu.edu/pre-college/academic-programs/sams.html"
+            }
+        ],
         "year": "Spring 2020",
         "description": [
             "The Summer Academy for Math and Science (SAMS) provides opportunities for students from underrepresented communities to explore STEM-related fields"
@@ -160,7 +170,12 @@
     {
         "name": "Code Longhorn - University of Texas at Austin",
         "year": "Spring 2020",
-        "link": "https://m.facebook.com/watch/?v=10155491309099588&_rdr",
+        "links": [
+            {
+                "name": "Showcase Video",
+                "link": "https://m.facebook.com/watch/?v=10155491309099588&_rdr"
+            }
+        ],
         "description": [
             "1 Week Summer program to learn more about UT School of Computing"
         ],
@@ -172,7 +187,12 @@
     {
         "name": "School of Science and Engineering Magnet High School",
         "year": "Spring 2018",
-        "link": "https://www.semagnet.org/",
+        "links": [
+            {
+                "name": "School Website",
+                "link": "https://www.semagnet.org/"
+            }
+        ],
         "description": [
             "I loved High School"
         ],
@@ -186,11 +206,16 @@
         "description": [
             "Abstract: Creating static visualizations is a lossy process, a user’s codeand data is compiled in the form of a static image.  Theseimages are the default form of data visualizations, and areubiquitous across both social media and academia. As visual-ization researchers, this lossy compilation into images makesit very challenging to experiment and tweak with design deci-sions of the original author. In this work, we present a noveldeep-learning based algorithm that candecompilean imagevisualization, allowing researchers to easily edit and inspectits visual design. Our method and domain-specific languageis more general than previous approaches and is extensible tomore types of data visualizations without the need for expert-tuned heuristics."
         ],
-        "pdf": {
+        "links": [
+            {
             "name": "Decompiling Data Visualizations from Images PDF",
             "link": "https://drive.google.com/file/d/1fWRGP0TCktx1DLG7bcBXkLL1l4UyupfZ/view?usp=sharing"
         },
-        "link": "https://www.youtube.com/watch?v=JmG8-sZFIbM",
+        {
+            "name": "Demo",
+            "link": "https://www.youtube.com/watch?v=JmG8-sZFIbM"
+        }
+    ],
         "year": "Spring 2021",
         "tags": [
             "research",
@@ -202,11 +227,16 @@
         "description": [
             "Abstract: Recent research in machine learning and image processing has pro-duced convolutional neural network (CNN) architectures that may betrained on regression tasks to predict continuous values, rather than just classification. In this paper, we explore applying regression CNNs to pre-dict the base fighting statistics (stats) of Pokemon using only an image of the Pokemon. Our CNN is shown to outperform random guessing or strategic guessing of stats. As a fun exercise, we also created a website that allows users to upload their own images to see what their stats would be using the trained CNNs."
         ],
-        "link": "https://www.youtube.com/watch?v=J20-to4ZOPc",
-        "pdf": {
-            "name": "Who’s That Pokemon? PDF",
-            "link": "https://drive.google.com/file/d/192ObTkvq8h8qRylK-1Hqqx2P2cIIAcrZ/view?usp=sharing"
-        },
+        "links": [
+            {
+                "name": "Who’s That Pokemon? PDF",
+                "link": "https://drive.google.com/file/d/192ObTkvq8h8qRylK-1Hqqx2P2cIIAcrZ/view?usp=sharing"
+            },
+            {
+                "name": "Demo",
+                "link": "https://www.youtube.com/watch?v=J20-to4ZOPc"
+            }
+        ],
         "year": "Spring 2021",
         "tags": [
             "research",

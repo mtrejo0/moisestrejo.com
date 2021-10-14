@@ -57,12 +57,8 @@ class Home extends React.Component {
               <p>
                 I am currently a senior at MIT studying Computer Science. I am
                 passionate about using technology to give everyone the same
-                opportinity to live happy and succeed. I have a Shiba Inu named
-                Mango{" "}
-                <span role="img" aria-label="mango">
-                  🥭
-                </span>
-                . I love cooking, basketball, skateboarding, and philosophy.{" "}
+                opportinity to live happy and succeed. I love cooking,
+                basketball, skateboarding, and philosophy.
               </p>
             </div>
 

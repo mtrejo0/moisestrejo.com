@@ -14,6 +14,8 @@ import Blog from "./containers/blog";
 import Webapps from "./containers/webapps";
 import webapps from "./information/webapps.json";
 
+import links from "./information/links.json";
+
 function App() {
   return (
     <div>
@@ -27,59 +29,18 @@ function App() {
           <Route path="/webapps" component={Webapps} />
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
-          <Route
-            path="/egg"
-            render={() =>
-              (window.location.href =
-                "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-            }
-          />
-          <Route
-            path="/fb"
-            render={() =>
-              (window.location.href =
-                "https://www.facebook.com/moises.trejo.773")
-            }
-          />
-          <Route
-            path="/facebook"
-            render={() =>
-              (window.location.href =
-                "https://www.facebook.com/moises.trejo.773")
-            }
-          />
-          <Route
-            path="/ig"
-            render={() =>
-              (window.location.href =
-                "https://www.instagram.com/moises.trejo0/")
-            }
-          />
-          <Route
-            path="/instagram"
-            render={() =>
-              (window.location.href =
-                "https://www.instagram.com/moises.trejo0/")
-            }
-          />
-          <Route
-            path="/linkedin"
-            render={() =>
-              (window.location.href =
-                "https://www.linkedin.com/in/moisestrejo/")
-            }
-          />
-          <Route
-            path="/li"
-            render={() =>
-              (window.location.href =
-                "https://www.linkedin.com/in/moisestrejo/")
-            }
-          />
-          <Route
-            path="/github"
-            render={() => (window.location.href = "https://github.com/mtrejo0")}
-          />
+
+          {links.map((link) =>
+            link.ids.map((id) => {
+              return (
+                <Route
+                  path={`/${id}`}
+                  render={() => (window.location.href = link.link)}
+                />
+              );
+            })
+          )}
+
           {webapps.map((webapp) => {
             return (
               <Route

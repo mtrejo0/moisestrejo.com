@@ -1,0 +1,41 @@
+[
+    {
+        "name": "moisest[@]mit.edu",
+        "description": "Send me an email I will respond :)"
+    },
+    {
+        "name": "Calendly",
+        "link": "https://calendly.com/moisestrejo/15min",
+        "description": "Schedule some time with me"
+    },
+    {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/moisestrejo/",
+        "description": "Connect with me!"
+    },
+    {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/moises.trejo0/",
+        "description": "Follow me!"
+    },
+    {
+        "name": "Github",
+        "link": "https://github.com/mtrejo0",
+        "description": "Checkout past projects"
+    },
+    {
+        "name": "Devpost",
+        "link": "https://devpost.com/mtrejo",
+        "description": "Checkout past hackathons"
+    },
+    {
+        "name": "Youtube",
+        "link": "https://www.youtube.com/channel/UCWiykWlbmi3ewionNGg5G-Q",
+        "description": "Checkout my goofy youtube videos :)"
+    },
+    {
+        "name": "TikTok",
+        "link": "https://www.tiktok.com/@moisestrejo100",
+        "description": "Coolest tiktok page youve ever seen!"
+    }
+]

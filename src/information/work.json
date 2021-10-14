@@ -5,7 +5,12 @@
         "description": [
             "Encouraged Social and Risk Management Policies. Helped hosts spot policy violations and advising them on how to mitigate risk."
         ],
-        "link": "https://www.mitifc.com/risk-handbook/",
+        "links": [
+            {
+                "name": "MIT IFC Handbook",
+                "link": "https://www.mitifc.com/risk-handbook/"
+            }
+        ],
         "tags": [
             "work"
         ]
@@ -32,10 +37,16 @@
             "Created learning agents to track the effect of different recommending systems on decision making",
             "Abstract: Social Media Platforms (SMPs) use recommendations to provide userswith content [1].  Some standard recommendation techniques can nega-tively affect the way users learn and how much SMPs can profit.  Plat-forms can to have a greedy approach when recommending content to users,which can negatively affect learning and profits.  We align the platform’sgoals with gaining more money and user’s goals to learn freely by modify-ing how recommendation systems estimate and recommend to their users.We introduce a new approach for estimating user interests for topics tointroduce diversity and treat users as a learning agent rather than a staticuser.  We found a way that a SMP can focus on these goals to improveusers’ learning experiences and make more profit than current approaches"
         ],
-        "pdf": {
-            "name": "Responsible Regulating Social Media PDF",
-            "link": "https://drive.google.com/file/d/15iwvnPyylNGwLkDqHr37FQsH4W7KADlL/view?usp=sharing"
-        },
+        "links": [
+            {
+                "name": "Responsible Regulating Social Media PDF",
+                "link": "https://drive.google.com/file/d/15iwvnPyylNGwLkDqHr37FQsH4W7KADlL/view?usp=sharing"
+            },
+            {
+                "name": "3 min talk",
+                "link": "https: //www.youtube.com/watch?v=CRcruJ3Eu7o"
+            }
+        ],
         "icon": "lids.jpg",
         "tags": [
             "work",
@@ -61,7 +72,12 @@
         "description": [
             "Encouraged Social and Risk Management Policies. Helped hosts spot policy violations and advising them on how to mitigate risk."
         ],
-        "link": "https://www.mitifc.com/risk-handbook/",
+        "links": [
+            {
+                "name": "MIT IFC Handbook",
+                "link": "https://www.mitifc.com/risk-handbook/"
+            }
+        ],
         "tags": [
             "work"
         ]
@@ -73,7 +89,12 @@
             "Constructed front end dashboard displaying average feedback, reviews, and payment churn for HOA managers toimprove resident experiences",
             "Participated in Data Lab with AWS to develop data lake + warehouse for HOA resident feedback and payment metrics"
         ],
-        "link": "https://townsq.io/",
+        "links": [
+            {
+                "name": "TownSq",
+                "link": "https://townsq.io/"
+            }
+        ],
         "tags": [
             "work"
         ]
@@ -83,6 +104,12 @@
         "year": "January 2019 - January 2020",
         "description": [
             "Mentored and taught 2 students each semester in Introduction to Algorithms and Data Structures 6.006. Topics included Master Theorem, Insertion + Selection + Merge + In Place Merge + Radix Sort, dynamic arrays, BSTs, AVLs, Heaps, Hash Maps, BFS, DFS, Dijkstras, Johnsons, Bellman Ford, Dynamic Programming, Subset Sum & Pseudo-polynomial, P, NP, Hardness, Completeness"
+        ],
+        "links": [
+            {
+                "name": "HKN",
+                "link": "https: //hkn.mit.edu/"
+            }
         ],
         "tags": [
             "work"
@@ -95,6 +122,12 @@
             "Developed an Android application called Skillshop that allows users to post workshops they want to teach and theability to sign up for public workshops connecting them to teachers and other students in the class"
         ],
         "icon": "facebook.png",
+        "links": [
+            {
+                "name": "Facebook University",
+                "link": "https: //www.facebook.com/careers/students-and-grads/students"
+            }
+        ],
         "tags": [
             "work"
         ]
@@ -105,7 +138,12 @@
         "description": [
             "Taught intro computer science to highschool sophomores and mentored mobile app development to highschool juniors at Prepa Tec in Mexico City"
         ],
-        "link": "https://misti.mit.edu/your-resources/crafting-your-experience/types-programs/global-teaching-labs",
+        "links": [
+            {
+                "name": "MIT MISTI",
+                "link": "https://misti.mit.edu/your-resources/crafting-your-experience/types-programs/global-teaching-labs"
+            }
+        ],
         "tags": [
             "work"
         ]

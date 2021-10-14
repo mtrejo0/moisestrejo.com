@@ -20,7 +20,6 @@ class Blog extends React.Component {
   render() {
     return (
       <div className="center">
-        <p>This is where I will write my thoughts :)</p>
         {blog_items.map((item) => (
           <BlogItem item={item}></BlogItem>
         ))}

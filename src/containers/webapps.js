@@ -1,6 +1,8 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import webapps from "../information/webapps.json";
+import apps from "../information/apps.json";
 
 const WebbappItem = ({ webapp }) => {
   let link = `https://moisesp5js.s3.us-east-2.amazonaws.com/${webapp.id}/index.html`;
@@ -22,17 +24,41 @@ const WebbappItem = ({ webapp }) => {
   );
 };
 
+const App = ({ app }) => {
+  return (
+    <div class="nice-border center">
+      <NavLink to={`/${app.id}`}>
+        <h3>{app.name}</h3>
+      </NavLink>
+      <br></br>
+      <p>{app.description}</p>
+    </div>
+  );
+};
+
 class Webapps extends React.Component {
   render() {
     return (
-      <div class="webapp-grid">
-        {webapps.map((webapp) => {
-          return (
-            <div class="webapp-item center">
-              <WebbappItem webapp={webapp} />
-            </div>
-          );
-        })}
+      <div className="center">
+        <div class="webapp-grid">
+          {apps.map((app) => {
+            return (
+              <div style={{ width: "100%" }}>
+                <App app={app} />
+              </div>
+            );
+          })}
+        </div>
+        <h3>P5.js</h3>
+        <div class="webapp-grid">
+          {webapps.map((webapp) => {
+            return (
+              <div class="webapp-item center">
+                <WebbappItem webapp={webapp} />
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   }

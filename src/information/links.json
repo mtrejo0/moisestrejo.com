@@ -43,5 +43,17 @@
             "tiktok"
         ],
         "link": "https://www.tiktok.com/@moisestrejo100"
+    },
+    {
+        "ids": [
+            "calendly"
+        ],
+        "link": "https://calendly.com/moisestrejo/30min"
+    },
+    {
+        "ids": [
+            "schedule"
+        ],
+        "link": "https://calendly.com/moisestrejo/30min"
     }
 ]

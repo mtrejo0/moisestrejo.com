@@ -16,6 +16,9 @@ import webapps from "./information/webapps.json";
 
 import links from "./information/links.json";
 
+
+import randomNumbers from "./components/randomNumbers";
+
 function App() {
   return (
     <div>
@@ -29,7 +32,6 @@ function App() {
           <Route path="/webapps" component={Webapps} />
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
-
           {links.map((link) =>
             link.ids.map((id) => {
               return (
@@ -40,7 +42,6 @@ function App() {
               );
             })
           )}
-
           {webapps.map((webapp) => {
             return (
               <Route
@@ -51,6 +52,18 @@ function App() {
               />
             );
           })}
+          {webapps.map((webapp) => {
+            return (
+              <Route
+                path={`/${webapp.id}`}
+                render={() =>
+                  (window.location.href = `https://moisesp5js.s3.us-east-2.amazonaws.com/${webapp.id}/index.html`)
+                }
+              />
+            );
+          })}
+          <Route path="/randomNumbers" component={randomNumbers} />
+
           <Route path="*" component={Error} />
         </Switch>
       </BrowserRouter>

@@ -9,6 +9,16 @@ class Contact extends React.Component {
     return (
       <div class="center">
         <h1 class="title">Lets talk!</h1>
+
+        <div class="nice-border">
+          <a
+            href={"https://forms.gle/yJRmC6x1C7oq1sVu8"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Send me a message!
+          </a>
+        </div>
         <div class="contact-grid">
           {contact.map((item) => {
             return (

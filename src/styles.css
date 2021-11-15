@@ -402,3 +402,14 @@ p {
   display: flex;
   justify-content: space-between;
 }
+
+
+.error-cat {
+  width: 50vw;
+}
+
+@media (max-width: 1100px) {
+  .error-cat {
+    width: 100%;
+  }
+}

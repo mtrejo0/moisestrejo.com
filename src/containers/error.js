@@ -12,6 +12,14 @@ const Error = () => {
         alt={"error"}
         className="nice-border error-cat"
       ></img>
+
+      <a
+        href={"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="nice-border error-cat">Return home!</div>
+      </a>
     </div>
   );
 };

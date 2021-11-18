@@ -19,6 +19,8 @@ import links from "./information/links.json";
 
 import randomNumbers from "./components/randomNumbers";
 
+import wordFrequency from "./components/wordFrequency";
+
 function App() {
   return (
     <div>
@@ -63,6 +65,7 @@ function App() {
             );
           })}
           <Route path="/randomNumbers" component={randomNumbers} />
+          <Route path="/wordFrequency" component={wordFrequency} />
 
           <Route path="*" component={Error} />
         </Switch>

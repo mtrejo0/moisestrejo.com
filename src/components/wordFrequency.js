@@ -5,7 +5,7 @@ class wordFrequency extends React.Component {
     super(props);
     this.state = {
       text: "",
-      frequencies: null,
+      data: null,
     };
 
     this.generate = this.generate.bind(this);
@@ -28,7 +28,10 @@ class wordFrequency extends React.Component {
 
     freqList.sort((a, b) => (a[1] < b[1] ? 1 : -1));
 
-    this.setState({ frequencies: freqList });
+    this.setState({ data: {
+      "word_count": words.length,
+      "frequencies": freqList
+    } });
   }
 
   render() {
@@ -45,9 +48,9 @@ class wordFrequency extends React.Component {
 
         <br></br>
         <button onClick={this.generate}>Get Frequencies</button>
-        {this.state.frequencies ? (
+        {this.state.data ? (
           <pre className="nice-border">
-            {JSON.stringify(this.state.frequencies, null, 4)}
+            {JSON.stringify(this.state.data, null, 4)}
           </pre>
         ) : null}
       </div>

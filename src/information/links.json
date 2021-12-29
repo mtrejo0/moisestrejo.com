@@ -46,14 +46,9 @@
     },
     {
         "ids": [
-            "calendly"
-        ],
-        "link": "https://calendly.com/moisestrejo/30min"
-    },
-    {
-        "ids": [
+            "calendly",
             "schedule"
         ],
-        "link": "https://calendly.com/moisestrejo/30min"
+        "link": "https://calendly.com/moisestrejo/60min"
     }
 ]

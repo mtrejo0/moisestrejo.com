@@ -10,12 +10,12 @@ import ResumePlusPlus from "./containers/resume++";
 import Contact from "./containers/contact";
 import Error from "./containers/error";
 import Blog from "./containers/blog";
+import Press from "./containers/press";
 
 import Webapps from "./containers/webapps";
 import webapps from "./information/webapps.json";
 
 import links from "./information/links.json";
-
 
 import randomNumbers from "./components/randomNumbers";
 
@@ -34,6 +34,7 @@ function App() {
           <Route path="/webapps" component={Webapps} />
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
+          <Route path="/press" component={Press} />
           {links.map((link) =>
             link.ids.map((id) => {
               return (

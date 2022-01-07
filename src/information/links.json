@@ -50,5 +50,11 @@
             "schedule"
         ],
         "link": "https://calendly.com/moisestrejo/60min"
+    },
+    {
+        "ids": [
+            "zoom"
+        ],
+        "link": "https://mit.zoom.us/my/moisestrejo"
     }
 ]

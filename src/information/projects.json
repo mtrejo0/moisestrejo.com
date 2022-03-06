@@ -1,5 +1,23 @@
 [
     {
+        "name": "DJ party time!",
+        "description": [
+            "Users can create a music party, search songs from name or playlist, suggest songs, see ranked songs by likes, danceability, energy, key, and BPM and much more. Now everyone can join the party!"
+        ],
+        "year": "Spring 2022",
+        "links": [
+            {
+                "name": "Devpost",
+                "link": "https://devpost.com/software/party-time-5l1oia"
+            }
+        ],
+        "img": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/839/012/datas/original.png",
+        "tags": [
+            "projects",
+            "hackathon"
+        ]
+    },
+    {
         "name": "The Indian poor* - 6.894 Project",
         "year": "Spring 2021",
         "description": [
@@ -33,6 +51,7 @@
             "projects"
         ]
     },
+    
     {
         "name": "Book Analyzer - Hack MIT",
         "description": [

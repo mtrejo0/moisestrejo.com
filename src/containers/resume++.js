@@ -6,6 +6,7 @@ import projects from "../information/projects.json";
 import skills from "../information/skills.json";
 import work from "../information/work.json";
 import awards from "../information/awards.json";
+import press from "../information/press.json";
 
 let all = [
   ...work,
@@ -14,6 +15,7 @@ let all = [
   ...projects,
   ...skills,
   ...awards,
+  ...press,
 ];
 
 let tabs = [
@@ -49,13 +51,20 @@ let tabs = [
     name: "Awards & Honors",
     tag: "award",
   },
+  {
+    name: "Press",
+    tag: "press",
+  },
 ];
 
 class ResumePlusPlus extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeTab: tabs[(Math.random() * tabs.length) | 0],
+      activeTab: {
+        name: "Work Experience",
+        tag: "work",
+      },
     };
     this.selectTab = this.selectTab.bind(this);
   }
@@ -79,7 +88,7 @@ class ResumePlusPlus extends React.Component {
                     ? "resume-li active-resume-tab"
                     : "resume-li"
                 }
-                onMouseOver={() => this.selectTab(tab.tag)}
+                onClick={() => this.selectTab(tab.tag)}
               >
                 {tab.name}
               </li>
@@ -113,6 +122,7 @@ class ResumeItem extends React.Component {
             {title}
             <ul>
               {this.props.item.description.map((each) => {
+                if (!each.length) return null;
                 return <li>{each}</li>;
               })}
               {this.props.item.links?.map((each) => {
@@ -154,19 +164,31 @@ class ResumeItem extends React.Component {
       </div>
     );
     return (
-      <div className="nice-border">
+      <div
+        className={
+          this.props.type === "sub-item" ? "sub-item-border" : "nice-border"
+        }
+      >
         {this.props.item.img ? (
           <div className="resume-item-image">
             <div className="resume-item-image-left">{text}</div>
             <div className="resume-item-image-right">
               <a href={this.props.item.link}>
-                <img
-                  class="resume-image"
-                  src={
-                    process.env.PUBLIC_URL + `/images/${this.props.item.img}`
-                  }
-                  alt={this.props.item.img}
-                />
+                {this.props.item.img.startsWith("https") ? (
+                  <img
+                    class="resume-image"
+                    src={this.props.item.img}
+                    alt={this.props.item.img}
+                  />
+                ) : (
+                  <img
+                    class="resume-image"
+                    src={
+                      process.env.PUBLIC_URL + `/images/${this.props.item.img}`
+                    }
+                    alt={this.props.item.img}
+                  />
+                )}
               </a>
             </div>
           </div>

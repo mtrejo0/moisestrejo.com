@@ -25,9 +25,6 @@ class NavigationBar extends React.Component {
                 <NavLink to="/blog">Blog</NavLink>
               </li>
               <li className="nav-li">
-                <NavLink to="/press">Press</NavLink>
-              </li>
-              <li className="nav-li">
                 <NavLink to="/contact">Contact</NavLink>
               </li>
             </ul>

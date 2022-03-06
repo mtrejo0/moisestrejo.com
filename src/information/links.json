@@ -49,12 +49,18 @@
             "calendly",
             "schedule"
         ],
-        "link": "https://calendly.com/moisestrejo/60min"
+        "link": "https://calendly.com/moisest/30min"
     },
     {
         "ids": [
             "zoom"
         ],
         "link": "https://mit.zoom.us/my/moisestrejo"
+    },
+    {
+        "ids": [
+            "twitter"
+        ],
+        "link": "https://twitter.com/MTrejo0"
     }
 ]

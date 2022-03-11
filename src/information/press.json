@@ -3,7 +3,8 @@
         "name": "MIT News Article: The sound of a sunset",
         "year": "Spring 2022",
         "tags": [
-            "press"
+            "press",
+            "research"
         ],
         "description": [
             "The Digital Humanities Lab unveils its Sonification Toolkit, which enables conversion of almost anything — from data to drawings — into sound."
@@ -24,7 +25,7 @@
         "name": "Sonification Toolkit Article",
         "year": "Fall 2021",
         "tags": [
-            "press"
+            "press", "research"
         ],
         "description": [
             "Article explaining the project and the team behind it!"

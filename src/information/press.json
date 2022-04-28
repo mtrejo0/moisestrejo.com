@@ -1,5 +1,21 @@
 [
     {
+        "name": "Course Sixs Secret Superheroes: EECS and the lecturer track",
+        "year": "Spring 2022",
+        "tags": [
+            "press"
+        ],
+        "description": [
+            "I made a cameo! And MIT lecturers are GOATed"
+        ],
+        "links": [
+            {
+                "name": "Article",
+                "link": "https://www.eecs.mit.edu/course-sixs-secret-superheroes-eecs-and-the-lecture-track/"
+            }
+        ]
+    },
+    {
         "name": "MIT News Article: The sound of a sunset",
         "year": "Spring 2022",
         "tags": [

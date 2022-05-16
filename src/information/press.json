@@ -50,6 +50,10 @@
             {
                 "name": "Article",
                 "link": "https://digitalhumanities.mit.edu/project/sonification-toolkit-for-musicians/"
+            },
+            {
+                "name": "Time Series - Sonification",
+                "link": "https://sonification.dhlab.mit.edu/time-series/"
             }
         ],
         "img": "https://cdn.sanity.io/images/fxpgvmzc/production/05182158ae260a2e842037b502ba5e353d6fb5ea-580x394.png?w=500&auto=format"

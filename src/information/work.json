@@ -1,5 +1,59 @@
 [
     {
+        "name": "CTO @ Function",
+        "year": "December 2021 - May 2022",
+        "description": [
+            "Function connects high growth startups to talented student communities to disrupt recruiting. We helped Tutor Intelligence, Nya Labs, and Prestij recruit top tier talent from MIT and Boston schools",
+            "I built the web application that companies and student organizations used to create events and communicate"
+        ],
+        "links": [],
+        "tags": [
+            "work"
+        ]
+    },
+    {
+        "name": "Undergraduate Researcher in the Digital Humanities Lab",
+        "year": "Spring 2022",
+        "description": [
+            "Racial discrimination in access to housing, jobs, finance and health care has left a lasting mark on the US urban landscape. In Boston in 2015, the average White family’s assets amounted to $247,500. The average Black family’s assets totaled all of $8.00—the price of two McDonald’s happy meals. We set out in this digital history lab to figure out at the neighborhood level how this great gap in wealth occurred. I worked on the housing page."
+        ],
+        "links": [
+            {
+                "name": "Self-Sufficient Cities",
+                "link": "https://cities.dhlab.mit.edu/"
+            },
+            {
+                "name": "Github",
+                "link": "https://github.com/dhmit/self-sustaining-cities"
+            }
+        ],
+        "tags": [
+            "work",
+            "research"
+        ]
+    },
+    {
+        "name": "Undergraduate Researcher in the Digital Humanities Lab",
+        "year": "Fall 2021",
+        "description": [
+            "Developed a 'sonification toolkit,' a flexible digital tools that will enable conversion of data sets (images, text, statistics) into sound in ways that quickly yield results. These tools will allow users to easily modify and adapt the ways the data is expressed to design and sculpt sound that is aesthetically satisfying and analytically illuminating. UROPs will define and develop a range of practices, then devise digital tools to quickly transform data sets of all types into a variety of sonified results."
+        ],
+        "links": [
+            {
+                "name": "Sonification Toolkit",
+                "link": "https://sonification.dhlab.mit.edu/time-series/"
+            },
+            {
+                "name": "Github",
+                "link": "https://github.com/dhmit/sonification"
+            }
+        ],
+        "tags": [
+            "work",
+            "research"
+        ]
+    },
+    {
         "name": "Interfraternity Council (IFC) - Risk Management Consultant",
         "year": "Fall 2021",
         "description": [

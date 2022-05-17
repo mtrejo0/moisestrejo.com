@@ -1,5 +1,23 @@
 [
     {
+        "name": "Spectrum Article about my Sonification UROP",
+        "year": "Spring 2022",
+        "tags": [
+            "press",
+            "research"
+        ],
+        "description": [
+            "Article after I was interviewed about my Sonification UROP and how I enjoyed the program!"
+        ],
+        "links": [
+            {
+                "name": "Article",
+                "link": "https://spectrum.mit.edu/spring-2022/wildly-popular-urop-is-about-learning-how-you-want-to-learn/"
+            }
+        ],
+        "img": "https://spectrum.mit.edu/wp-content/uploads/mens-et-manus-in-action_02.jpg"
+    },
+    {
         "name": "Course Sixs Secret Superheroes: EECS and the lecturer track",
         "year": "Spring 2022",
         "tags": [
@@ -15,6 +33,7 @@
             }
         ]
     },
+    
     {
         "name": "MIT News Article: The sound of a sunset",
         "year": "Spring 2022",

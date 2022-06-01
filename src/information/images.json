@@ -33,5 +33,20 @@
         "link": "",
         "img": "silverfangs.png",
         "text": "dig deep"
+    },
+    {
+        "link": "",
+        "img": "skeleton_butterfly.jpg",
+        "text": "you give me butterflies"
+    },
+    {
+        "link": "",
+        "img": "el_grande.jpg",
+        "text": "tienes todo con la muerte"
+    },
+    {
+        "link": "",
+        "img": "drinking_and_death.jpg",
+        "text": "dance till you drop"
     }
 ]

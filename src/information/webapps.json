@@ -5,6 +5,11 @@
         "id" : "genetic"
     },
     {
+        "name": "DJ Visualizer",
+        "description": "Generate DJ Visualizations",
+        "id": "dj_vis"
+    },
+    {
         "name" : "Maze path finder",
         "description" : "Generates random maze and uses BFS to make sure there is a path possible between them then visualizes how it searches the graph until it finds a path from the start point to the end point",
         "id" : "maze_solver"

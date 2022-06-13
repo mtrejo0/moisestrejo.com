@@ -19,7 +19,7 @@ const WebbappItem = ({ webapp }) => {
         />
       </a>
       <br></br>
-      <p>{webapp.description}</p>
+      <ul>{webapp.description.map(each => <li>{each}</li>)}</ul>
     </div>
   );
 };

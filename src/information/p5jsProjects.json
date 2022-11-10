@@ -1,0 +1,148 @@
+[
+  {
+    "name": "Genetic Path Finding",
+    "description": [
+      "Generates lots of agents with random moves. The ones with the best fitness are used to generate more agents to learn a path."
+    ],
+    "id": "genetic"
+  },
+  {
+    "name": "DJ Visualizer",
+    "description": [
+      ", - halves the bpm",
+      ". - doubles the bpm",
+      "[ ] - shifts color theme down/up",
+      "1 - toggles random circles",
+      "2 - toggles verticle lines<",
+      "3 - toggles spiral lines",
+      "4 - toggles center circle",
+      "up/down - changes bpm +/- 5",
+      "left/right - changes bpm +/- 1",
+      "spacebar - tap for the program to learn the BPM you are tapping at"
+    ],
+    "id": "dj_vis"
+  },
+  {
+    "name": "Maze path finder",
+    "description": [
+      "Generates random maze and uses BFS to make sure there is a path possible between them then visualizes how it searches the graph until it finds a path from the start point to the end point"
+    ],
+    "id": "maze_solver"
+  },
+  {
+    "name": "Langton's Ant",
+    "description": [
+      "A large matrix where we can simulate Langton's Ant that has the simple rules: if white turn left, if black turn right"
+    ],
+    "id": "ant"
+  },
+  {
+    "name": "PID Control",
+    "description": [
+      "PID stands for proportional integral derivative which is a controller that will try to reach a state this interaction lets you change the constants and goal state"
+    ],
+    "id": "PID"
+  },
+  {
+    "name": "Hearts <3",
+    "description": ["Randomized heart animations for my love"],
+    "id": "hearts"
+  },
+  {
+    "name": "PID Race car",
+    "description": [
+      "Small simulation with a car that uses PID to follow a wall. Click and drag to add obstacles"
+    ],
+    "id": "race car"
+  },
+  {
+    "name": "Base Calculator",
+    "description": [
+      "Add number, its base A, and target base B this will convert the number from base A to base B"
+    ],
+    "id": "baseConverter"
+  },
+  {
+    "name": "Dopler Effect Simulation",
+    "description": [
+      "Dopler effect is the effect of having waves in motion this shows different vizualizations you can use"
+    ],
+    "id": "dopler"
+  },
+  {
+    "name": "Stopwatch",
+    "description": ["Colorful stopwatch"],
+    "id": "timer"
+  },
+  {
+    "name": "Selection Sort",
+    "description": [
+      "Sorting algorithm that picks the next best item to sort O(n²), Ω(n²)"
+    ],
+    "id": "selection"
+  },
+  {
+    "name": "Insertion Sort",
+    "description": [
+      "Sorting algorithm that swaps items until they are in the right place O(n²), Ω(n)"
+    ],
+    "id": "insertion"
+  },
+  {
+    "name": "Merge Sort",
+    "description": [
+      "Sorting algorithm that uses divide and conquer to sort smaller problems and combine them to sort an array O(n²)"
+    ],
+    "id": "mergeSort"
+  },
+  {
+    "name": "Lissajous Generator",
+    "description": [
+      "Lissajous created by using circles with different periods"
+    ],
+    "id": "lissajous"
+  },
+  {
+    "name": "Flappy Bird",
+    "description": ["Remake of Flappy Bird, press space to jump"],
+    "id": "flappyBird"
+  },
+  {
+    "name": "Asteroids",
+    "description": [
+      "Remake of Asteroids, use arrow keys to more space to shoot"
+    ],
+    "id": "rocket"
+  },
+  {
+    "name": "Drunk Walk",
+    "description": ["Shows brownian motion and the path the agent takes"],
+    "id": "drunkWalk"
+  },
+  {
+    "name": "Particle Interaction",
+    "description": [
+      "Shows brownian motion with particles and allows you to see interactions"
+    ],
+    "id": "particleInteraction"
+  },
+  {
+    "name": "Wave Particles",
+    "description": [
+      "Shows particles that move in circles, your mous position changes their period and their overall image"
+    ],
+    "id": "spinParticles"
+  },
+  {
+    "name": "Angle PID",
+    "description": [
+      "Three turrets use PID to lock onto your cursor to be able to shoot at "
+    ],
+    "id": "anglePID"
+  },
+  {
+    "name": "Calculator",
+    "description": ["Simple arithmetic calculator"],
+    "id": "calculator"
+  }
+]

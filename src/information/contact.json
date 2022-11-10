@@ -6,36 +6,43 @@
   {
     "name": "Calendly",
     "link": "https://calendly.com/moisestrejo/30min",
-    "description": "Schedule some time with me"
+    "description": "Schedule some time with me",
+    "icon": "https://upload.wikimedia.org/wikipedia/en/7/7f/Calendly_company_logo.png"
   },
   {
     "name": "LinkedIn",
     "link": "https://www.linkedin.com/in/moisestrejo/",
-    "description": "Connect with me!"
+    "description": "Connect with me!",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg"
   },
   {
     "name": "Instagram",
     "link": "https://www.instagram.com/moises.trejo0/",
-    "description": "Follow me!"
+    "description": "Follow me!",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
   },
   {
     "name": "Github",
     "link": "https://github.com/mtrejo0",
-    "description": "Checkout past projects"
+    "description": "Checkout past projects",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/2/29/GitHub_logo_2013.svg"
   },
   {
     "name": "Devpost",
     "link": "https://devpost.com/mtrejo",
-    "description": "Checkout past hackathons"
+    "description": "Checkout past hackathons",
+    "icon": "https://q9k6x7m8.stackpathcdn.com/assets/reimagine2/devpost-logo-646bdf6ac6663230947a952f8d354cad.svg"
   },
   {
     "name": "Youtube",
     "link": "https://www.youtube.com/channel/UCWiykWlbmi3ewionNGg5G-Q",
-    "description": "Checkout my goofy youtube videos :)"
+    "description": "Checkout my goofy youtube videos :)",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
   },
   {
     "name": "TikTok",
     "link": "https://www.tiktok.com/@moisestrejo100",
-    "description": "Coolest tiktok page youve ever seen!"
+    "description": "Coolest tiktok page youve ever seen!",
+    "icon": "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg"
   }
 ]

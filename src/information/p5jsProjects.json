@@ -49,6 +49,11 @@
     "id": "hearts"
   },
   {
+    "name": "Triangles.",
+    "description": ["Random triangles popping up on your screen!"],
+    "id": "triangles"
+  },
+  {
     "name": "PID Race car",
     "description": [
       "Small simulation with a car that uses PID to follow a wall. Click and drag to add obstacles"

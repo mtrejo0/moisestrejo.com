@@ -41,7 +41,7 @@ const Home = () => {
       .catch((err) => {
         console.error(err);
       });
-  });
+  }, []);
 
   return (
     <div className="center">
@@ -49,7 +49,7 @@ const Home = () => {
         <h1 className="title">Hey I'm Moises!</h1>
         <p>
           You are the {loading ? "Loading..." : users}th person to visit this
-          site!
+          page!
         </p>
       </div>
       <div className={"paragraph"}>

@@ -91,7 +91,6 @@ const Home = () => {
           <li>Natural Sciences: Mathematics, Chemistry, Biology, Physics</li>
           <li>Music: Music Producing, DJing</li>
           <li>Comedy</li>
-          <li></li>
           <li>Video Editing</li>
           <li>Literature</li>
           <li>Urban Planning</li>

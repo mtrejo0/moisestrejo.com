@@ -20,10 +20,11 @@ import ErrorPage from "./containers/errorPage";
 const GoTo = ({ link }: { link: string }) => {
   window.location.href = link;
   return <>Loading ...</>;
-};
+};  
 
 function App() {
   return (
+    <body>
     <div>
       <BrowserRouter>
         <NavigationBar></NavigationBar>
@@ -74,6 +75,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
+    </body>
   );
 }
 

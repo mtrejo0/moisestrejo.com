@@ -1,4 +1,16 @@
 [
+
+  {
+    "name": "Robotics UX Engineer, Researcher Designer @ Tutor Intelligence",
+    "year": "May 2022 - Present",
+    "description": [
+      "Developed web application for factory workers to interact with robots, start jobs, view metrics, and billing",
+      "Improved live data labeling portal to increase the number of robots a tutor can manage",
+      "Conducted multiple user interviews for improving user experiences with the robots"
+    ],
+    "links": [],
+    "tags": ["work"]
+  },
   {
     "name": "CTO @ Function",
     "year": "December 2021 - May 2022",
@@ -61,7 +73,7 @@
   },
   {
     "name": "Twitter SWE",
-    "year": "June 2021 - Present",
+    "year": "June 2021 - August 2021",
     "description": [
       "Introduced Zipkin tracing to sample live SQL operations and save them for access in BigQuery",
       "Developed scheduled job that finds how often each graph/partition are hit and the popular queries under each",

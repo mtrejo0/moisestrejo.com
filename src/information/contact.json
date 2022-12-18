@@ -50,8 +50,11 @@
     "link": "https://soundcloud.com/295221-6",
     "description": "Listen to my music!",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/7/78/Soundcloud_logo.svg"
+  },
+  {
+    "name": "Medium",
+    "link": "https://medium.com/@moises.trejo0",
+    "description": "Read my articles!",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Medium_%28website%29_logo.svg/2880px-Medium_%28website%29_logo.svg.png"
   }
-
-
-  
 ]

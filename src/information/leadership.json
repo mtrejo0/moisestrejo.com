@@ -1,7 +1,41 @@
 [
   {
+    "name": "MIT Kickboxing Club - Social Media Chair",
+    "year": "August 2022 - Preset",
+    "ongoing": true,
+    "description": [
+      "As social media chair I record lessons and partner drills for the MIT and worldwide kickboxing community to see."
+    ],
+    "tags": ["leadership"],
+    "links": [
+      {
+        "name": "MIT Kickboxing Instagram",
+        "link": "https://www.instagram.com/mitkickboxing/"
+      },
+      {
+        "name": "MIT Kickboxing Website",
+        "link": "http://kickboxing.mit.edu/"
+      }
+    ]
+  },
+  {
+    "name": "MIT BJJ Club - Social Media Chair",
+    "year": "August 2022 - Preset",
+    "ongoing": true,
+    "description": [
+      "As social media chair I record lessons and partner drills for the MIT and worldwide BJJ community to see."
+    ],
+    "tags": ["leadership"],
+    "links": [
+      {
+        "name": "MIT BJJ Instagram",
+        "link": "https://www.instagram.com/mitbjjclub/"
+      }
+    ]
+  },
+  {
     "name": "Society of Hispanic Professional Engineers - (SHPE)",
-    "year": "Fall 2018 - Present",
+    "year": "Fall 2018 - May 2022",
     "ongoing": true,
     "links": [
       {
@@ -17,7 +51,7 @@
     "sub_items": [
       {
         "name": "President",
-        "year": "May 2021 - Present",
+        "year": "May 2021 - May 2022",
         "description": [
           "Empower the MIT Latinx community through company/community outreach events",
           "Delegate weekly responsibilities to all executive members to ensure successful event coordination",
@@ -52,7 +86,7 @@
   },
   {
     "name": "Latinos in Science and Engineering - (MAES)",
-    "year": "Spring 2018 - Present",
+    "year": "Spring 2018 - May 2022",
     "links": [
       {
         "name": "MIT MAES",
@@ -68,7 +102,7 @@
     "sub_items": [
       {
         "name": "VP Internal Relations",
-        "year": "May 2021 - Present",
+        "year": "May 2021 - May 2022",
         "description": [
           "Manage mailing list and distribute professional and academic opportunities to members",
           "Develop and manage website with sponsor info",
@@ -94,7 +128,7 @@
   },
   {
     "name": "Sigma Nu",
-    "year": "May 2021 - Present",
+    "year": "May 2021 - May 2022",
     "links": [
       {
         "name": "MIT Sigma Nu",
@@ -110,7 +144,7 @@
     "sub_items": [
       {
         "name": "Social Chair",
-        "year": "May 2021 - Present",
+        "year": "May 2021 - May 2022",
         "description": [
           "Oragnize social events like parties, mixers, and formal"
         ]
@@ -150,7 +184,7 @@
   },
   {
     "name": "The Standard - Member",
-    "year": "January 2019 - Present",
+    "year": "January 2019 - May 2022",
     "ongoing": true,
     "description": [
       "Men of color setting the standard for academic, professional, and professional success"

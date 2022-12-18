@@ -108,7 +108,7 @@ const Home = () => {
           info={
               "The handsome devil in question: Moises Trejo"
           }
-          src={"https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/315628617_5396957163747158_7407919556543693337_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=IRNNZmuFXewAX9TmMxm&tn=zTnyu9m4DizLlVe9&_nc_ht=scontent-bos5-1.xx&oh=00_AfC0pUb5ktWFsTVYMzhIER2ZNA-I7BRGag2CEDNnaPYFNA&oe=63831F3B"}
+          src={process.env.PUBLIC_URL + `/images/profile_picture.jpeg`}
         /></Grid>
 
       <Grid item xs={12} md={6}> 

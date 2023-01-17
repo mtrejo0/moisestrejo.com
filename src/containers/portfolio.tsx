@@ -10,8 +10,10 @@ import { Box, useMediaQuery, useTheme } from "@mui/material";
 
 const PortfolioItem = ({
   item,
+  p5,
 }: {
   item: { name: string; description: string[]; id: string };
+  p5?: boolean;
 }) => {
   const link = `https://moisesp5js.s3.us-east-2.amazonaws.com/${item.id}/index.html`;
   return (
@@ -22,7 +24,9 @@ const PortfolioItem = ({
       <a href={link}>
         <img
           className="webapp-image"
-          src={process.env.PUBLIC_URL + `/images/${item.id}.jpg`}
+          src={
+            process.env.PUBLIC_URL + `/images/${p5 ? "p5/" : ""}${item.id}.jpg`
+          }
           alt={item.id}
         />
       </a>
@@ -93,7 +97,7 @@ const Porfolio = () => {
         {p5jsProjects.map((item) => {
           return (
             <Grid item xs={isMobile ? 12 : 6}>
-              <PortfolioItem item={item} />
+              <PortfolioItem item={item} p5 />
             </Grid>
           );
         })}

@@ -24,7 +24,17 @@ class Blog extends React.Component {
   render() {
     return (
       <div className="center">
-        <iframe src="https://v1.embednotion.com/embed/65425f137e6b4701bac1f84a7c99488a" style={{width: "90%", height: "100vh", border: "2px solid #ccc", borderRadius: "10px", margin: "32px"}} title="blog"></iframe> 
+        <iframe
+          src="https://v1.embednotion.com/embed/65425f137e6b4701bac1f84a7c99488a"
+          style={{
+            width: "90%",
+            height: "100vh",
+            border: "2px solid #ccc",
+            borderRadius: "10px",
+            margin: "32px",
+          }}
+          title="blog"
+        ></iframe>
         {/* {blog_items.map((item) => (
           <BlogItem item={item}></BlogItem>
         ))} */}

@@ -20,61 +20,61 @@ import ErrorPage from "./containers/errorPage";
 const GoTo = ({ link }: { link: string }) => {
   window.location.href = link;
   return <>Loading ...</>;
-};  
+};
 
 function App() {
   return (
     <body>
-    <div>
-      <BrowserRouter>
-        <NavigationBar></NavigationBar>
-        <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<Home />}></Route>
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/resume++" element={<ResumePlusPlus />} />
-          <Route path="/portfolio" element={<Porfolio />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/press" element={<Press />} />
-          {links.map((link) =>
-            link.ids.map((id) => {
+      <div>
+        <BrowserRouter>
+          <NavigationBar></NavigationBar>
+          <Routes>
+            <Route path="/" element={<Navigate to="/home" />} />
+            <Route path="/home" element={<Home />}></Route>
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/resume++" element={<ResumePlusPlus />} />
+            <Route path="/portfolio" element={<Porfolio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/press" element={<Press />} />
+            {links.map((link) =>
+              link.ids.map((id) => {
+                return (
+                  <Route path={`/${id}`} element={<GoTo link={link.link} />} />
+                );
+              })
+            )}
+            {p5jsProjects.map((webapp) => {
               return (
-                <Route path={`/${id}`} element={<GoTo link={link.link} />} />
+                <Route
+                  path={`/${webapp.id}`}
+                  element={
+                    <GoTo
+                      link={`https://moisesp5js.s3.us-east-2.amazonaws.com/${webapp.id}/index.html`}
+                    />
+                  }
+                />
               );
-            })
-          )}
-          {p5jsProjects.map((webapp) => {
-            return (
-              <Route
-                path={`/${webapp.id}`}
-                element={
-                  <GoTo
-                    link={`https://moisesp5js.s3.us-east-2.amazonaws.com/${webapp.id}/index.html`}
-                  />
-                }
-              />
-            );
-          })}
-          {p5jsProjects.map((webapp) => {
-            return (
-              <Route
-                path={`/${webapp.id}`}
-                element={
-                  <GoTo
-                    link={`https://moisesp5js.s3.us-east-2.amazonaws.com/${webapp.id}/index.html`}
-                  />
-                }
-              />
-            );
-          })}
-          <Route path="/randomNumbers" element={<RandomNumbers />} />
-          <Route path="/wordFrequency" element={<WordFrequency />} />
+            })}
+            {p5jsProjects.map((webapp) => {
+              return (
+                <Route
+                  path={`/${webapp.id}`}
+                  element={
+                    <GoTo
+                      link={`https://moisesp5js.s3.us-east-2.amazonaws.com/${webapp.id}/index.html`}
+                    />
+                  }
+                />
+              );
+            })}
+            <Route path="/randomNumbers" element={<RandomNumbers />} />
+            <Route path="/wordFrequency" element={<WordFrequency />} />
 
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </body>
   );
 }

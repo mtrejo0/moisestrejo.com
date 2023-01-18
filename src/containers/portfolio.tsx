@@ -6,7 +6,7 @@ import internalApps from "../information/internalApps.json";
 import externalApps from "../information/externalApps.json";
 
 import Grid from "@mui/material/Grid";
-import { Box, useMediaQuery, useTheme } from "@mui/material";
+import { useMediaQuery, useTheme } from "@mui/material";
 
 const PortfolioItem = ({
   item,
@@ -59,6 +59,7 @@ const ExternalApp = ({ app }: { app: any }) => {
         <h3>{app.name}</h3>
         <br></br>
         <p>{app.description}</p>
+        <p>moisestrejo.com/{app.id}</p>
       </div>
     </a>
   );

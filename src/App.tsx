@@ -14,6 +14,8 @@ import p5jsProjects from "./information/p5jsProjects.json";
 
 import links from "./information/links.json";
 
+import externalApps from "./information/externalApps.json";
+
 import "./styles.css";
 import ErrorPage from "./containers/errorPage";
 
@@ -56,13 +58,13 @@ function App() {
                 />
               );
             })}
-            {p5jsProjects.map((webapp) => {
+            {externalApps.map((webapp) => {
               return (
                 <Route
                   path={`/${webapp.id}`}
                   element={
                     <GoTo
-                      link={`https://moisesp5js.s3.us-east-2.amazonaws.com/${webapp.id}/index.html`}
+                      link={webapp.link}
                     />
                   }
                 />

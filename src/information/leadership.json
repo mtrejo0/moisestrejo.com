@@ -1,5 +1,20 @@
 [
   {
+    "name": "Code Nation Volunteer",
+    "year": "August 2022 - Preset",
+    "ongoing": true,
+    "description": [
+      "I volunteer once a week at DeWitt highschool in Bronx, NY a Title I school teaching computer science through project based learning!"
+    ],
+    "tags": ["leadership"],
+    "links": [
+      {
+        "name": "Code Nation",
+        "link": "https://codenation.org/"
+      }
+    ]
+  },
+  {
     "name": "MIT Kickboxing Club - Social Media Chair",
     "year": "August 2022 - Preset",
     "ongoing": true,

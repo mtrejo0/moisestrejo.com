@@ -30,6 +30,13 @@
     "id": "maze_solver"
   },
   {
+    "name": "Text Display ",
+    "description": [
+      "I was inspired to make something cute for displaying tiktok names on live or just any text in an interesting way"
+    ],
+    "id": "names"
+  },
+  {
     "name": "Langton's Ant",
     "description": [
       "A large matrix where we can simulate Langton's Ant that has the simple rules: if white turn left, if black turn right"

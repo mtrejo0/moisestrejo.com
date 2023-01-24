@@ -106,7 +106,7 @@ const Home = () => {
         <Grid item xs={12} md={6}>
           <ImageWithText
             info={"The handsome devil in question: Moises Trejo"}
-            src={process.env.PUBLIC_URL + `/images/profile_picture.jpeg`}
+            img={`profile_picture.jpeg`}
           />
         </Grid>
 

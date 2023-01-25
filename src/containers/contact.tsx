@@ -10,18 +10,8 @@ const Contact = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <div className="center">
+    <Stack sx={{alignItems: "center"}}>
       <h1 className="title">Lets talk!</h1>
-      <div className="nice-border">
-        <a
-          href={"https://forms.gle/yJRmC6x1C7oq1sVu8"}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Send me a message!
-        </a>
-      </div>
-
       <Grid container>
         {contact.map((item) => {
           const body = (
@@ -36,7 +26,7 @@ const Contact = () => {
           );
 
           return (
-            <Grid item xs={isMobile ? 6 : 3}>
+            <Grid item xs={isMobile ? 12 : 3}>
               {item.link ? (
                 <a
                   href={item.link}
@@ -65,7 +55,8 @@ const Contact = () => {
           })
         )}
       </Stack>
-    </div>
+      <img alt="qr-code" src={process.env.PUBLIC_URL + `/images/qr-code.png`} style={{ width: isMobile ? "90%" : "400px", marginBottom: "120px"}}></img>
+    </Stack>
   );
 };
 export default Contact;

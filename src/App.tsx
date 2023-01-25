@@ -62,11 +62,7 @@ function App() {
               return (
                 <Route
                   path={`/${webapp.id}`}
-                  element={
-                    <GoTo
-                      link={webapp.link}
-                    />
-                  }
+                  element={<GoTo link={webapp.link} />}
                 />
               );
             })}

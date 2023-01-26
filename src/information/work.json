@@ -78,7 +78,7 @@
       "Developed scheduled job that finds how often each graph/partition are hit and the popular queries under each",
       "Built dashboard for engineers to identify pain points and trends in partition/graph load"
     ],
-    "icon": "twitter.jpg",
+    "icon": "logos/twitter.jpg",
     "tags": ["work"]
   },
   {
@@ -100,7 +100,7 @@
         "link": "https: //www.youtube.com/watch?v=CRcruJ3Eu7o"
       }
     ],
-    "icon": "lids.jpg",
+    "icon": "logos/lids.jpg",
     "tags": ["work", "research"]
   },
   {
@@ -111,7 +111,7 @@
       "Refactored existing web controller to use class-based evaluator for whitelisting and privacy rules",
       "Updated the on boarding flow for the chat plugin to allow businesses to add and customize newly introduced features"
     ],
-    "icon": "facebook.png",
+    "icon": "logos/facebook.png",
     "tags": ["work"]
   },
   {
@@ -163,7 +163,7 @@
     "description": [
       "Developed an Android application called Skillshop that allows users to post workshops they want to teach and theability to sign up for public workshops connecting them to teachers and other students in the class"
     ],
-    "icon": "facebook.png",
+    "icon": "logos/facebook.png",
     "links": [
       {
         "name": "Facebook University",
@@ -192,7 +192,7 @@
     "description": [
       "Exceptional drive-thru personel 🍔. I always gave extra spicy ketchup."
     ],
-    "icon": "whataburger.png",
+    "icon": "logos/whataburger.png",
     "tags": ["work"]
   }
 ]

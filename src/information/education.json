@@ -4,7 +4,7 @@
     "description": ["BS in Computer Science and Engineering, GPA: 4.6/5"],
     "year": "Expected May 2022",
     "tags": ["education"],
-    "icon": "mit.png",
+    "icon": "logos/mit.png",
     "sub_items": [
       {
         "name": "21M.385 - Interactive Music Systems",
@@ -272,7 +272,7 @@
     "description": [
       "The Summer Academy for Math and Science (SAMS) provides opportunities for students from underrepresented communities to explore STEM-related fields"
     ],
-    "icon": "cmu.png",
+    "icon": "logos/cmu.png",
     "tags": ["education"]
   },
   {
@@ -287,7 +287,7 @@
     "description": [
       "1 Week Summer program to learn more about UT School of Computing"
     ],
-    "icon": "ut.png",
+    "icon": "logos/ut.png",
     "tags": ["education"]
   },
   {
@@ -300,7 +300,7 @@
       }
     ],
     "description": ["I loved High School"],
-    "icon": "sem.jpg",
+    "icon": "logos/sem.jpg",
     "tags": ["education"]
   },
   {

@@ -1,7 +1,7 @@
 [
   {
     "name": "Code Nation Volunteer",
-    "year": "August 2022 - Preset",
+    "year": "August 2022 - Present",
     "ongoing": true,
     "description": [
       "I volunteer once a week at DeWitt highschool in Bronx, NY a Title I school teaching computer science through project based learning!"
@@ -16,7 +16,7 @@
   },
   {
     "name": "MIT Kickboxing Club - Social Media Chair",
-    "year": "August 2022 - Preset",
+    "year": "August 2022 - Present",
     "ongoing": true,
     "description": [
       "As social media chair I record lessons and partner drills for the MIT and worldwide kickboxing community to see."
@@ -35,7 +35,7 @@
   },
   {
     "name": "MIT BJJ Club - Social Media Chair",
-    "year": "August 2022 - Preset",
+    "year": "August 2022 - Present",
     "ongoing": true,
     "description": [
       "As social media chair I record lessons and partner drills for the MIT and worldwide BJJ community to see."
@@ -62,7 +62,7 @@
       "SHPE provides community and resources to its members through collaborative coprotate, profesional development events and so much more!"
     ],
     "tags": ["leadership"],
-    "icon": "shpe.jpg",
+    "icon": "logos/shpe.jpg",
     "sub_items": [
       {
         "name": "President",
@@ -113,7 +113,7 @@
       "MAES's mission is to promote, cultivate, and honor excellence in education and leadership among Latino engineers and scientists."
     ],
     "tags": ["leadership"],
-    "icon": "maes.jpg",
+    "icon": "logos/maes.jpg",
     "sub_items": [
       {
         "name": "VP Internal Relations",
@@ -155,7 +155,7 @@
       "To develop ethical leaders inspired by the principles of Love, Honor, and Truth. To foster the personal growth of each man’s mind, heart, and character. To perpetuate lifelong friendships and commitment to the Fraternity."
     ],
     "tags": ["leadership"],
-    "icon": "sigmanu.jpg",
+    "icon": "logos/sigmanu.jpg",
     "sub_items": [
       {
         "name": "Social Chair",

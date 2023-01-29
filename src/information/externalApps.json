@@ -44,7 +44,13 @@
   {
     "name": "Goal Tracker",
     "description": "A better way to track your goals!",
-    "link": " https://main.d2x32okpn5yutu.amplifyapp.com/",
+    "link": "https://main.d2x32okpn5yutu.amplifyapp.com/",
     "id": "goals"
+  },
+  {
+    "name": "DJ Graph",
+    "description": "Add a spotify playlist and see how you should mix your songs!",
+    "link": "https://main.d2895n4efuepww.amplifyapp.com/",
+    "id": "djGraph"
   }
 ]

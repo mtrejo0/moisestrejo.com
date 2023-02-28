@@ -36,6 +36,7 @@ const PortfolioItem = ({
           <li>{each}</li>
         ))}
       </ul>
+      
     </div>
   );
 };
@@ -59,7 +60,15 @@ const ExternalApp = ({ app }: { app: any }) => {
         <h3>{app.name}</h3>
         <br></br>
         <p>{app.description}</p>
+        <p>({app.resources})</p>
         <p>moisestrejo.com/{app.id}</p>
+        {app.video &&
+            <iframe src={"https://www.youtube.com/embed/"+app.video}
+              allow='autoplay; encrypted-media'
+              title='video'
+              width={"300px"}
+              height="200px"
+      />}
       </div>
     </a>
   );

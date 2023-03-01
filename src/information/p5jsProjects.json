@@ -20,7 +20,8 @@
       "left/right - changes bpm +/- 1",
       "spacebar - tap for the program to learn the BPM you are tapping at"
     ],
-    "id": "dj_vis"
+    "id": "dj_vis",
+    "video": "j-UYMUW4Ehw"
   },
   {
     "name": "Maze path finder",

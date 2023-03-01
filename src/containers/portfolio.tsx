@@ -12,32 +12,44 @@ const PortfolioItem = ({
   item,
   p5,
 }: {
-  item: { name: string; description: string[]; id: string };
+  item: { name: string; description: string[]; id: string; video?: string };
   p5?: boolean;
 }) => {
   const link = `https://moisesp5js.s3.us-east-2.amazonaws.com/${item.id}/index.html`;
   return (
-    <div className="nice-border center">
-      <a href={link}>
+    <a href={link} style={{ textDecoration: "none" }}>
+      <div className="nice-border center">
         <h3>{item.name}</h3>
-      </a>
-      <a href={link}>
-        <img
-          className="webapp-image"
-          src={
-            process.env.PUBLIC_URL + `/images/${p5 ? "p5/" : ""}${item.id}.jpg`
-          }
-          alt={item.id}
-        />
-      </a>
-      <br></br>
-      <ul>
-        {item.description.map((each: any) => (
-          <li>{each}</li>
-        ))}
-      </ul>
-      
-    </div>
+
+        <div>
+          {item.video ? (
+            <iframe
+              src={"https://www.youtube.com/embed/" + item.video}
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="video"
+              width={"300px"}
+              height="200px"
+            />
+          ) : (
+            <img
+              className="webapp-image"
+              src={
+                process.env.PUBLIC_URL +
+                `/images/${p5 ? "p5/" : ""}${item.id}.jpg`
+              }
+              alt={item.id}
+            />
+          )}
+        </div>
+        <br></br>
+        <ul>
+          {item.description.map((each: any) => (
+            <li style={{ color: "black" }}>{each}</li>
+          ))}
+        </ul>
+      </div>
+    </a>
   );
 };
 
@@ -62,13 +74,16 @@ const ExternalApp = ({ app }: { app: any }) => {
         <p>{app.description}</p>
         <p>({app.resources})</p>
         <p>moisestrejo.com/{app.id}</p>
-        {app.video &&
-            <iframe src={"https://www.youtube.com/embed/"+app.video}
-              allow='autoplay; encrypted-media'
-              title='video'
-              width={"300px"}
-              height="200px"
-      />}
+        {app.video && (
+          <iframe
+            src={"https://www.youtube.com/embed/" + app.video}
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            title="video"
+            width={"300px"}
+            height="200px"
+          />
+        )}
       </div>
     </a>
   );

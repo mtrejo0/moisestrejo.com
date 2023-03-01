@@ -1,53 +1,10 @@
 [
   {
-    "name": "TODOs",
-    "description": "Make a todo list! ",
-    "resources": "React.JS, Firebase, Material UI, Typescript",
-    "link": "https://main.d20g9fwcjddfy5.amplifyapp.com",
-    "id": "todo"
-  },
-  {
-    "name": "Free Writes",
-    "description": "Make a free write!",
-    "resources": "React.JS, Firebase, Material UI, Typescript",
-    "link": "https://main.djnpg8z8p3pn6.amplifyapp.com",
-    "id": "freeWrite"
-  },
-  {
-    "name": "Request me!",
-    "description": "Easier way to split bill costs with friends!",
-    "resources": "React.JS, Material UI, Typescript",
-    "link": "https://main.d9p0ib0b1wuin.amplifyapp.com",
-    "id": "requestme"
-  },
-  {
-    "name": "Where is the Red Line?",
-    "description": "The fastest way to figure out where the red line is in Boston!",
-    "resources": "Apple Shortcut, AWS API Gateway, AWS Lamdba w Python, and MBTA API",
-    "link": "https://www.icloud.com/shortcuts/c5d02699fc0e4e539c1e22a851b869e4",
-    "id": "redline",
-    "video": "F--q6hZNGpw"
-  },
-  {
     "name": "Grassroots",
     "description": "The fastest way to figure out who your representatives are and what they are saying!",
     "resources": "React.JS, Twitter API, Google Maps API, Material UI, Typescript",
     "link": "https://main.dnsxxxpftj2z2.amplifyapp.com",
     "id": "grassroots"
-  },
-  {
-    "name": "Rhyming!",
-    "description": "Paste in your lyrics and you will see all the rhymes highlighted!",
-    "resources": "React.JS, Material UI, Typescript",
-    "link": "https://master.d16qayanzycbk6.amplifyapp.com/",
-    "id": "rhyming"
-  },
-  {
-    "name": "Read Fast!",
-    "description": "Add text and it will display it so you can read it much faster!",
-    "resources": "React.JS, Material UI, Typescript",
-    "link": "https://main.d18q6iuh1p0d9y.amplifyapp.com/",
-    "id": "readFast"
   },
   {
     "name": "Goal Tracker",
@@ -62,14 +19,29 @@
     "resources": "React.JS, Spotify Web API, Material UI",
     "link": "https://main.d2895n4efuepww.amplifyapp.com/",
     "id": "djGraph"
-  }
-  ,
+  },
   {
-    "name": "Bubble Sort It!",
-    "description": "Bubble sort a list in your life: restaurants, companies, friends, anything!",
+    "name": "TODOs",
+    "description": "Make a todo list! ",
+    "resources": "React.JS, Firebase, Material UI, Typescript",
+    "link": "https://main.d20g9fwcjddfy5.amplifyapp.com",
+    "id": "todo"
+  },
+  {
+    "name": "Where is the Red Line?",
+    "description": "The fastest way to figure out where the red line is in Boston!",
+    "resources": "Apple Shortcut, AWS API Gateway, AWS Lamdba w Python, and MBTA API",
+    "link": "https://www.icloud.com/shortcuts/c5d02699fc0e4e539c1e22a851b869e4",
+    "id": "redline",
+    "video": "F--q6hZNGpw"
+  },
+  {
+    "name": "Read Fast!",
+    "description": "Add text and it will display it so you can read it much faster!",
     "resources": "React.JS, Material UI, Typescript",
-    "link": "https://main.d3ky9v89pcwg9d.amplifyapp.com/",
-    "id": "bubble"
+    "link": "https://main.d18q6iuh1p0d9y.amplifyapp.com/",
+    "id": "readFast",
+    "video": "WtPxzrSfA3U"
   },
   {
     "name": "Calorie Estimator",
@@ -79,6 +51,38 @@
     "id": "calories",
     "video": "Y1BVx9f59Ts"
   },
+
+  {
+    "name": "Free Writes",
+    "description": "Make a free write!",
+    "resources": "React.JS, Firebase, Material UI, Typescript",
+    "link": "https://main.djnpg8z8p3pn6.amplifyapp.com",
+    "id": "freeWrite"
+  },
+  {
+    "name": "Request me!",
+    "description": "Easier way to split bill costs with friends!",
+    "resources": "React.JS, Material UI, Typescript",
+    "link": "https://main.d9p0ib0b1wuin.amplifyapp.com",
+    "id": "requestme"
+  },
+
+  {
+    "name": "Rhyming!",
+    "description": "Paste in your lyrics and you will see all the rhymes highlighted!",
+    "resources": "React.JS, Material UI, Typescript",
+    "link": "https://master.d16qayanzycbk6.amplifyapp.com/",
+    "id": "rhyming"
+  },
+
+  {
+    "name": "Bubble Sort It!",
+    "description": "Bubble sort a list in your life: restaurants, companies, friends, anything!",
+    "resources": "React.JS, Material UI, Typescript",
+    "link": "https://main.d3ky9v89pcwg9d.amplifyapp.com/",
+    "id": "bubble"
+  },
+
   {
     "name": "ChatGPT Texbook Generator",
     "description": "Generate a textbook using any single prompt.",

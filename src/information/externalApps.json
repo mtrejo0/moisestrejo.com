@@ -53,6 +53,15 @@
   },
 
   {
+    "name": "Rhyming!",
+    "description": "Paste in your lyrics and you will see all the rhymes highlighted!",
+    "resources": "React.JS, Material UI, Typescript",
+    "link": "https://master.d16qayanzycbk6.amplifyapp.com/",
+    "id": "rhyming",
+    "video": "VSK2dR71rrc"
+  },
+
+  {
     "name": "Free Writes",
     "description": "Make a free write!",
     "resources": "React.JS, Firebase, Material UI, Typescript",
@@ -67,13 +76,7 @@
     "id": "requestme"
   },
 
-  {
-    "name": "Rhyming!",
-    "description": "Paste in your lyrics and you will see all the rhymes highlighted!",
-    "resources": "React.JS, Material UI, Typescript",
-    "link": "https://master.d16qayanzycbk6.amplifyapp.com/",
-    "id": "rhyming"
-  },
+  
 
   {
     "name": "Bubble Sort It!",

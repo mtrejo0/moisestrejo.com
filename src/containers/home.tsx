@@ -66,7 +66,7 @@ const Home = () => {
         <p>
           I am recent graduate of MIT 22 where I studied Computer Science. I am
           passionate about using technology to give everyone the same
-          opportinity to live happy and succeed.
+          opportunity to live happy and succeed.
         </p>
 
         <p>I love all of the following:</p>

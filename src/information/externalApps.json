@@ -92,5 +92,14 @@
     "resources": "Python, OpenAI GPT-3 API",
     "link": "https://github.com/mtrejo0/chatGPT-Textbook-Generation",
     "id": "textbook"
+  },
+  {
+    "name": "Do nothing for 2 min",
+    "description": "A simple way to relax",
+    "resources": "React.JS, Material UI, Typescript",
+    "link": "https://main.dgm0121ljahuf.amplifyapp.com/",
+    "id": "relax"
   }
+
+  
 ]

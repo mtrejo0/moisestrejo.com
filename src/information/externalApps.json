@@ -99,7 +99,12 @@
     "resources": "React.JS, Material UI, Typescript",
     "link": "https://main.dgm0121ljahuf.amplifyapp.com/",
     "id": "relax"
-  }
-
-  
+  },
+  {
+    "name": "Check In",
+    "description": "A way for MIT students to understand how one another is doing",
+    "resources": "React.JS, Material UI, Typescript",
+    "link": "https://main.d2jd8sxowxe8iz.amplifyapp.com/",
+    "id": "checkin"
+  } 
 ]

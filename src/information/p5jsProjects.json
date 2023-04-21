@@ -162,5 +162,10 @@
     "name": "Calculator",
     "description": ["Simple arithmetic calculator"],
     "id": "calculator"
+  },
+  {
+    "name": "Bar Visualization",
+    "description": ["Simple metronome for 4 beat counts"],
+    "id": "barVis"
   }
 ]

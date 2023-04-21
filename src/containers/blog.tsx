@@ -25,7 +25,7 @@ class Blog extends React.Component {
     return (
       <div className="center">
         <iframe
-          src="https://v1.embednotion.com/embed/65425f137e6b4701bac1f84a7c99488a"
+          src="https://v2-embednotion.com/Blog-ee4152ffaabd44738af540ca292b1adf"
           style={{
             width: "90%",
             height: "100vh",

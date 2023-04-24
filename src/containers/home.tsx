@@ -20,6 +20,7 @@ const ImageWithText = ({
       {img ? (
         <img
           className={small ? "small-image" : "image"}
+          style={{width: "100%"}}
           src={process.env.PUBLIC_URL + `/images/${img}`}
           alt={img}
         ></img>
@@ -27,6 +28,7 @@ const ImageWithText = ({
       {src ? (
         <img
           className={small ? "small-image" : "image"}
+          style={{width: "100%"}}
           src={src}
           alt={img}
         ></img>
@@ -103,42 +105,42 @@ const Home = () => {
         pl={{ xs: "32px", md: "10%" }}
         pr={{ xs: "32px", md: "10%" }}
       >
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={4}>
           <ImageWithText
             info={"The handsome devil in question: Moises Trejo"}
             img={`profile_picture.jpg`}
           />
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={4}>
           <ImageWithText
             info={"Born and raised in Dallas, TX  🤠"}
             img="dallas.jpg"
           />
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={4}>
           {" "}
           <ImageWithText
             info={"MIT Class of 2022, BS in Computer Science"}
             img="mit_dome.jpg"
           />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={4}>
           {" "}
           <ImageWithText
             info={"Roots from Tlaltenango, Zacatecas 🇲🇽"}
             img="mexico.jpg"
           />{" "}
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={4}>
           {" "}
           <ImageWithText
             info={<p>FGLI - First generation low income student</p>}
             img="fam.jpg"
           />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={4}>
           {" "}
           <ImageWithText
             info={<p>I love the mavericks</p>}
@@ -151,7 +153,7 @@ const Home = () => {
         </Grid>
 
         {images.map((each, i) => (
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={4}>
             <ImageWithText
               info={each.text}
               img={"art/" + each.img}

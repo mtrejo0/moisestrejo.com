@@ -4,7 +4,8 @@
     "description": [
       "Generates lots of agents with random moves. The ones with the best fitness are used to generate more agents to learn a path."
     ],
-    "id": "genetic"
+    "id": "genetic",
+    "src": "genetic.gif"
   },
   {
     "name": "DJ Visualizer",
@@ -149,14 +150,16 @@
     "description": [
       "Shows particles that move in circles, your mous position changes their period and their overall image"
     ],
-    "id": "spinParticles"
+    "id": "spinParticles",
+    "src": "spinParticles.gif"
   },
   {
     "name": "Angle PID",
     "description": [
       "Three turrets use PID to lock onto your cursor to be able to shoot at "
     ],
-    "id": "anglePID"
+    "id": "anglePID",
+    "src": "anglePID.gif"
   },
   {
     "name": "Calculator",
@@ -166,6 +169,13 @@
   {
     "name": "Bar Visualization",
     "description": ["Simple metronome for 4 beat counts"],
-    "id": "barVis"
+    "id": "barVis",
+    "src": "barVis.gif"
+  },
+  {
+    "name": "Platformer",
+    "description": ["Platformer game to escape the lava!"],
+    "id": "platformer",
+    "src": "platformer.gif"
   }
 ]

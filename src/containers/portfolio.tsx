@@ -12,7 +12,7 @@ const PortfolioItem = ({
   item,
   p5,
 }: {
-  item: { name: string; description: string[]; id: string; video?: string };
+  item: { name: string; description: string[]; id: string; video?: string, src?: string };
   p5?: boolean;
 }) => {
   const link = `https://moisesp5js.s3.us-east-2.amazonaws.com/${item.id}/index.html`;
@@ -36,7 +36,7 @@ const PortfolioItem = ({
               className="webapp-image"
               src={
                 process.env.PUBLIC_URL +
-                `/images/${p5 ? "p5/" : ""}${item.id}.jpg`
+                `/images/${p5 ? "p5/" : ""}${item.src ? item.src : item.id + ".jpg"}`
               }
               alt={item.id}
             />
@@ -99,7 +99,7 @@ const Porfolio = () => {
       <Grid container>
         {externalApps.map((app) => {
           return (
-            <Grid item xs={isMobile ? 12 : 6} style={{ width: "100%" }}>
+            <Grid item xs={isMobile ? 12 : 4} style={{ width: "100%" }}>
               <ExternalApp app={app} />
             </Grid>
           );
@@ -111,7 +111,7 @@ const Porfolio = () => {
       <Grid container>
         {internalApps.map((app) => {
           return (
-            <Grid item xs={isMobile ? 12 : 6} style={{ width: "100%" }}>
+            <Grid item xs={isMobile ? 12 : 4} style={{ width: "100%" }}>
               <InternalApp app={app} />
             </Grid>
           );
@@ -121,7 +121,7 @@ const Porfolio = () => {
       <Grid container>
         {p5jsProjects.map((item) => {
           return (
-            <Grid item xs={isMobile ? 12 : 6}>
+            <Grid item xs={isMobile ? 12 : 4}>
               <PortfolioItem item={item} p5 />
             </Grid>
           );

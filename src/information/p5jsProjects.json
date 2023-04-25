@@ -23,7 +23,8 @@
       "spacebar - tap for the program to learn the BPM you are tapping at"
     ],
     "id": "dj_vis",
-    "video": "j-UYMUW4Ehw"
+    "video": "j-UYMUW4Ehw",
+    "href": "https://giphy.com/embed/1Koln3SN5uLmwNFdxu"
   },
   {
     "name": "Maze path finder",
@@ -60,24 +61,28 @@
   {
     "name": "Hearts <3",
     "description": ["Randomized heart animations for my love"],
-    "id": "hearts"
+    "id": "hearts",
+    "href": "https://giphy.com/embed/n1jqKaHxYNOxhorWAe"
   },
   {
     "name": "Sheps :)",
     "description": ["What it is like to kiss with kezia <3"],
-    "id": "sheps"
+    "id": "sheps",
+    "href": "https://giphy.com/embed/nKqTRiYPU25FeOgUkF"
   },
   {
     "name": "Triangles.",
     "description": ["Random triangles popping up on your screen!"],
-    "id": "triangles"
+    "id": "triangles",
+    "href": "https://giphy.com/embed/WuPjfhrDs1vev9YAcA"
   },
   {
     "name": "PID Race car",
     "description": [
       "Small simulation with a car that uses PID to follow a wall. Click and drag to add obstacles"
     ],
-    "id": "race car"
+    "id": "race car",
+    "href": "https://giphy.com/embed/tBzDKntjdBAfjbWx8S"
   },
   {
     "name": "Base Calculator",
@@ -91,64 +96,74 @@
     "description": [
       "Dopler effect is the effect of having waves in motion this shows different vizualizations you can use"
     ],
-    "id": "dopler"
+    "id": "dopler",
+    "href": "https://giphy.com/embed/OfUeRS9mz5yXBEQSpj"
   },
   {
     "name": "Stopwatch",
     "description": ["Colorful stopwatch"],
-    "id": "timer"
+    "id": "timer",
+    "href": "https://giphy.com/embed/g0ducfLbYqo4TZNKLW"
   },
   {
     "name": "Selection Sort",
     "description": [
       "Sorting algorithm that picks the next best item to sort O(n²), Ω(n²)"
     ],
-    "id": "selection"
+    "id": "selection",
+    "href": "https://giphy.com/embed/o63QTCDLcfVo37KwQ7"
   },
   {
     "name": "Insertion Sort",
     "description": [
       "Sorting algorithm that swaps items until they are in the right place O(n²), Ω(n)"
     ],
-    "id": "insertion"
+    "id": "insertion",
+    "href": "https://giphy.com/embed/2kvALN313dVwkGruoQ"
   },
   {
     "name": "Merge Sort",
     "description": [
       "Sorting algorithm that uses divide and conquer to sort smaller problems and combine them to sort an array O(n²)"
     ],
-    "id": "mergeSort"
+    "id": "mergeSort",
+    "href": "https://giphy.com/embed/g3Lv6zsFpXxQpCHV9l"
   },
   {
     "name": "Lissajous Generator",
     "description": [
       "Lissajous created by using circles with different periods"
     ],
-    "id": "lissajous"
+    "id": "lissajous",
+    "href": "https://giphy.com/embed/HuLtZMMxuqlNrTkgbd"
   },
   {
     "name": "Flappy Bird",
     "description": ["Remake of Flappy Bird, press space to jump"],
-    "id": "flappyBird"
+    "id": "flappyBird",
+    "href": "https://giphy.com/embed/MusChV7t5hxNjVVLhG"
   },
   {
     "name": "Asteroids",
     "description": [
       "Remake of Asteroids, use arrow keys to more space to shoot"
     ],
-    "id": "rocket"
+    "id": "rocket",
+    "href": "https://giphy.com/embed/MlJzsgXyVbh9iLR7Lt"
   },
   {
     "name": "Drunk Walk",
     "description": ["Shows brownian motion and the path the agent takes"],
-    "id": "drunkWalk"
+    "id": "drunkWalk",
+    "href": "https://giphy.com/embed/VD17t9Pgvm03APABxc"
   },
   {
     "name": "Particle Interaction",
     "description": [
       "Shows brownian motion with particles and allows you to see interactions"
     ],
-    "id": "particleInteraction"
+    "id": "particleInteraction",
+    "href": "https://giphy.com/embed/duZY4sWwu8qN5zxPFp"
   },
   {
     "name": "Wave Particles",

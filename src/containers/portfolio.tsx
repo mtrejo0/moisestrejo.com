@@ -6,7 +6,11 @@ import internalApps from "../information/internalApps.json";
 import externalApps from "../information/externalApps.json";
 
 import Grid from "@mui/material/Grid";
-import { useMediaQuery, useTheme } from "@mui/material";
+import { Stack, useMediaQuery, useTheme } from "@mui/material";
+
+
+import { OpenInNew } from "@mui/icons-material";
+
 
 const PortfolioItem = ({
   item,
@@ -19,10 +23,18 @@ const PortfolioItem = ({
   return (
     <a href={link} style={{ textDecoration: "none" }}>
       <div className="nice-border center">
-        <h3>{item.name}</h3>
+        <Stack direction="row" alignItems={"center"} spacing={"8px"}><h3>{item.name}</h3> <OpenInNew/></Stack>
+        
 
         <div>
-          {item.video ? (
+          { 
+          
+          item.href ?
+
+          <a href={link} style={{ textDecoration: "none" }}>
+            <iframe src={item.href} width="100%"  frameBorder="0" sandbox="allow-forms allow-scripts"></iframe>
+            </a>
+          : item.video ? (
             <iframe
               src={"https://www.youtube.com/embed/" + item.video}
               allow="autoplay; encrypted-media"
@@ -31,13 +43,7 @@ const PortfolioItem = ({
               width={"300px"}
               height="200px"
             />
-          ) : 
-          
-          item.href ?
-
-          <iframe src={item.href} width="100%"  frameBorder="0" allowFullScreen></iframe>
-          
-          :
+          ) :
           (
             <img
               className="webapp-image"
@@ -55,6 +61,7 @@ const PortfolioItem = ({
             <li style={{ color: "black" }}>{each}</li>
           ))}
         </ul>
+        {item.youtubeLink && <a href={item.youtubeLink}>Youtube Video</a>}
       </div>
     </a>
   );

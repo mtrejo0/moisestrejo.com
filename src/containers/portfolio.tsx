@@ -12,7 +12,7 @@ const PortfolioItem = ({
   item,
   p5,
 }: {
-  item: { name: string; description: string[]; id: string; video?: string, src?: string };
+  item: any;
   p5?: boolean;
 }) => {
   const link = `https://moisesp5js.s3.us-east-2.amazonaws.com/${item.id}/index.html`;
@@ -31,10 +31,17 @@ const PortfolioItem = ({
               width={"300px"}
               height="200px"
             />
-          ) : (
+          ) : 
+          
+          item.href ?
+
+          <iframe src={item.href} width="100%"  frameBorder="0" allowFullScreen></iframe>
+          
+          :
+          (
             <img
               className="webapp-image"
-              src={
+              src={ item.href ? item.href :
                 process.env.PUBLIC_URL +
                 `/images/${p5 ? "p5/" : ""}${item.src ? item.src : item.id + ".jpg"}`
               }

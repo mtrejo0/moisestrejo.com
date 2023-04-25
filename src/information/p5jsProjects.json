@@ -5,7 +5,8 @@
       "Generates lots of agents with random moves. The ones with the best fitness are used to generate more agents to learn a path."
     ],
     "id": "genetic",
-    "src": "genetic.gif"
+    "src": "genetic.gif",
+    "href": "https://giphy.com/embed/d27oC1jjwGfQhPbWJI"
   },
   {
     "name": "DJ Visualizer",
@@ -29,28 +30,32 @@
     "description": [
       "Generates random maze and uses BFS to make sure there is a path possible between them then visualizes how it searches the graph until it finds a path from the start point to the end point"
     ],
-    "id": "maze_solver"
+    "id": "maze_solver",
+    "href": "https://giphy.com/embed/K6xPbwxUA3Ib7JB83y"
   },
   {
     "name": "Text Display ",
     "description": [
       "I was inspired to make something cute for displaying tiktok names on live or just any text in an interesting way"
     ],
-    "id": "names"
+    "id": "names",
+    "href": "https://giphy.com/embed/YRKybvHrPpVMcNt44z"
   },
   {
     "name": "Langton's Ant",
     "description": [
       "A large matrix where we can simulate Langton's Ant that has the simple rules: if white turn left, if black turn right"
     ],
-    "id": "ant"
+    "id": "ant",
+    "href": "https://giphy.com/embed/EwyhrR0Oy9Z9j6sTII"
   },
   {
     "name": "PID Control",
     "description": [
       "PID stands for proportional integral derivative which is a controller that will try to reach a state this interaction lets you change the constants and goal state"
     ],
-    "id": "PID"
+    "id": "PID",
+    "href": "https://giphy.com/embed/nof9LToV001nxDPF3z"
   },
   {
     "name": "Hearts <3",
@@ -151,7 +156,7 @@
       "Shows particles that move in circles, your mous position changes their period and their overall image"
     ],
     "id": "spinParticles",
-    "src": "spinParticles.gif"
+    "href": "https://giphy.com/embed/eXfMeLyJAdjXuoMCTU"
   },
   {
     "name": "Angle PID",
@@ -159,7 +164,7 @@
       "Three turrets use PID to lock onto your cursor to be able to shoot at "
     ],
     "id": "anglePID",
-    "src": "anglePID.gif"
+    "href": "https://giphy.com/embed/1cuKntmipdD0FKFLze"
   },
   {
     "name": "Calculator",
@@ -170,12 +175,12 @@
     "name": "Bar Visualization",
     "description": ["Simple metronome for 4 beat counts"],
     "id": "barVis",
-    "src": "barVis.gif"
+    "href": "https://giphy.com/embed/rlv8vF1Ipi1Ta6BJD2"
   },
   {
     "name": "Platformer",
     "description": ["Platformer game to escape the lava!"],
     "id": "platformer",
-    "src": "platformer.gif"
+    "href": "https://giphy.com/embed/7oEakeAK9NDKcmoDCY"
   }
 ]

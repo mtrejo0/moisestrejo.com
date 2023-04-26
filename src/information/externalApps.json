@@ -106,5 +106,12 @@
     "resources": "React.JS, Material UI, Typescript",
     "link": "https://main.d2jd8sxowxe8iz.amplifyapp.com/",
     "id": "checkin"
+  },
+  {
+    "name": "ADCC 2022 BJJ Data Visualization",
+    "description": "Data visualization of ADCC BJJ competition",
+    "resources": "React.JS, Material UI, Typescript",
+    "link": "https://mtrejo0.github.io/bjjVis/",
+    "id": "bjjVis"
   } 
 ]

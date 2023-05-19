@@ -113,5 +113,13 @@
     "resources": "React.JS, Material UI, Typescript",
     "link": "https://mtrejo0.github.io/bjjVis/",
     "id": "bjjVis"
-  } 
+  },
+  
+  {
+    "name": "UR Dice",
+    "description": "Roll the dice in a game of UR!",
+    "resources": "React.JS, Typescript",
+    "link": "https://mtrejo0.github.io/ur/",
+    "id": "ur"
+  }
 ]

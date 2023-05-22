@@ -52,6 +52,14 @@
     "href": "https://giphy.com/embed/EwyhrR0Oy9Z9j6sTII"
   },
   {
+    "name": "Conways Game of Life",
+    "description": [
+      "With a twist, you can reverse the direction of time"
+    ],
+    "id": "conway",
+    "href": "https://giphy.com/embed/5vCmRwwqYlosjyWfNg"
+  },
+  {
     "name": "PID Control",
     "description": [
       "PID stands for proportional integral derivative which is a controller that will try to reach a state this interaction lets you change the constants and goal state"

@@ -206,5 +206,17 @@
     "description": ["Platformer game to escape the lava!"],
     "id": "platformer",
     "href": "https://giphy.com/embed/7oEakeAK9NDKcmoDCY"
+  },
+  {
+    "name": "Pretty Pendulums",
+    "description": ["Tried to replicate pretty pendulums from tiktok"],
+    "id": "pendulums",
+    "href": "https://giphy.com/embed/ti5IN7nUIZrfBv1IEU"
+  },
+  {
+    "name": "Chaos Pendulums",
+    "description": ["10 chaos pendulums and a movement path for each"],
+    "id": "chaos_pendulum",
+    "href": "https://giphy.com/embed/kD9dLwwFqgkTqPQQzo"
   }
 ]

@@ -75,7 +75,7 @@
   },
   {
     "name": "Sheps :)",
-    "description": ["What it is like to kiss with kezia <3"],
+    "description": ["What it is like to kiss with my current girlfriend <3"],
     "id": "sheps",
     "href": "https://giphy.com/embed/nKqTRiYPU25FeOgUkF"
   },
@@ -218,5 +218,53 @@
     "description": ["10 chaos pendulums and a movement path for each"],
     "id": "chaos_pendulum",
     "href": "https://giphy.com/embed/kD9dLwwFqgkTqPQQzo"
+  },
+  {
+    "name": "Colors",
+    "description": ["Edit these colors with math!"],
+    "id": "colors",
+    "href": ""
+  },
+  {
+    "name": "Simulations",
+    "description": ["Generate many simulations of up or down randomness and see the disctibution at the end!"],
+    "id": "simulations",
+    "href": ""
+  },
+  {
+    "name": "COVID Simulations",
+    "description": ["A simulation of infections where one can change the infection, recovery, and creation rates"],
+    "id": "simulations2D",
+    "href": ""
+  },
+  {
+    "name": "Rocket Orbit",
+    "description": ["A rocket that you can control orbiting around a sun!"],
+    "id": "orbit",
+    "href": ""
+  },
+  {
+    "name": "Snake",
+    "description": ["This snake game will always win!"],
+    "id": "snake",
+    "href": ""
+  },
+  {
+    "name": "SIN/COS simulation!",
+    "description": ["This demonstration shows how sin and cos are related!"],
+    "id": "cos",
+    "href": ""
+  },
+  {
+    "name": "Roomba algorithm",
+    "description": ["This is a simple line drawing robot, I tried to replicate how the roomba moves"],
+    "id": "roomba",
+    "href": ""
+  },
+  {
+    "name": "Love Hate",
+    "description": ["A rocket that you can control orbiting around a sun!"],
+    "id": "lovehate",
+    "href": ""
   }
 ]

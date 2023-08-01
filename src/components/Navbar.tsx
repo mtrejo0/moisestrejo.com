@@ -19,6 +19,9 @@ const NavigationBar = () => {
           <NavLink to="/portfolio">Portfolio</NavLink>
         </li>
         <li className="nav-li">
+          <NavLink to="/p5art">P5 Art</NavLink>
+        </li>
+        <li className="nav-li">
           <NavLink to="/blog">Blog</NavLink>
         </li>
         <li className="nav-li">

@@ -12,7 +12,7 @@ import { Stack, useMediaQuery, useTheme } from "@mui/material";
 import { OpenInNew } from "@mui/icons-material";
 
 
-const PortfolioItem = ({
+export const PortfolioItem = ({
   item,
   p5,
 }: {
@@ -109,8 +109,7 @@ const Porfolio = () => {
 
   return (
     <div className="center">
-      <h3>External Apps</h3>
-      <Grid container>
+      <Grid container sx={{mt: 4}}>
         {externalApps.map((app) => {
           return (
             <Grid item xs={isMobile ? 12 : 4} style={{ width: "100%" }}>
@@ -127,16 +126,6 @@ const Porfolio = () => {
           return (
             <Grid item xs={isMobile ? 12 : 4} style={{ width: "100%" }}>
               <InternalApp app={app} />
-            </Grid>
-          );
-        })}
-      </Grid>
-      <h3>P5.js</h3>
-      <Grid container>
-        {p5jsProjects.map((item) => {
-          return (
-            <Grid item xs={isMobile ? 12 : 4}>
-              <PortfolioItem item={item} p5 />
             </Grid>
           );
         })}

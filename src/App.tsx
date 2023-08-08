@@ -19,6 +19,7 @@ import externalApps from "./information/externalApps.json";
 import "./styles.css";
 import ErrorPage from "./containers/errorPage";
 import P5Art from "./containers/p5art";
+import Shop from "./containers/shop";
 
 const GoTo = ({ link }: { link: string }) => {
   window.location.href = link;
@@ -41,6 +42,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/press" element={<Press />} />
+            <Route path="/shop" element={<Shop />} />
             {links.map((link) =>
               link.ids.map((id) => {
                 return (

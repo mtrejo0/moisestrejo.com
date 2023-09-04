@@ -135,5 +135,12 @@
     "resources": "React.JS, Typescript, AWS Lambda",
     "link": "https://mtrejo0.github.io/birthday-billboard/",
     "id": "billboard"
+  },
+  {
+    "name": "Mis dichos favoritos",
+    "description": "Oíganme decir mis dichos favoritos en español",
+    "resources": "React.JS, AWS S3",
+    "link": "https://mtrejo0.github.io/spanish-sayings/",
+    "id": "spanish"
   }
 ]

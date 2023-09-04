@@ -20,7 +20,7 @@
     "link": "https://github.com/mtrejo0"
   },
   {
-    "ids": ["youtube"],
+    "ids": ["yt", "youtube"],
     "link": "https://www.youtube.com/channel/UCWiykWlbmi3ewionNGg5G-Q"
   },
   {
@@ -38,5 +38,9 @@
   {
     "ids": ["twitter"],
     "link": "https://twitter.com/MTrejo0"
+  },
+  {
+    "ids": ["patreon"],
+    "link": "https://www.patreon.com/user?u=87100023"
   }
 ]

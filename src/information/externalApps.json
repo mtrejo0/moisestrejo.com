@@ -75,14 +75,11 @@
     "link": "https://main.d9p0ib0b1wuin.amplifyapp.com",
     "id": "requestme"
   },
-
-  
-
   {
     "name": "Bubble Sort It!",
     "description": "Bubble sort a list in your life: restaurants, companies, friends, anything!",
     "resources": "React.JS, Material UI, Typescript",
-    "link": "https://main.d3ky9v89pcwg9d.amplifyapp.com/",
+    "link": "https://mtrejo0.github.io/bubbleSortIt/",
     "id": "bubble"
   },
 

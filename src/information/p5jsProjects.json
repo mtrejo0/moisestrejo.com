@@ -278,5 +278,11 @@
     "description": ["Joseph Albers inspired digital art."],
     "id": "josephAlbers",
     "href": ""
+  },
+  {
+    "name": "Simple Art",
+    "description": ["Inspired by the Museum of Modern Art San Fransisco."],
+    "id": "simpleArt",
+    "href": ""
   }
 ]

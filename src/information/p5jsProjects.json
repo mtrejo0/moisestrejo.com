@@ -272,5 +272,11 @@
     "description": ["A love story seen from above"],
     "id": "leslie",
     "href": ""
+  },
+  {
+    "name": "Joseph Albers",
+    "description": ["Joseph Albers inspired digital art."],
+    "id": "josephAlbers",
+    "href": ""
   }
 ]

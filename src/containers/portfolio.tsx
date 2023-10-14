@@ -1,7 +1,5 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 
-import p5jsProjects from "../information/p5jsProjects.json";
 import internalApps from "../information/internalApps.json";
 import externalApps from "../information/externalApps.json";
 
@@ -19,7 +17,7 @@ export const PortfolioItem = ({
   item: any;
   p5?: boolean;
 }) => {
-  const link = `https://moisesp5js.s3.us-east-2.amazonaws.com/${item.id}/index.html`;
+  const link = `https://mtrejo0.github.io/p5/${item.id}/index.html`;
   return (
     <a href={link} style={{ textDecoration: "none" }}>
       <div className="nice-border center">
@@ -32,14 +30,14 @@ export const PortfolioItem = ({
           item.href ?
 
           <a href={link} style={{ textDecoration: "none" }}>
-            <iframe src={item.href} width="100%"  frameBorder="0" sandbox="allow-forms allow-scripts"></iframe>
+            <iframe src={item.href} title={item.href} width="100%"  frameBorder="0" sandbox="allow-forms allow-scripts"></iframe>
             </a>
           : item.video ? (
             <iframe
               src={"https://www.youtube.com/embed/" + item.video}
               allow="autoplay; encrypted-media"
               allowFullScreen
-              title="video"
+              title={item.video}
               width={"300px"}
               height="200px"
             />
@@ -93,7 +91,7 @@ const ExternalApp = ({ app }: { app: any }) => {
             src={"https://www.youtube.com/embed/" + app.video}
             allow="autoplay; encrypted-media"
             allowFullScreen
-            title="video"
+            title={app.video}
             width={"300px"}
             height="200px"
           />

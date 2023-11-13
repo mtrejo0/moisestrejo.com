@@ -4,35 +4,32 @@ import internalApps from "../information/internalApps.json";
 import externalApps from "../information/externalApps.json";
 
 import Grid from "@mui/material/Grid";
-import { Stack, useMediaQuery, useTheme } from "@mui/material";
-
+import { Box, Stack, useMediaQuery, useTheme } from "@mui/material";
 
 import { OpenInNew } from "@mui/icons-material";
+import { useState } from "react";
 
-
-export const PortfolioItem = ({
-  item,
-  p5,
-}: {
-  item: any;
-  p5?: boolean;
-}) => {
+export const P5Item = ({ item, p5 }: { item: any; p5?: boolean }) => {
   const link = `https://mtrejo0.github.io/p5/${item.id}/index.html`;
   return (
-    <a href={link} style={{ textDecoration: "none" }}>
+    <a href={link} style={{ textDecoration: "none", color: "inherit" }}>
       <div className="nice-border center">
-        <Stack direction="row" alignItems={"center"} spacing={"8px"}><h3>{item.name}</h3> <OpenInNew/></Stack>
-        
+        <Stack direction="row" alignItems={"center"} spacing={"8px"}>
+          <h3>{item.name}</h3> <OpenInNew />
+        </Stack>
 
         <div>
-          { 
-          
-          item.href ?
-
-          <a href={link} style={{ textDecoration: "none" }}>
-            <iframe src={item.href} title={item.href} width="100%"  frameBorder="0" sandbox="allow-forms allow-scripts"></iframe>
+          {item.href ? (
+            <a href={link} style={{ textDecoration: "none" }}>
+              <iframe
+                src={item.href}
+                title={item.href}
+                width="100%"
+                frameBorder="0"
+                sandbox="allow-forms allow-scripts"
+              ></iframe>
             </a>
-          : item.video ? (
+          ) : item.video ? (
             <iframe
               src={"https://www.youtube.com/embed/" + item.video}
               allow="autoplay; encrypted-media"
@@ -41,13 +38,16 @@ export const PortfolioItem = ({
               width={"300px"}
               height="200px"
             />
-          ) :
-          (
+          ) : (
             <img
               className="webapp-image"
-              src={ item.href ? item.href :
-                process.env.PUBLIC_URL +
-                `/images/${p5 ? "p5/" : ""}${item.src ? item.src : item.id + ".jpg"}`
+              src={
+                item.href
+                  ? item.href
+                  : process.env.PUBLIC_URL +
+                    `/images/${p5 ? "p5/" : ""}${
+                      item.src ? item.src : item.id + ".jpg"
+                    }`
               }
               alt={item.id}
             />
@@ -67,7 +67,10 @@ export const PortfolioItem = ({
 
 const InternalApp = ({ app }: { app: any }) => {
   return (
-    <div className="nice-border center">
+    <div
+      className="nice-border center"
+      style={{ textDecoration: "none", color: "inherit" }}
+    >
       <NavLink to={`/${app.id}`}>
         <h3>{app.name}</h3>
       </NavLink>
@@ -79,13 +82,16 @@ const InternalApp = ({ app }: { app: any }) => {
 
 const ExternalApp = ({ app }: { app: any }) => {
   return (
-    <a href={app.link} style={{ textDecoration: "none" }}>
-      <div className="nice-border center">
-        <h3>{app.name}</h3>
-        <br></br>
+    <Grid container className="nice-border" height={"100%"}>
+      <Grid xs={8}>
+        <h1>{app.name}</h1>
+
+        <a href={app.link}>
+          <p>moisestrejo.com/{app.id}</p>
+        </a>
+
         <p>{app.description}</p>
-        <p>({app.resources})</p>
-        <p>moisestrejo.com/{app.id}</p>
+
         {app.video && (
           <iframe
             src={"https://www.youtube.com/embed/" + app.video}
@@ -96,8 +102,16 @@ const ExternalApp = ({ app }: { app: any }) => {
             height="200px"
           />
         )}
-      </div>
-    </a>
+      </Grid>
+
+      <Grid xs={4}>
+        <ul>
+          {app.resources.split(", ").map((each: any) => (
+            <li>{each}</li>
+          ))}
+        </ul>
+      </Grid>
+    </Grid>
   );
 };
 
@@ -105,29 +119,48 @@ const Porfolio = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
-  return (
-    <div className="center">
-      <Grid container sx={{mt: 4}}>
-        {externalApps.map((app) => {
-          return (
-            <Grid item xs={isMobile ? 12 : 4} style={{ width: "100%" }}>
-              <ExternalApp app={app} />
-            </Grid>
-          );
-        })}
-      </Grid>
+  const [activeApp, setActiveApp] = useState(externalApps[0]);
 
-      <h3>Internal Apps</h3>
+  return (
+    <div>
+      <Box display={"flex"} mb={"100px"}>
+        <Box width={"20%"}>
+          {externalApps.map((app) => {
+            return (
+              <div
+                style={{
+                  textAlign: "left",
+                  width: "fit-content",
+                  marginLeft: "64px",
+                  textDecoration: app == activeApp ? "underline" : "none",
+                }}
+                onMouseEnter={() => setActiveApp(app)}
+              >
+                <b>
+                  <p style={{ width: "fit-content", textAlign: "left" }}>
+                    {app.name}
+                  </p>
+                </b>
+              </div>
+            );
+          })}
+        </Box>
+        <Box width={"80%"} mr={"64px"} ml={"16px"}>
+          <ExternalApp app={activeApp} />
+        </Box>
+      </Box>
+
+      {/* <h3>Internal Apps</h3>
 
       <Grid container>
         {internalApps.map((app) => {
           return (
-            <Grid item xs={isMobile ? 12 : 4} style={{ width: "100%" }}>
+            <Grid item xs={isMobile ? 12 : 4} >
               <InternalApp app={app} />
             </Grid>
           );
         })}
-      </Grid>
+      </Grid> */}
     </div>
   );
 };

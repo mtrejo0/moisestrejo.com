@@ -53,9 +53,7 @@
   },
   {
     "name": "Conways Game of Life",
-    "description": [
-      "With a twist, you can reverse the direction of time"
-    ],
+    "description": ["With a twist, you can reverse the direction of time"],
     "id": "conway",
     "href": "https://giphy.com/embed/5vCmRwwqYlosjyWfNg"
   },
@@ -227,13 +225,17 @@
   },
   {
     "name": "Simulations",
-    "description": ["Generate many simulations of up or down randomness and see the disctibution at the end!"],
+    "description": [
+      "Generate many simulations of up or down randomness and see the disctibution at the end!"
+    ],
     "id": "simulations",
     "href": ""
   },
   {
     "name": "COVID Simulations",
-    "description": ["A simulation of infections where one can change the infection, recovery, and creation rates"],
+    "description": [
+      "A simulation of infections where one can change the infection, recovery, and creation rates"
+    ],
     "id": "simulations2D",
     "href": ""
   },
@@ -257,7 +259,9 @@
   },
   {
     "name": "Roomba algorithm",
-    "description": ["This is a simple line drawing robot, I tried to replicate how the roomba moves"],
+    "description": [
+      "This is a simple line drawing robot, I tried to replicate how the roomba moves"
+    ],
     "id": "roomba",
     "href": ""
   },

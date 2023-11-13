@@ -64,7 +64,7 @@ const Contact = () => {
       ></img>
 
       <p>moisestrejo.com/linkedin</p>
-<img
+      <img
         alt="qr-code"
         src={process.env.PUBLIC_URL + `/images/linkedinQR.png`}
         style={{ width: isMobile ? "90%" : "400px", marginBottom: "120px" }}

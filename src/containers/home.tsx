@@ -21,7 +21,7 @@ const ImageWithText = ({
       {img ? (
         <img
           className={small ? "small-image" : "image"}
-          style={{width: "100%"}}
+          style={{ width: "100%" }}
           src={process.env.PUBLIC_URL + `/images/${img}`}
           alt={img}
         ></img>
@@ -29,7 +29,7 @@ const ImageWithText = ({
       {src ? (
         <img
           className={small ? "small-image" : "image"}
-          style={{width: "100%"}}
+          style={{ width: "100%" }}
           src={src}
           alt={img}
         ></img>

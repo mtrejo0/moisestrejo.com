@@ -84,6 +84,14 @@ const NavigationBar = () => {
         <div
           className="nav-li"
           style={{
+            textDecoration: location.pathname === "/art" ? "underline" : "none",
+          }}
+        >
+          <NavLink to="/art">Art</NavLink>
+        </div>
+        <div
+          className="nav-li"
+          style={{
             textDecoration:
               location.pathname === "/blog" ? "underline" : "none",
           }}

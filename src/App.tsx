@@ -20,6 +20,7 @@ import "./styles.css";
 import ErrorPage from "./containers/errorPage";
 import P5Art from "./containers/p5art";
 import Shop from "./containers/shop";
+import Art from "./containers/art";
 
 const GoTo = ({ link }: { link: string }) => {
   window.location.href = link;
@@ -39,6 +40,7 @@ function App() {
             <Route path="/resume++" element={<ResumePlusPlus />} />
             <Route path="/portfolio" element={<Porfolio />} />
             <Route path="/p5art" element={<P5Art />} />
+            <Route path="/art" element={<Art />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/press" element={<Press />} />

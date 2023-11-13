@@ -1,8 +1,6 @@
 import { ReactNode, useEffect, useState } from "react";
 import axios from "axios";
-import images from "../information/images.json";
 import { Grid } from "@mui/material";
-import RandomNumbers from "../components/RandomNumbers";
 
 const ImageWithText = ({
   info,
@@ -43,6 +41,27 @@ const Home = () => {
 
   const [users, setUsers] = useState(0);
 
+  const interests = [
+    "Computer Science",
+    "Design",
+    "Entrepreneurship",
+    "Making: 3D printing, laser cutting, embedded systems",
+    "Cooking",
+    "Art and its various forms: Painting, Digital Design",
+    "Sports: Kickboxing, Brazilian Jiu Jitsu, Basketball, Soccer",
+    "Dancing: Contemporary Dance, Salsa, Merengue, Cumbias, Breakdancing",
+    "Skateboarding",
+    "Philosophy, Ethics, Theology, Psychology",
+    "Anthropology",
+    "Natural Sciences: Mathematics, Chemistry, Biology, Physics",
+    "Music: Music Producing, DJing",
+    "Comedy",
+    "Video Editing",
+    "Literature",
+    "Urban Planning",
+    "the list goes on...",
+  ];
+
   useEffect(() => {
     axios
       .get(`https://2r2wddk4i6.execute-api.us-east-2.amazonaws.com/test`)
@@ -75,26 +94,9 @@ const Home = () => {
       </div>
 
       <ul>
-        <li>Computer Science</li>
-        <li>Design</li>
-        <li>Entrepreneurship</li>
-        <li>Making: 3D printing, laser cutting, embedded systems</li>
-        <li>Cooking</li>
-        <li>Art and its various forms: Painting, Digital Design</li>
-        <li>Sports: Kickboxing, Brazilian Jiu Jitsu, Basketball, Soccer</li>
-        <li>
-          Dancing: Contemporary Dance, Salsa, Merengue, Cumbias, Breakdancing
-        </li>
-        <li>Skateboarding</li>
-        <li>Philosophy, Ethics, Theology, Psychology</li>
-        <li>Anthropology</li>
-        <li>Natural Sciences: Mathematics, Chemistry, Biology, Physics</li>
-        <li>Music: Music Producing, DJing</li>
-        <li>Comedy</li>
-        <li>Video Editing</li>
-        <li>Literature</li>
-        <li>Urban Planning</li>
-        <li>the list goes on...</li>
+        {interests.map((interest, index) => (
+          <li key={index}>{interest}</li>
+        ))}
       </ul>
 
       <h1 className="title">About Me</h1>
@@ -147,20 +149,6 @@ const Home = () => {
             img="moi_mavs.png"
           />
         </Grid>
-        <Grid item xs={12}>
-          {" "}
-          <h1 className="title">Art</h1>
-        </Grid>
-
-        {images.map((each, i) => (
-          <Grid item xs={12} md={4}>
-            <ImageWithText
-              info={each.text}
-              img={"art/" + each.img}
-              key={i}
-            ></ImageWithText>
-          </Grid>
-        ))}
       </Grid>
     </div>
   );

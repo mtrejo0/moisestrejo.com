@@ -7,6 +7,8 @@ import skills from "../information/skills.json";
 import work from "../information/work.json";
 import awards from "../information/awards.json";
 import press from "../information/press.json";
+import { Box } from "@mui/material";
+import { P5App } from "./p5art";
 
 let all = [
   ...work,
@@ -68,33 +70,38 @@ const ResumePlusPlus = () => {
   };
 
   return (
-    <div>
-      <br></br>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          textDecoration: "none",
-        }}
-      >
-        {tabs.map((tab) => (
-          <div
-            className={
-              tab === activeTab ? "resume-li active-resume-tab" : "resume-li"
-            }
-            onClick={() => selectTab(tab.tag)}
-          >
-            {tab.name}
-          </div>
-        ))}
-      </div>
-      {all
-        .filter((each) => each.tags.includes(activeTab.tag))
-        .map((each) => (
-          <ResumeItem item={each}></ResumeItem>
-        ))}
-    </div>
+    <Box display={"flex"} mb={"100px"}>
+      <Box width={"20%"}>
+        {tabs.map((tab) => {
+          return (
+            <div
+              className="nav-li"
+              style={{
+                textAlign: "left",
+                width: "fit-content",
+                marginLeft: "64px",
+                textDecoration: tab == activeTab ? "underline" : "none",
+                cursor: "pointer",
+              }}
+              onMouseEnter={() => selectTab(tab.tag)}
+            >
+              <b>
+                <p style={{ width: "fit-content", textAlign: "left" }}>
+                  {tab.name}
+                </p>
+              </b>
+            </div>
+          );
+        })}
+      </Box>
+      <Box width={"80%"} mr={"64px"} ml={"16px"}>
+        {all
+          .filter((each) => each.tags.includes(activeTab.tag))
+          .map((each) => (
+            <ResumeItem item={each}></ResumeItem>
+          ))}
+      </Box>
+    </Box>
   );
 };
 const ResumeItem = ({ item, type }: { item: any; type?: any }) => {
@@ -103,11 +110,16 @@ const ResumeItem = ({ item, type }: { item: any; type?: any }) => {
       {type === "sub-item" ? <h5>{item.name}</h5> : <h3>{item.name}</h3>}
     </div>
   );
-  let text = (
-    <div>
-      <div className="resume-top">
+  return (
+    <div className={type === "sub-item" ? "sub-item-border" : "nice-border"}>
+      <div>
         <div>
-          {title}
+          <Box display={"flex"} justifyContent={"space-between"}>
+            {title}
+            <strong>
+              <p>{item.year}</p>
+            </strong>
+          </Box>
           <ul>
             {item.description.map((each: any) => {
               if (!each.length) return null;
@@ -125,34 +137,7 @@ const ResumeItem = ({ item, type }: { item: any; type?: any }) => {
           </ul>
         </div>
         <div className="resume-item-right">
-          <strong>
-            <p>{item.year}</p>
-          </strong>
-          {item.icon ? (
-            <img
-              className="resume-icon"
-              src={process.env.PUBLIC_URL + `/images/${item.icon}`}
-              alt={item.icon}
-            />
-          ) : null}
-        </div>
-      </div>
-
-      {item.sub_items ? (
-        <div>
-          {item.sub_items.map((each: any) => (
-            <ResumeItem item={each} type="sub-item"></ResumeItem>
-          ))}
-        </div>
-      ) : null}
-    </div>
-  );
-  return (
-    <div className={type === "sub-item" ? "sub-item-border" : "nice-border"}>
-      {item.img ? (
-        <div className="resume-item-image">
-          <div className="resume-item-image-left">{text}</div>
-          <div className="resume-item-image-right">
+          {item.img ? (
             <a href={item.link}>
               {item.img.startsWith("https") ? (
                 <img className="resume-image" src={item.img} alt={item.img} />
@@ -164,11 +149,24 @@ const ResumeItem = ({ item, type }: { item: any; type?: any }) => {
                 />
               )}
             </a>
-          </div>
+          ) : null}
+          {item.icon ? (
+            <img
+              className="resume-icon"
+              src={process.env.PUBLIC_URL + `/images/${item.icon}`}
+              alt={item.icon}
+            />
+          ) : null}
         </div>
-      ) : (
-        <div className="resume-item">{text}</div>
-      )}
+
+        {item.sub_items ? (
+          <div>
+            {item.sub_items.map((each: any) => (
+              <ResumeItem item={each} type="sub-item"></ResumeItem>
+            ))}
+          </div>
+        ) : null}
+      </div>
     </div>
   );
 };

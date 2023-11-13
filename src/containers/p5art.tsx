@@ -12,7 +12,11 @@ export const P5App = ({ app }: { app: any }) => {
         <Grid xs={6}>
           <h1>{app.name}</h1>
 
-          <a href={link} style={{ textDecoration: "none", color: "inherit" }}>
+          <a
+            href={link}
+            style={{ textDecoration: "none", color: "inherit" }}
+            target="_blank"
+          >
             moisestrejo.com/{app.id}
           </a>
 
@@ -68,35 +72,36 @@ const P5Art = () => {
   const [activeApp, setActiveApp] = useState(p5jsProjects[0]);
 
   return (
-    <div>
-      <Box display={"flex"} mb={"100px"}>
-        <Box width={"20%"}>
-          {p5jsProjects.map((app) => {
-            return (
-              <div
-                style={{
-                  textAlign: "left",
-                  width: "fit-content",
-                  marginLeft: "64px",
-                  textDecoration: app == activeApp ? "underline" : "none",
-                  cursor: "pointer",
-                }}
-                onMouseEnter={() => setActiveApp(app)}
-              >
-                <b>
-                  <p style={{ width: "fit-content", textAlign: "left" }}>
-                    {app.name}
-                  </p>
-                </b>
-              </div>
-            );
-          })}
-        </Box>
-        <Box width={"80%"} mr={"64px"} ml={"16px"}>
-          <P5App app={activeApp} />
-        </Box>
+    <Box display={"flex"} width={"100%"} mb={"100px"}>
+      <Box width={"20%"} pl={isMobile ? "8px" : "64px"}>
+        {p5jsProjects.map((app) => {
+          return (
+            <div
+              style={{
+                textAlign: "left",
+                width: "fit-content",
+                textDecoration: app == activeApp ? "underline" : "none",
+                cursor: "pointer",
+              }}
+              onMouseEnter={() => setActiveApp(app)}
+            >
+              <b>
+                <p style={{ width: "fit-content", textAlign: "left" }}>
+                  {app.name}
+                </p>
+              </b>
+            </div>
+          );
+        })}
       </Box>
-    </div>
+      <Box
+        width={"80%"}
+        mr={isMobile ? "8px" : "64px"}
+        ml={isMobile ? "8px" : "16px"}
+      >
+        <P5App app={activeApp} />
+      </Box>
+    </Box>
   );
 };
 

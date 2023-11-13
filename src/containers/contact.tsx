@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <Stack sx={{ alignItems: "center" }}>
       <Grid container>
-        <Grid xs={8}>
+        <Grid xs={isMobile ? 12 : 8}>
           <h1 className="title">Lets talk!</h1>
           <Stack spacing={2} mb={8} textAlign={"center"}>
             {contact.map((item) => {
@@ -37,7 +37,7 @@ const Contact = () => {
             })}
           </Stack>
         </Grid>
-        <Grid xs={4}>
+        <Grid xs={isMobile ? 12 : 4} textAlign={isMobile ? "center" : "left"}>
           <h1>Quick Links</h1>
           <Stack spacing={2} mb={8}>
             {links.map((link) =>

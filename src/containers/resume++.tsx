@@ -7,7 +7,7 @@ import skills from "../information/skills.json";
 import work from "../information/work.json";
 import awards from "../information/awards.json";
 import press from "../information/press.json";
-import { Box } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 import { P5App } from "./p5art";
 
 let all = [
@@ -69,9 +69,12 @@ const ResumePlusPlus = () => {
     setActiveTab(tabs.filter((each) => each.tag === tag)[0]);
   };
 
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <Box display={"flex"} mb={"100px"}>
-      <Box width={"20%"}>
+      <Box width={"20%"} pl={isMobile ? "8px" : "64px"}>
         {tabs.map((tab) => {
           return (
             <div
@@ -79,7 +82,6 @@ const ResumePlusPlus = () => {
               style={{
                 textAlign: "left",
                 width: "fit-content",
-                marginLeft: "64px",
                 textDecoration: tab == activeTab ? "underline" : "none",
                 cursor: "pointer",
               }}
@@ -94,7 +96,11 @@ const ResumePlusPlus = () => {
           );
         })}
       </Box>
-      <Box width={"80%"} mr={"64px"} ml={"16px"}>
+      <Box
+        width={"80%"}
+        mr={isMobile ? "8px" : "64px"}
+        ml={isMobile ? "8px" : "16px"}
+      >
         {all
           .filter((each) => each.tags.includes(activeTab.tag))
           .map((each) => (

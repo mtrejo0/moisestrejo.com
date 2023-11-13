@@ -1,8 +1,12 @@
+import { useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
 
 import { NavLink, useLocation } from "react-router-dom";
 
 const NavigationBar = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   const location = useLocation();
 
   return (
@@ -14,7 +18,13 @@ const NavigationBar = () => {
         flexDirection: "column",
       }}
     >
-      <h1 style={{ fontSize: "96px", marginBottom: "16px", marginTop: "16px" }}>
+      <h1
+        style={{
+          fontSize: isMobile ? "32px" : "96px",
+          marginBottom: "16px",
+          marginTop: "16px",
+        }}
+      >
         MOISES TREJO
       </h1>
 
@@ -23,6 +33,7 @@ const NavigationBar = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          flexWrap: "wrap",
         }}
       >
         <div

@@ -25,12 +25,15 @@ const InternalApp = ({ app }: { app: any }) => {
 };
 
 const ExternalApp = ({ app }: { app: any }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <Grid container className="nice-border" height="100vh">
       <Grid xs={8}>
         <h1>{app.name}</h1>
 
-        <a href={app.link}>
+        <a href={app.link} target="_blank">
           <p>moisestrejo.com/{app.id}</p>
         </a>
 
@@ -48,7 +51,7 @@ const ExternalApp = ({ app }: { app: any }) => {
         )}
       </Grid>
 
-      <Grid xs={4}>
+      <Grid xs={isMobile ? 12 : 4}>
         <ul>
           {app.resources.split(", ").map((each: any) => (
             <li>{each}</li>
@@ -68,14 +71,13 @@ const Porfolio = () => {
   return (
     <div>
       <Box display={"flex"} mb={"100px"}>
-        <Box width={"20%"}>
+        <Box width={"20%"} pl={isMobile ? "8px" : "64px"}>
           {externalApps.map((app) => {
             return (
               <div
                 style={{
                   textAlign: "left",
                   width: "fit-content",
-                  marginLeft: "64px",
                   textDecoration: app == activeApp ? "underline" : "none",
                   cursor: "pointer",
                 }}
@@ -90,7 +92,11 @@ const Porfolio = () => {
             );
           })}
         </Box>
-        <Box width={"80%"} mr={"64px"} ml={"16px"}>
+        <Box
+          width={"80%"}
+          mr={isMobile ? "8px" : "64px"}
+          ml={isMobile ? "8px" : "16px"}
+        >
           <ExternalApp app={activeApp} />
         </Box>
       </Box>

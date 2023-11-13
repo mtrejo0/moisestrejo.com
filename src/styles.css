@@ -70,28 +70,17 @@ body {
 
 .resume-li {
   display: block;
-  color: blue;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   border-radius: 32px;
   margin: 8px;
+  cursor: pointer;
 }
 
 /* Change the link color to #111 (black) on hover */
 .resume-li:hover {
-  background-color: black;
-  color: white !important;
-}
-
-.resume-top {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.resume-item {
-  width: 100%;
+  text-decoration: underline;
 }
 
 .resume-item-image {
@@ -210,18 +199,6 @@ body {
 :root {
   --main-color: #b9fb9c;
   background-color: var(--main-color);
-}
-
-.nav-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  font-size: 18px;
-  font-weight: 700;
-  width: 100vw;
-  align-items: center;
-  justify-content: center;
 }
 
 .nav-li a {

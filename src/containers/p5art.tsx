@@ -7,7 +7,7 @@ import { useState } from "react";
 export const P5App = ({ app }: { app: any }) => {
   const link = `https://mtrejo0.github.io/p5/${app.id}/index.html`;
   return (
-    <Box className="nice-border" height="100%">
+    <Box className="nice-border" height="100vh">
       <Grid container>
         <Grid xs={6}>
           <h1>{app.name}</h1>
@@ -79,6 +79,7 @@ const P5Art = () => {
                   width: "fit-content",
                   marginLeft: "64px",
                   textDecoration: app == activeApp ? "underline" : "none",
+                  cursor: "pointer",
                 }}
                 onMouseEnter={() => setActiveApp(app)}
               >

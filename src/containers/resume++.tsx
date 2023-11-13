@@ -70,19 +70,24 @@ const ResumePlusPlus = () => {
   return (
     <div>
       <br></br>
-      <div className="center">
-        <ul className="resume-ul">
-          {tabs.map((tab) => (
-            <li
-              className={
-                tab === activeTab ? "resume-li active-resume-tab" : "resume-li"
-              }
-              onClick={() => selectTab(tab.tag)}
-            >
-              {tab.name}
-            </li>
-          ))}
-        </ul>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          textDecoration: "none",
+        }}
+      >
+        {tabs.map((tab) => (
+          <div
+            className={
+              tab === activeTab ? "resume-li active-resume-tab" : "resume-li"
+            }
+            onClick={() => selectTab(tab.tag)}
+          >
+            {tab.name}
+          </div>
+        ))}
       </div>
       {all
         .filter((each) => each.tags.includes(activeTab.tag))

@@ -16,11 +16,7 @@ const Contact = () => {
           <h1 className="title">Lets talk!</h1>
           <Stack spacing={2} mb={8} textAlign={"center"}>
             {contact.map((item) => {
-              const body = (
-                <div>
-                  {item.name}
-                </div>
-              );
+              const body = <div>{item.name}</div>;
 
               return (
                 <Box>

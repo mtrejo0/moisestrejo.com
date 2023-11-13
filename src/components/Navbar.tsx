@@ -16,9 +16,6 @@ const NavigationBar = () => {
         MOISES TREJO
       </h1>
 
-      <h1 style={{ fontSize: "16px", marginBottom: "16px", marginTop: "16px" }}>
-        PUSSY. MONEY. WEED.
-      </h1>
 
       <div
         style={{

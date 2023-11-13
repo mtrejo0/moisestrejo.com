@@ -59,7 +59,6 @@ const Home = () => {
   return (
     <div className="center">
       <div className={"paragraph"}>
-        <h1 className="title">Hey I'm Moises!</h1>
         <p>
           You are the {loading ? "Loading..." : users.toLocaleString()}th person
           to visit this page!

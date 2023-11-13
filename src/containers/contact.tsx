@@ -1,4 +1,4 @@
-import { Grid, Stack, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Grid, Stack, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
 
 import contact from "../information/contact.json";
@@ -11,50 +11,51 @@ const Contact = () => {
 
   return (
     <Stack sx={{ alignItems: "center" }}>
-      <h1 className="title">Lets talk!</h1>
       <Grid container>
-        {contact.map((item) => {
-          const body = (
-            <div className="nice-border">
-              {item.icon ? (
-                <img src={item.icon} style={{ width: "100px" }}></img>
-              ) : (
-                <p>{item.name}</p>
-              )}
-              <p>{item.description}</p>
-            </div>
-          );
+        <Grid xs={8}>
+          <h1 className="title">Lets talk!</h1>
+          <Stack spacing={2} mb={8} textAlign={"center"}>
+            {contact.map((item) => {
+              const body = (
+                <div>
+                  {item.name}
+                </div>
+              );
 
-          return (
-            <Grid item xs={isMobile ? 12 : 3}>
-              {item.link ? (
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "none" }}
-                >
-                  {body}
-                </a>
-              ) : (
-                body
-              )}
-            </Grid>
-          );
-        })}
+              return (
+                <Box>
+                  {item.link ? (
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: "none" }}
+                    >
+                      {body}
+                    </a>
+                  ) : (
+                    body
+                  )}
+                </Box>
+              );
+            })}
+          </Stack>
+        </Grid>
+        <Grid xs={4}>
+          <h1>Quick Links</h1>
+          <Stack spacing={2} mb={8}>
+            {links.map((link) =>
+              link.ids.map((id) => {
+                return (
+                  <a href={link.link} target="_blank" rel="noopener noreferrer">
+                    moisestrejo.com/{id}
+                  </a>
+                );
+              })
+            )}
+          </Stack>
+        </Grid>
       </Grid>
-      <h1 className="title">Quick Links</h1>
-      <Stack spacing={2} mb={8}>
-        {links.map((link) =>
-          link.ids.map((id) => {
-            return (
-              <a href={link.link} target="_blank" rel="noopener noreferrer">
-                moisestrejo.com/{id}
-              </a>
-            );
-          })
-        )}
-      </Stack>
 
       <p>moisestrejo.com/contact</p>
       <img

@@ -56,7 +56,7 @@ function App() {
                   path={`/${webapp.id}`}
                   element={
                     <GoTo
-                      link={`https://moisesp5js.s3.us-east-2.amazonaws.com/${webapp.id}/index.html`}
+                      link={`https://mtrejo0.github.io/p5/${webapp.id}/index.html`}
                     />
                   }
                 />

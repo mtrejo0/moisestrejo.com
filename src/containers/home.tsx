@@ -2,6 +2,7 @@ import { ReactNode, useEffect, useState } from "react";
 import axios from "axios";
 import images from "../information/images.json";
 import { Grid } from "@mui/material";
+import RandomNumbers from "../components/RandomNumbers";
 
 const ImageWithText = ({
   info,

@@ -21,12 +21,21 @@ const NavigationBar = () => {
       <h1
         style={{
           fontSize: isMobile ? "32px" : "96px",
-          marginBottom: "16px",
+          marginBottom: "0",
           marginTop: "16px",
         }}
       >
         MOISES TREJO
       </h1>
+
+      <b><p
+        style={{
+          margin: 0,
+          marginBottom: "16px",
+        }}
+      >
+        el mero mero.
+      </p></b>
 
       <div
         style={{

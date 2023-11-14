@@ -76,6 +76,8 @@ const P5Art = () => {
     <Box display={"flex"} width={"100%"} mb={"100px"}>
       <Box width={"20%"} pl={isMobile ? "8px" : "64px"}>
         {p5jsProjects.map((app) => {
+
+          const link = `https://mtrejo0.github.io/p5/${app.id}/index.html`;
           return (
             <div
               style={{
@@ -86,11 +88,17 @@ const P5Art = () => {
               }}
               onMouseEnter={() => setActiveApp(app)}
             >
-              <b>
-                <p style={{ width: "fit-content", textAlign: "left" }}>
-                  {app.name}
-                </p>
-              </b>
+              <a
+                href={link}
+                style={{ textDecoration: "none", color: "inherit" }}
+                target="_blank"
+              >
+                <b>
+                  <p style={{ width: "fit-content", textAlign: "left" }}>
+                    {app.name}
+                  </p>
+                </b>
+              </a>
             </div>
           );
         })}

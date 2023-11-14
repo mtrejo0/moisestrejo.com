@@ -221,7 +221,7 @@
     "name": "Colors",
     "description": ["Edit these colors with math!"],
     "id": "colors",
-    "href": ""
+    "href": "https://giphy.com/embed/nihwA289LX0cFFBDmO"
   },
   {
     "name": "Simulations",
@@ -229,7 +229,7 @@
       "Generate many simulations of up or down randomness and see the disctibution at the end!"
     ],
     "id": "simulations",
-    "href": ""
+    "href": "https://giphy.com/embed/x573fMQKeTqh50sm56"
   },
   {
     "name": "COVID Simulations",
@@ -237,25 +237,25 @@
       "A simulation of infections where one can change the infection, recovery, and creation rates"
     ],
     "id": "simulations2D",
-    "href": ""
+    "href": "https://giphy.com/embed/pWPszGOhnwVh8Mg76m"
   },
   {
     "name": "Rocket Orbit",
     "description": ["A rocket that you can control orbiting around a sun!"],
     "id": "orbit",
-    "href": ""
+    "href": "https://giphy.com/embed/xl3Mc7VBo0vZxndJCG"
   },
   {
     "name": "Snake",
     "description": ["This snake game will always win!"],
     "id": "snake",
-    "href": ""
+    "href": "https://giphy.com/embed/TJ9KlmZ2TflJxllNgb"
   },
   {
     "name": "SIN/COS simulation!",
     "description": ["This demonstration shows how sin and cos are related!"],
     "id": "cos",
-    "href": ""
+    "href": "https://giphy.com/embed/rXleKkOaDgolnxaKO2"
   },
   {
     "name": "Roomba algorithm",
@@ -263,30 +263,30 @@
       "This is a simple line drawing robot, I tried to replicate how the roomba moves"
     ],
     "id": "roomba",
-    "href": ""
+    "href": "https://giphy.com/embed/bJez5TwRoZudrfBX9W"
   },
   {
     "name": "Love Hate",
     "description": ["A rocket that you can control orbiting around a sun!"],
     "id": "lovehate",
-    "href": ""
+    "href": "https://giphy.com/embed/4QvL03ITnHDOlqqYR1"
   },
   {
     "name": "Leslie",
     "description": ["A love story seen from above"],
     "id": "leslie",
-    "href": ""
+    "href": "https://giphy.com/embed/3azIbCRsTEtVhWWEyF"
   },
   {
     "name": "Joseph Albers",
     "description": ["Joseph Albers inspired digital art."],
     "id": "josephAlbers",
-    "href": ""
+    "href": "https://giphy.com/embed/pWPszGOhnwVh8Mg76m"
   },
   {
     "name": "Simple Art",
     "description": ["Inspired by the Museum of Modern Art San Fransisco."],
     "id": "simpleArt",
-    "href": ""
+    "href": "https://giphy.com/embed/5nnxdroX2lm4iLvCnc"
   }
 ]

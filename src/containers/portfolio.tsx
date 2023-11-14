@@ -4,9 +4,8 @@ import internalApps from "../information/internalApps.json";
 import externalApps from "../information/externalApps.json";
 
 import Grid from "@mui/material/Grid";
-import { Box, Stack, useMediaQuery, useTheme } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 
-import { OpenInNew } from "@mui/icons-material";
 import { useState } from "react";
 
 const InternalApp = ({ app }: { app: any }) => {
@@ -29,36 +28,38 @@ const ExternalApp = ({ app }: { app: any }) => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Grid container className="nice-border" height="100vh">
-      <Grid xs={8}>
-        <h1>{app.name}</h1>
+    <Box className="nice-border" height={"100vh"}>
+      <Grid container>
+        <Grid xs={12}><h1>{app.name}</h1></Grid>
+        <Grid xs={8}>
+          <a href={app.link} style={{ textDecoration: "none", color: "inherit" }}
+            target="_blank">
+            moisestrejo.com/{app.id}
+          </a>
 
-        <a href={app.link} target="_blank">
-          <p>moisestrejo.com/{app.id}</p>
-        </a>
+          <p>{app.description}</p>
 
-        <p>{app.description}</p>
+          {app.video && (
+            <iframe
+              src={"https://www.youtube.com/embed/" + app.video}
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title={app.video}
+              width={"300px"}
+              height="200px"
+            />
+          )}
+        </Grid>
 
-        {app.video && (
-          <iframe
-            src={"https://www.youtube.com/embed/" + app.video}
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            title={app.video}
-            width={"300px"}
-            height="200px"
-          />
-        )}
+        <Grid xs={isMobile ? 12 : 4}>
+          <ul>
+            {app.resources.split(", ").map((each: any) => (
+              <li>{each}</li>
+            ))}
+          </ul>
+        </Grid>
       </Grid>
-
-      <Grid xs={isMobile ? 12 : 4}>
-        <ul>
-          {app.resources.split(", ").map((each: any) => (
-            <li>{each}</li>
-          ))}
-        </ul>
-      </Grid>
-    </Grid>
+    </Box>
   );
 };
 

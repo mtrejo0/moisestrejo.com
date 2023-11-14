@@ -6,12 +6,14 @@ import { useState } from "react";
 
 export const P5App = ({ app }: { app: any }) => {
   const link = `https://mtrejo0.github.io/p5/${app.id}/index.html`;
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  
   return (
-    <Box className="nice-border" height="100vh">
+    <Box className="nice-border" height="100vh" mr={isMobile ? 0 :"auto"}>
       <Grid container>
-        <Grid xs={6}>
-          <h1>{app.name}</h1>
-
+        <Grid  xs={12}> <h1>{app.name}</h1></Grid>
+        <Grid xs={isMobile ? 12 :6}>
           <a
             href={link}
             style={{ textDecoration: "none", color: "inherit" }}
@@ -20,7 +22,6 @@ export const P5App = ({ app }: { app: any }) => {
             moisestrejo.com/{app.id}
           </a>
 
-          <br></br>
 
           {app.description.map((each: any) => (
             <p style={{ color: "black" }}>{each}</p>
@@ -28,7 +29,7 @@ export const P5App = ({ app }: { app: any }) => {
 
           {app.youtubeLink && <a href={app.youtubeLink}>Youtube Video</a>}
         </Grid>
-        <Grid xs={6} paddingTop={"32px"}>
+        <Grid xs={isMobile ? 12 :6}>
           {app.href ? (
             <iframe
               src={app.href}

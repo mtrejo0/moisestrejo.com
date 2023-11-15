@@ -63,11 +63,11 @@ const Shop = () => {
       description:
         "Offers from: Instacart, Twitter, Facebook, Google, Snapchat",
     },
-    { label: "Business Councelling", price: "$100/hr" },
-    { label: "Financial Councelling", price: "$100/hr" },
-    { label: "Dance Lessons", price: "$50/hr" },
-    { label: "Boxing Lessons", price: "$50/hr" },
-    { label: "Brazilian Jiu Jitsu Lessons", price: "$50/hr" },
+    // { label: "Business Councelling", price: "$100/hr" },
+    // { label: "Financial Councelling", price: "$100/hr" },
+    { label: "Dance Lessons - In Person", price: "$50/hr" },
+    { label: "Boxing Lessons - In Person", price: "$50/hr" },
+    { label: "Brazilian Jiu Jitsu Lessons - In Person", price: "$50/hr" },
     { label: "Yoga and Meditation Classes", price: "$50/hr" },
     { label: "Music Lessons", price: "$50/hr" },
   ];

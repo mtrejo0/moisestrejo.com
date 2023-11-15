@@ -14,12 +14,12 @@ const ImageWithText = ({
   small?: boolean;
 }) => {
   return (
-    <div className="nice-border">
+    <div style={{ padding: "16px", margin: "32px", textAlign: "center"}}>
       <p>{info}</p>
       {img ? (
         <img
           className={small ? "small-image" : "image"}
-          style={{ width: "100%" }}
+          style={{ width: "100%", border: "2px black solid" }}
           src={process.env.PUBLIC_URL + `/images/${img}`}
           alt={img}
         ></img>
@@ -27,7 +27,7 @@ const ImageWithText = ({
       {src ? (
         <img
           className={small ? "small-image" : "image"}
-          style={{ width: "100%" }}
+          style={{ width: "100%", border: "2px black solid" }}
           src={src}
           alt={img}
         ></img>
@@ -85,22 +85,26 @@ const Home = () => {
       </div>
       <div className={"paragraph"}>
         <p>
+          Currently im a Software Engineer at Instacart on the Catalog Enrichment Team! 
+          I post DJ mixes on my YouTube in my free time. I like cooking Mexican food and working out. 
+          I live in Dallas, Texas where I am from and I love it very much. 
+          I love making generative art using P5.js. I make web apps that are fun and useful. 
           I am recent graduate of MIT 22 where I studied Computer Science. I am
           passionate about using technology to give everyone the same
           opportunity to live happy and succeed.
         </p>
 
-        <p>I love all of the following:</p>
+        
       </div>
 
-      <ul>
-        {interests.map((interest, index) => (
-          <li key={index}>{interest}</li>
-        ))}
-      </ul>
-
-      <h1 className="title">About Me</h1>
-      <br />
+      <div className={"paragraph"}>
+        <p>I love all of the following:</p>
+        <p>
+          {interests.join(", ")}
+        </p>
+      </div>
+      
+      <h1 className="title" style={{marginBottom: '-16px'}}>About Me</h1>
 
       <Grid
         container

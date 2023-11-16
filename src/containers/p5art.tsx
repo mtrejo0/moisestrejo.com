@@ -19,7 +19,7 @@ export const P5App = ({ app }: { app: any }) => {
             style={{ textDecoration: "none", color: "inherit" }}
             target="_blank"
           >
-            moisestrejo.com/{app.id}
+            <b>moisestrejo.com/{app.id}</b>
           </a>
 
 

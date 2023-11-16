@@ -34,7 +34,7 @@ const ExternalApp = ({ app }: { app: any }) => {
         <Grid xs={8}>
           <a href={app.link} style={{ textDecoration: "none", color: "inherit" }}
             target="_blank">
-            moisestrejo.com/{app.id}
+            <b>moisestrejo.com/{app.id}</b>
           </a>
 
           <p>{app.description}</p>

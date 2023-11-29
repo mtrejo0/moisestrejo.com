@@ -1,6 +1,11 @@
 [
   {
     "link": "",
+    "img": "chains_and_whips.jpg",
+    "text": "Chains and Whips, Nov 2023"
+  },
+  {
+    "link": "",
     "img": "moises_skeleton.jpg",
     "text": "¡Qué susto!, 2023"
   },
@@ -54,7 +59,46 @@
     "img": "drinking_and_death.png",
     "text": "dance till you drop, 2022"
   },
-
+  {
+    "link": "",
+    "img": "green.jpg",
+    "text": "More shades of green than, 2020"
+  },
+  {
+    "link": "",
+    "img": "crossing_paths.jpg",
+    "text": "I'll see you again, but we may never meet, 2020"
+  },
+  {
+    "link": "",
+    "img": "trip.jpg",
+    "text": "Life is a trip, 2020"
+  },
+  {
+    "link": "",
+    "img": "if_you_had_to.jpg",
+    "text": "Why not?, 2020"
+  },
+  {
+    "link": "",
+    "img": "filters.jpg",
+    "text": "Filters of society, 2020"
+  },
+  {
+    "link": "",
+    "img": "chance.jpg",
+    "text": "Leave it up to the gods, 2020"
+  },
+  {
+    "link": "",
+    "img": "progress.jpg",
+    "text": "What we choose to keep, 2020"
+  },
+  {
+    "link": "",
+    "img": "see_clearly.jpg",
+    "text": "See clearly, 2020"
+  },
   {
     "link": "",
     "img": "downUp.jpg",
@@ -74,6 +118,11 @@
     "link": "",
     "img": "sculpture.png",
     "text": "Moi Sculpture, 2018"
+  },
+  {
+    "link": "",
+    "img": "doom.jpg",
+    "text": "DOOM!, 2018"
   },
   {
     "link": "",

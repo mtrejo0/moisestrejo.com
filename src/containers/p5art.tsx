@@ -88,17 +88,11 @@ const P5Art = () => {
               }}
               onMouseEnter={() => setActiveApp(app)}
             >
-              <a
-                href={link}
-                style={{ textDecoration: "none", color: "inherit" }}
-                target="_blank"
-              >
-                <b>
-                  <p style={{ width: "fit-content", textAlign: "left" }}>
-                    {app.name}
-                  </p>
-                </b>
-              </a>
+              <b>
+                <p style={{ width: "fit-content", textAlign: "left" }}>
+                  {app.name}
+                </p>
+              </b>
             </div>
           );
         })}

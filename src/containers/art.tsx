@@ -1,6 +1,6 @@
-import { Box, Grid, useMediaQuery, useTheme } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 
-import { ReactNode, useState } from "react";
+import { useState } from "react";
 import artList from "../information/art.json";
 
 const Art = () => {
@@ -18,7 +18,7 @@ const Art = () => {
               style={{
                 textAlign: "left",
                 width: "fit-content",
-                textDecoration: app == activeApp ? "underline" : "none",
+                textDecoration: app === activeApp ? "underline" : "none",
                 cursor: "pointer",
               }}
               onMouseEnter={() => setActiveApp(app)}

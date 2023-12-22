@@ -28,12 +28,17 @@ const ExternalApp = ({ app }: { app: any }) => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Box className="nice-border" height={"100vh"}>
+    <Box className="nice-border" height={"100%"}>
       <Grid container>
-        <Grid xs={12}><h1>{app.name}</h1></Grid>
+        <Grid xs={12}>
+          <h1>{app.name}</h1>
+        </Grid>
         <Grid xs={8}>
-          <a href={app.link} style={{ textDecoration: "none", color: "inherit" }}
-            target="_blank">
+          <a
+            href={app.link}
+            style={{ textDecoration: "none", color: "inherit" }}
+            target="_blank"
+          >
             <b>moisestrejo.com/{app.id}</b>
           </a>
 
@@ -58,6 +63,17 @@ const ExternalApp = ({ app }: { app: any }) => {
             ))}
           </ul>
         </Grid>
+
+        <Grid xs={12}>
+        <iframe
+              src={app.link}
+              title={app.id}
+              width="100%"
+              height="1000px"
+            />
+        </Grid>
+
+        
       </Grid>
     </Box>
   );
@@ -102,17 +118,6 @@ const Porfolio = () => {
         </Box>
       </Box>
 
-      {/* <h3>Internal Apps</h3>
-
-      <Grid container>
-        {internalApps.map((app) => {
-          return (
-            <Grid item xs={isMobile ? 12 : 4} >
-              <InternalApp app={app} />
-            </Grid>
-          );
-        })}
-      </Grid> */}
     </div>
   );
 };

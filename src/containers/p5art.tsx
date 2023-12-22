@@ -8,20 +8,23 @@ export const P5App = ({ app }: { app: any }) => {
   const link = `https://mtrejo0.github.io/p5/${app.id}/index.html`;
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  
+
   return (
-    <Box className="nice-border" height="100vh" mr={isMobile ? 0 :"auto"}>
+    <Box className="nice-border" height="100%" mr={isMobile ? 0 : "auto"}>
       <Grid container>
-        <Grid  xs={12}> <h1>{app.name}</h1></Grid>
-        <Grid xs={isMobile ? 12 :6}>
+        <Grid xs={12}>
+          {" "}
+          <h1>{app.name}</h1>
+        </Grid>
+        <Grid xs={12}>
           <a
             href={link}
             style={{ textDecoration: "none", color: "inherit" }}
             target="_blank"
+            rel="noreferrer"
           >
             <b>moisestrejo.com/{app.id}</b>
           </a>
-
 
           {app.description.map((each: any) => (
             <p style={{ color: "black" }}>{each}</p>
@@ -29,35 +32,33 @@ export const P5App = ({ app }: { app: any }) => {
 
           {app.youtubeLink && <a href={app.youtubeLink}>Youtube Video</a>}
         </Grid>
-        <Grid xs={isMobile ? 12 :6}>
-          {app.href ? (
-            <iframe
-              src={app.href}
-              title={app.href}
-              width="100%"
-              height={"100%"}
-              frameBorder="0"
-              sandbox="allow-forms allow-scripts"
-            ></iframe>
-          ) : app.video ? (
-            <iframe
-              src={"https://www.youtube.com/embed/" + app.video}
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-              title={app.video}
-              width={"300px"}
-              height="200px"
-            />
+        <Grid xs={12}>
+          {isMobile ? (
+            app.href ? (
+              <iframe
+                src={app.href}
+                title={app.href}
+                width="100%"
+                height={"100%"}
+                frameBorder="0"
+                sandbox="allow-forms allow-scripts"
+              ></iframe>
+            ) : app.video ? (
+              <iframe
+                src={"https://www.youtube.com/embed/" + app.video}
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                title={app.video}
+                width={"300px"}
+                height="200px"
+              />
+            ) : null
           ) : (
-            <img
-              className="webapp-image"
-              src={
-                app.href
-                  ? app.href
-                  : process.env.PUBLIC_URL +
-                    `/images/p5/${app.src ? app.src : app.id + ".jpg"}`
-              }
-              alt={app.id}
+            <iframe
+              src={`https://mtrejo0.github.io/p5/${app.id}/index.html`}
+              title={app.id}
+              width="100%"
+              height="1000px"
             />
           )}
         </Grid>
@@ -76,14 +77,12 @@ const P5Art = () => {
     <Box display={"flex"} width={"100%"} mb={"100px"}>
       <Box width={"20%"} pl={isMobile ? "8px" : "64px"}>
         {p5jsProjects.map((app) => {
-
-          const link = `https://mtrejo0.github.io/p5/${app.id}/index.html`;
           return (
             <div
               style={{
                 textAlign: "left",
                 width: "fit-content",
-                textDecoration: app == activeApp ? "underline" : "none",
+                textDecoration: app === activeApp ? "underline" : "none",
                 cursor: "pointer",
               }}
               onMouseEnter={() => setActiveApp(app)}

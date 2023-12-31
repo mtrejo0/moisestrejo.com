@@ -51,11 +51,12 @@ const NavigationBar = () => {
           className="nav-li"
           style={{
             textDecoration:
-              location.pathname === "/home" ? "underline" : "none",
+              location.pathname === "/portfolio" ? "underline" : "none",
           }}
         >
-          <NavLink to="/home">Home</NavLink>
+          <NavLink to="/portfolio">Portfolio</NavLink>
         </div>
+        
         <div
           className="nav-li"
           style={{
@@ -72,16 +73,7 @@ const NavigationBar = () => {
               location.pathname === "/resume++" ? "underline" : "none",
           }}
         >
-          <NavLink to="/resume++">Resume ++</NavLink>
-        </div>
-        <div
-          className="nav-li"
-          style={{
-            textDecoration:
-              location.pathname === "/portfolio" ? "underline" : "none",
-          }}
-        >
-          <NavLink to="/portfolio">Portfolio</NavLink>
+          <NavLink to="/resume++">Resume++</NavLink>
         </div>
         <div
           className="nav-li"
@@ -129,6 +121,15 @@ const NavigationBar = () => {
           }}
         >
           <NavLink to="/contact">Contact</NavLink>
+        </div>
+        <div
+          className="nav-li"
+          style={{
+            textDecoration:
+              location.pathname === "/about" ? "underline" : "none",
+          }}
+        >
+          <NavLink to="/about">About</NavLink>
         </div>
       </div>
     </div>

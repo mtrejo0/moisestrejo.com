@@ -2,12 +2,24 @@ import { Box, useMediaQuery, useTheme } from "@mui/material";
 
 import { useState } from "react";
 import artList from "../information/art.json";
+import { useNavigate, useParams } from "react-router-dom";
 
 const Art = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
-  const [activeApp, setActiveApp] = useState(artList[0]);
+
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const initialApp = artList.find(app => app.img === id) || artList[0];
+
+  const [activeApp, setActiveApp] = useState(initialApp);
+
+  const setActiveAppAndRoute = (app: any) => {
+    setActiveApp(app)
+    navigate(`/art/${app.img}`);
+  }
+
 
   return (
     <Box display={"flex"} width={"100%"} mb={"100px"}>
@@ -21,7 +33,7 @@ const Art = () => {
                 textDecoration: app === activeApp ? "underline" : "none",
                 cursor: "pointer",
               }}
-              onMouseEnter={() => setActiveApp(app)}
+              onMouseEnter={() => setActiveAppAndRoute(app)}
             >
               <b>
                 <p style={{ width: "fit-content", textAlign: "left" }}>

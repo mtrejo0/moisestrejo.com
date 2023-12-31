@@ -1,4 +1,5 @@
 import React from "react";
+import ResumePlusPlus from "./resume++";
 
 const Resume = () => {
   let id = "17BKQrfpLi5IcTNLteQFf-x9ryXTra822";

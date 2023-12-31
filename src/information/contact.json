@@ -4,12 +4,6 @@
     "description": "Send me an email I will respond :)"
   },
   {
-    "name": "Calendly",
-    "link": "https://calendly.com/moisestrejo/30min",
-    "description": "Schedule some time with me",
-    "icon": "https://upload.wikimedia.org/wikipedia/en/7/7f/Calendly_company_logo.png"
-  },
-  {
     "name": "LinkedIn",
     "link": "https://www.linkedin.com/in/moisestrejo/",
     "description": "Connect with me!",

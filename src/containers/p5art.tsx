@@ -3,6 +3,7 @@ import p5jsProjects from "../information/p5jsProjects.json";
 import { Box, Grid, useMediaQuery, useTheme } from "@mui/material";
 
 import { useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 
 export const P5App = ({ app }: { app: any }) => {
   const link = `https://mtrejo0.github.io/p5/${app.id}/index.html`;
@@ -70,8 +71,16 @@ export const P5App = ({ app }: { app: any }) => {
 const P5Art = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const initialApp = p5jsProjects.find(app => app.id === id) || p5jsProjects[0];
 
-  const [activeApp, setActiveApp] = useState(p5jsProjects[0]);
+  const [activeApp, setActiveApp] = useState(initialApp);
+
+  const setActiveAppAndRoute = (app: any) => {
+    setActiveApp(app)
+    navigate(`/p5art/${app.id}`);
+  }
 
   return (
     <Box display={"flex"} width={"100%"} mb={"100px"}>
@@ -85,7 +94,7 @@ const P5Art = () => {
                 textDecoration: app === activeApp ? "underline" : "none",
                 cursor: "pointer",
               }}
-              onMouseEnter={() => setActiveApp(app)}
+              onMouseEnter={() => setActiveAppAndRoute(app)}
             >
               <b>
                 <p style={{ width: "fit-content", textAlign: "left" }}>

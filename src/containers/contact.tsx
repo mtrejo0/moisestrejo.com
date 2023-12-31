@@ -35,16 +35,17 @@ const Contact = () => {
     <Stack sx={{ alignItems: "center" }}>
       <Grid container>
         <Grid xs={isMobile ? 12 : 6}>
-          <h1 style={{ textAlign: "center" }}>Lets talk!</h1>
+          <h2 style={{ textAlign: "center" }}>Lets talk!</h2>
           <Stack spacing={2} mb={8} alignItems={"center"}>
             <ListItems items={contact} />
           </Stack>
         </Grid>
         <Grid xs={isMobile ? 12 : 6}>
-          <h1 style={{ textAlign: "center" }}>Quick Links</h1>
+          <h2 style={{ textAlign: "center" }}>Quick Links</h2>
           <Stack spacing={2} mb={8} alignItems={"center"}>
             <ListItems
               items={links
+                .filter( each => !each.link.includes('calendly'))
                 .flatMap((link) => link.ids)
                 .map((each) => ({
                   link: each,

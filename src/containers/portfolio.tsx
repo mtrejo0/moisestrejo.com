@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams, useNavigate } from "react-router-dom";
 
 import internalApps from "../information/internalApps.json";
 import externalApps from "../information/externalApps.json";
@@ -26,6 +26,7 @@ const InternalApp = ({ app }: { app: any }) => {
 const ExternalApp = ({ app }: { app: any }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  
 
   const keywords = ["cloud", "youtube", "github"];
   const includesKeyword = keywords.some(keyword => app.link.includes(keyword));
@@ -90,8 +91,16 @@ const ExternalApp = ({ app }: { app: any }) => {
 const Porfolio = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const initialApp = externalApps.find(app => app.id === id) || externalApps[0];
 
-  const [activeApp, setActiveApp] = useState(externalApps[0]);
+  const [activeApp, setActiveApp] = useState(initialApp);
+
+  const setActiveAppAndRoute = (app: any) => {
+    setActiveApp(app)
+    navigate(`/portfolio/${app.id}`);
+  }
 
   return (
     <div>
@@ -106,7 +115,7 @@ const Porfolio = () => {
                   textDecoration: app == activeApp ? "underline" : "none",
                   cursor: "pointer",
                 }}
-                onMouseEnter={() => setActiveApp(app)}
+                onMouseEnter={() => setActiveAppAndRoute(app)}
               >
                 <b>
                   <p style={{ width: "fit-content", textAlign: "left" }}>

@@ -34,13 +34,16 @@ function App() {
         <BrowserRouter>
           <NavigationBar></NavigationBar>
           <Routes>
-            <Route path="/" element={<Navigate to="/home" />} />
-            <Route path="/home" element={<Home />}></Route>
+            <Route path="/" element={<Navigate to="/portfolio" />} />
+            <Route path="/about" element={<Home />}></Route>
             <Route path="/resume" element={<Resume />} />
             <Route path="/resume++" element={<ResumePlusPlus />} />
             <Route path="/portfolio" element={<Porfolio />} />
+            <Route path="/portfolio/:id" element={<Porfolio />} />
             <Route path="/p5art" element={<P5Art />} />
+            <Route path="/p5art/:id" element={<P5Art />} />
             <Route path="/art" element={<Art />} />
+            <Route path="/art/:id" element={<Art />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/press" element={<Press />} />

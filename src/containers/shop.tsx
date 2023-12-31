@@ -48,23 +48,22 @@ const Shop = () => {
   const councellingItems: any = [
     {
       label: "College Councelling",
-      price: "$100/hr",
+      price: "$50/hr",
       description:
         "Accepted to MIT, Stanford, Columbia, Carnegie Mellon, UT Austin, UT Dallas, MIT Sloan Business School, MIT Masters of Engineering",
     },
     {
       label: "STEM Subject Councelling - CS, Calc, Chem...",
-      price: "$100/hr",
+      price: "$50/hr",
       description: "MIT Graduate, AP National Scolar, 1530 SAT",
     },
     {
       label: "Mock Interview Technical/Behavioral",
-      price: "$100/hr",
+      price: "$50/hr",
       description:
         "Offers from: Instacart, Twitter, Facebook, Google, Snapchat",
     },
-    // { label: "Business Councelling", price: "$100/hr" },
-    // { label: "Financial Councelling", price: "$100/hr" },
+    { label: "Business Councelling", price: "$50/hr" },
     { label: "Dance Lessons - In Person", price: "$50/hr" },
     { label: "Boxing Lessons - In Person", price: "$50/hr" },
     { label: "Brazilian Jiu Jitsu Lessons - In Person", price: "$50/hr" },

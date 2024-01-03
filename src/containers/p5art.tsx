@@ -2,8 +2,7 @@ import p5jsProjects from "../information/p5jsProjects.json";
 
 import { Box, Grid, useMediaQuery, useTheme } from "@mui/material";
 
-import { useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import AppListDisplay from "../components/AppListDisplay";
 
 export const P5App = ({ app }: { app: any }) => {
   const link = `https://mtrejo0.github.io/p5/${app.id}/index.html`;
@@ -11,7 +10,7 @@ export const P5App = ({ app }: { app: any }) => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Box className="nice-border" height="100%" mr={isMobile ? 0 : "auto"}>
+    <Box className="nice-border" height="100%">
       <Grid container>
         <Grid xs={12}>
           {" "}
@@ -69,51 +68,12 @@ export const P5App = ({ app }: { app: any }) => {
 };
 
 const P5Art = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const initialApp = p5jsProjects.find(app => app.id === id) || p5jsProjects[0];
-
-  const [activeApp, setActiveApp] = useState(initialApp);
-
-  const setActiveAppAndRoute = (app: any) => {
-    setActiveApp(app)
-    navigate(`/p5art/${app.id}`);
-  }
-
   return (
-    <Box display={"flex"} width={"100%"} mb={"100px"}>
-      <Box width={"20%"} pl={isMobile ? "8px" : "64px"}>
-        {p5jsProjects.map((app) => {
-          return (
-            <div
-              style={{
-                textAlign: "left",
-                width: "fit-content",
-                textDecoration: app === activeApp ? "underline" : "none",
-                cursor: "pointer",
-              }}
-              onMouseEnter={() => setActiveAppAndRoute(app)}
-            >
-              <b>
-                <p style={{ width: "fit-content", textAlign: "left" }}>
-                  {app.name}
-                </p>
-              </b>
-            </div>
-          );
-        })}
-      </Box>
-      <Box
-        width={"80%"}
-        mr={isMobile ? "8px" : "64px"}
-        ml={isMobile ? "8px" : "16px"}
-      >
-        <P5App app={activeApp} />
-      </Box>
-    </Box>
+    <div>
+      <AppListDisplay apps={p5jsProjects} displayApp={(app: any) => <P5App app={app}/>} subRoute = "p5art"/>
+    </div>
   );
+ 
 };
 
 export default P5Art;

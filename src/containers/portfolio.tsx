@@ -1,27 +1,25 @@
-import { NavLink, useParams, useNavigate } from "react-router-dom";
-
-import internalApps from "../information/internalApps.json";
+// import internalApps from "../information/internalApps.json";
 import externalApps from "../information/externalApps.json";
 
 import Grid from "@mui/material/Grid";
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 
-import { useState } from "react";
+import AppListDisplay from "../components/AppListDisplay";
 
-const InternalApp = ({ app }: { app: any }) => {
-  return (
-    <div
-      className="nice-border center"
-      style={{ textDecoration: "none", color: "inherit" }}
-    >
-      <NavLink to={`/${app.id}`}>
-        <h3>{app.name}</h3>
-      </NavLink>
-      <br></br>
-      <p>{app.description}</p>
-    </div>
-  );
-};
+// const InternalApp = ({ app }: { app: any }) => {
+//   return (
+//     <div
+//       className="nice-border center"
+//       style={{ textDecoration: "none", color: "inherit" }}
+//     >
+//       <NavLink to={`/${app.id}`}>
+//         <h3>{app.name}</h3>
+//       </NavLink>
+//       <br></br>
+//       <p>{app.description}</p>
+//     </div>
+//   );
+// };
 
 const ExternalApp = ({ app }: { app: any }) => {
   const theme = useTheme();
@@ -43,6 +41,7 @@ const ExternalApp = ({ app }: { app: any }) => {
             href={app.link}
             style={{ textDecoration: "none", color: "inherit" }}
             target="_blank"
+            rel="noreferrer"
           >
             <b>moisestrejo.com/{app.id}</b>
           </a>
@@ -89,52 +88,10 @@ const ExternalApp = ({ app }: { app: any }) => {
 };
 
 const Porfolio = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const initialApp = externalApps.find(app => app.id === id) || externalApps[0];
-
-  const [activeApp, setActiveApp] = useState(initialApp);
-
-  const setActiveAppAndRoute = (app: any) => {
-    setActiveApp(app)
-    navigate(`/portfolio/${app.id}`);
-  }
 
   return (
     <div>
-      <Box display={"flex"} mb={"100px"}>
-        <Box width={"20%"} pl={isMobile ? "8px" : "64px"}>
-          {externalApps.map((app) => {
-            return (
-              <div
-                style={{
-                  textAlign: "left",
-                  width: "fit-content",
-                  textDecoration: app == activeApp ? "underline" : "none",
-                  cursor: "pointer",
-                }}
-                onMouseEnter={() => setActiveAppAndRoute(app)}
-              >
-                <b>
-                  <p style={{ width: "fit-content", textAlign: "left" }}>
-                    {app.name}
-                  </p>
-                </b>
-              </div>
-            );
-          })}
-        </Box>
-        <Box
-          width={"80%"}
-          mr={isMobile ? "8px" : "64px"}
-          ml={isMobile ? "8px" : "16px"}
-        >
-          <ExternalApp app={activeApp} />
-        </Box>
-      </Box>
-
+      <AppListDisplay apps={externalApps} displayApp={(app: any) => <ExternalApp app={app}/>} subRoute = "portfolio"/>
     </div>
   );
 };

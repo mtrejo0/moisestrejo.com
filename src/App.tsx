@@ -21,6 +21,7 @@ import ErrorPage from "./containers/errorPage";
 import P5Art from "./containers/p5art";
 import Shop from "./containers/shop";
 import Art from "./containers/art";
+import Footer from "./components/Footer";
 
 const GoTo = ({ link }: { link: string }) => {
   window.location.href = link;
@@ -82,6 +83,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </div>
+      <Footer/>
     </body>
   );
 }

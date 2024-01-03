@@ -8,8 +8,8 @@ const ArtDisplay = ({app}:{app: any}) => {
     <h3 style={{marginTop: "0px"}}>{app.name}</h3>
     <img
       style={{ maxHeight: "80vh", padding: 0, maxWidth: "80%" }}
-      src={process.env.PUBLIC_URL + `/images/art/${app.img}`}
-      alt={app.img}
+      src={process.env.PUBLIC_URL + `/images/art/${app.id}`}
+      alt={app.id}
       className="nice-border"
     ></img>
   </Stack>
@@ -18,7 +18,7 @@ const ArtDisplay = ({app}:{app: any}) => {
 const Art = () => {
   return (
     <div>
-      <AppListDisplay apps={artList} displayApp={(app: any) => <ArtDisplay app={app}/>} subRoute = "images"/>
+      <AppListDisplay apps={artList} displayApp={(app: any) => <ArtDisplay app={app}/>} subRoute = "art"/>
     </div>
   );
 };

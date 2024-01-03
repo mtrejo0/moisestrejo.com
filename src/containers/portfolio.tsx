@@ -25,7 +25,7 @@ const ExternalApp = ({ app }: { app: any }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
-  const keywords = ["cloud", "youtube", "github"];
+  const keywords = ["cloud", "youtube", "github.com"];
   const includesKeyword = keywords.some((keyword) =>
     app.link.includes(keyword)
   );

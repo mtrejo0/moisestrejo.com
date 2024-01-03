@@ -172,6 +172,11 @@ body {
   background-color: var(--main-color);
 }
 
+iframe {
+  border: 2px black solid;
+  border-radius: 8px;
+}
+
 .nav-li a {
   display: block;
   color: black;

@@ -56,7 +56,7 @@ const NavigationBar = () => {
         >
           <NavLink to="/portfolio">Portfolio</NavLink>
         </div>
-        
+
         <div
           className="nav-li"
           style={{

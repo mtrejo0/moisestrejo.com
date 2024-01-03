@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 import education from "../information/education.json";
 import leadership from "../information/leadership.json";
 import projects from "../information/projects.json";
@@ -7,8 +5,8 @@ import skills from "../information/skills.json";
 import work from "../information/work.json";
 import awards from "../information/awards.json";
 import press from "../information/press.json";
-import { Box, useMediaQuery, useTheme } from "@mui/material";
-import { P5App } from "./p5art";
+import { Box } from "@mui/material";
+import AppListDisplay from "../components/AppListDisplay";
 
 let all = [
   ...work,
@@ -23,93 +21,60 @@ let all = [
 let tabs = [
   {
     name: "Work Experience",
-    tag: "work",
+    id: "work",
   },
   {
     name: "Education",
-    tag: "education",
+    id: "education",
   },
   {
     name: "Projects",
-    tag: "projects",
+    id: "projects",
   },
   {
     name: "Leadership",
-    tag: "leadership",
+    id: "leadership",
   },
   {
     name: "Skills",
-    tag: "skills",
+    id: "skills",
   },
   {
     name: "Research",
-    tag: "research",
+    id: "research",
   },
   {
     name: "Hackathons",
-    tag: "hackathon",
+    id: "hackathon",
   },
   {
     name: "Awards & Honors",
-    tag: "award",
+    id: "award",
   },
   {
     name: "Press",
-    tag: "press",
+    id: "press",
   },
 ];
 
 const ResumePlusPlus = () => {
-  const [activeTab, setActiveTab] = useState<{ name: string; tag: string }>({
-    name: "Work Experience",
-    tag: "work",
-  });
-
-  const selectTab = (tag: string) => {
-    setActiveTab(tabs.filter((each) => each.tag === tag)[0]);
-  };
-
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-
   return (
-    <Box display={"flex"} mb={"100px"}>
-      <Box width={"20%"} pl={isMobile ? "8px" : "64px"}>
-        {tabs.map((tab) => {
-          return (
-            <div
-              className="nav-li"
-              style={{
-                textAlign: "left",
-                width: "fit-content",
-                textDecoration: tab == activeTab ? "underline" : "none",
-                cursor: "pointer",
-              }}
-              onMouseEnter={() => selectTab(tab.tag)}
-            >
-              <b>
-                <p style={{ width: "fit-content", textAlign: "left" }}>
-                  {tab.name}
-                </p>
-              </b>
-            </div>
-          );
-        })}
-      </Box>
-      <Box
-        width={"80%"}
-        mr={isMobile ? "8px" : "64px"}
-        ml={isMobile ? "8px" : "16px"}
-      >
-        {all
-          .filter((each) => each.tags.includes(activeTab.tag))
-          .map((each) => (
-            <ResumeItem item={each}></ResumeItem>
-          ))}
-      </Box>
-    </Box>
+    <AppListDisplay
+      apps={tabs}
+      displayApp={(app: any) => (
+        <div>
+          {all
+            .filter((each) => each.tags.includes(app.id))
+            .map((each) => (
+              <ResumeItem item={each}></ResumeItem>
+            ))}
+        </div>
+      )}
+      subRoute="resume++"
+    />
   );
 };
+
 const ResumeItem = ({ item, type }: { item: any; type?: any }) => {
   let title = (
     <div>

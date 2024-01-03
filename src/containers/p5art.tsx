@@ -70,10 +70,13 @@ export const P5App = ({ app }: { app: any }) => {
 const P5Art = () => {
   return (
     <div>
-      <AppListDisplay apps={p5jsProjects} displayApp={(app: any) => <P5App app={app}/>} subRoute = "p5art"/>
+      <AppListDisplay
+        apps={p5jsProjects}
+        displayApp={(app: any) => <P5App app={app} />}
+        subRoute="p5art"
+      />
     </div>
   );
- 
 };
 
 export default P5Art;

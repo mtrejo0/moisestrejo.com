@@ -30,7 +30,7 @@ const GoTo = ({ link }: { link: string }) => {
 
 function App() {
   return (
-    <body>
+    <div>
       <div>
         <BrowserRouter>
           <NavigationBar></NavigationBar>
@@ -39,6 +39,7 @@ function App() {
             <Route path="/about" element={<Home />}></Route>
             <Route path="/resume" element={<Resume />} />
             <Route path="/resume++" element={<ResumePlusPlus />} />
+            <Route path="/resume++/:id" element={<ResumePlusPlus />} />
             <Route path="/portfolio" element={<Porfolio />} />
             <Route path="/portfolio/:id" element={<Porfolio />} />
             <Route path="/p5art" element={<P5Art />} />
@@ -83,8 +84,8 @@ function App() {
           </Routes>
         </BrowserRouter>
       </div>
-      <Footer/>
-    </body>
+      <Footer />
+    </div>
   );
 }
 

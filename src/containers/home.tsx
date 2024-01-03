@@ -2,6 +2,11 @@ import { ReactNode, useEffect, useState } from "react";
 import axios from "axios";
 import { Grid } from "@mui/material";
 
+export const borderStyle = {
+  border: "2px black solid",
+  borderRadius: "8px",
+};
+
 const ImageWithText = ({
   info,
   img,
@@ -19,7 +24,7 @@ const ImageWithText = ({
       {img ? (
         <img
           className={small ? "small-image" : "image"}
-          style={{ width: "100%", border: "2px black solid" }}
+          style={{ width: "100%", ...borderStyle }}
           src={process.env.PUBLIC_URL + `/images/${img}`}
           alt={img}
         ></img>

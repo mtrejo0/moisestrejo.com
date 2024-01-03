@@ -45,7 +45,7 @@ const Contact = () => {
           <Stack spacing={2} mb={8} alignItems={"center"}>
             <ListItems
               items={links
-                .filter( each => !each.link.includes('calendly'))
+                .filter((each) => !each.link.includes("calendly"))
                 .flatMap((link) => link.ids)
                 .map((each) => ({
                   link: each,

@@ -24,14 +24,18 @@ import AppListDisplay from "../components/AppListDisplay";
 const ExternalApp = ({ app }: { app: any }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  
 
   const keywords = ["cloud", "youtube", "github"];
-  const includesKeyword = keywords.some(keyword => app.link.includes(keyword));
-
+  const includesKeyword = keywords.some((keyword) =>
+    app.link.includes(keyword)
+  );
 
   return (
-    <Box className="nice-border" height={"100%"} sx={{ backgroundColor: 'white' }}>
+    <Box
+      className="nice-border"
+      height={"100%"}
+      sx={{ backgroundColor: "white" }}
+    >
       <Grid container>
         <Grid xs={12}>
           <h1>{app.name}</h1>
@@ -69,29 +73,28 @@ const ExternalApp = ({ app }: { app: any }) => {
         </Grid>
 
         <Grid xs={12}>
-          {includesKeyword ? 
-          null
-          : 
-          <iframe
+          {includesKeyword ? null : (
+            <iframe
               src={app.link}
               title={app.id}
               width="100%"
               height="1000px"
             />
-          }
+          )}
         </Grid>
-
-        
       </Grid>
     </Box>
   );
 };
 
 const Porfolio = () => {
-
   return (
     <div>
-      <AppListDisplay apps={externalApps} displayApp={(app: any) => <ExternalApp app={app}/>} subRoute = "portfolio"/>
+      <AppListDisplay
+        apps={externalApps}
+        displayApp={(app: any) => <ExternalApp app={app} />}
+        subRoute="portfolio"
+      />
     </div>
   );
 };

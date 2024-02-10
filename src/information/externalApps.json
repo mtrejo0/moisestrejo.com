@@ -9,8 +9,8 @@
   {
     "name": "Goal Tracker",
     "description": "A better way to track your goals!",
-    "resources": "React.JS, Firebase, Material UI, Typescript",
-    "link": "https://main.d2x32okpn5yutu.amplifyapp.com/",
+    "resources": "React.JS, Firebase, Tailwind",
+    "link": "https://main--myuberman.netlify.app/",
     "id": "goals"
   },
   {

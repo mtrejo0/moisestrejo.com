@@ -23,6 +23,13 @@ import Shop from "./containers/shop";
 import Art from "./containers/art";
 import Footer from "./components/Footer";
 
+import LogRocket from 'logrocket';
+import setupLogRocketReact from 'logrocket-react';
+
+LogRocket.init('5ynwnu/moisestrejocom');
+// after calling LogRocket.init()
+setupLogRocketReact(LogRocket);
+
 const GoTo = ({ link }: { link: string }) => {
   window.location.href = link;
   return <>Loading ...</>;

@@ -1,6 +1,7 @@
 import { ReactNode, useEffect, useState } from "react";
 import axios from "axios";
 import { Grid } from "@mui/material";
+import { MailChimpForm } from "../components/MailChimpForm";
 
 export const borderStyle = {
   border: "2px black solid",
@@ -88,7 +89,13 @@ const Home = () => {
           to visit this page!
         </p>
       </div>
-      <div className={"paragraph"}>
+
+      <div>
+        <MailChimpForm/>
+      </div>
+
+
+      {/* <div className={"paragraph"}>
         <p>
           Currently im a Software Engineer at Instacart on the Catalog
           Enrichment Team! I post DJ mixes on my YouTube in my free time. I like
@@ -104,7 +111,9 @@ const Home = () => {
       <div className={"paragraph"}>
         <p>I love all of the following:</p>
         <p>{interests.join(", ")}</p>
-      </div>
+      </div> */}
+
+      
 
       <h1 className="title" style={{ marginBottom: "-16px" }}>
         About Me

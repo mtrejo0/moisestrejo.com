@@ -47,13 +47,13 @@ const MenuItem = ({
 const Shop = () => {
   const councellingItems: any = [
     {
-      label: "College Councelling",
+      label: "College Counseling",
       price: "$50/hr",
       description:
         "Accepted to MIT, Stanford, Columbia, Carnegie Mellon, UT Austin, UT Dallas, MIT Sloan Business School, MIT Masters of Engineering",
     },
     {
-      label: "STEM Subject Councelling - CS, Calc, Chem...",
+      label: "STEM Subject Counseling - CS, Calc, Chem...",
       price: "$50/hr",
       description: "MIT Graduate, AP National Scolar, 1530 SAT",
     },
@@ -63,7 +63,7 @@ const Shop = () => {
       description:
         "Offers from: Instacart, Twitter, Facebook, Google, Snapchat",
     },
-    { label: "Business Councelling", price: "$50/hr" },
+    { label: "Business Counseling", price: "$50/hr" },
     { label: "Dance Lessons - In Person", price: "$50/hr" },
     { label: "Boxing Lessons - In Person", price: "$50/hr" },
     { label: "Brazilian Jiu Jitsu Lessons - In Person", price: "$50/hr" },

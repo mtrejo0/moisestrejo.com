@@ -23,10 +23,10 @@ import Shop from "./containers/shop";
 import Art from "./containers/art";
 import Footer from "./components/Footer";
 
-import LogRocket from 'logrocket';
-import setupLogRocketReact from 'logrocket-react';
+import LogRocket from "logrocket";
+import setupLogRocketReact from "logrocket-react";
 
-LogRocket.init('5ynwnu/moisestrejocom');
+LogRocket.init("5ynwnu/moisestrejocom");
 // after calling LogRocket.init()
 setupLogRocketReact(LogRocket);
 
@@ -42,7 +42,7 @@ function App() {
         <BrowserRouter>
           <NavigationBar></NavigationBar>
           <Routes>
-            <Route path="/" element={<Navigate to="/portfolio" />} />
+            <Route path="/" element={<Navigate to="/about" />} />
             <Route path="/about" element={<Home />}></Route>
             <Route path="/resume" element={<Resume />} />
             <Route path="/resume++" element={<ResumePlusPlus />} />

@@ -90,12 +90,12 @@ const Home = () => {
         </p>
       </div>
 
-      <div>
+      {/* <div>
         <MailChimpForm/>
-      </div>
+      </div> */}
 
 
-      {/* <div className={"paragraph"}>
+      <div className={"paragraph"}>
         <p>
           Currently im a Software Engineer at Instacart on the Catalog
           Enrichment Team! I post DJ mixes on my YouTube in my free time. I like
@@ -111,7 +111,7 @@ const Home = () => {
       <div className={"paragraph"}>
         <p>I love all of the following:</p>
         <p>{interests.join(", ")}</p>
-      </div> */}
+      </div>
 
       
 

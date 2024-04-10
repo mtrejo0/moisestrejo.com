@@ -288,5 +288,17 @@
     "description": ["Inspired by the Museum of Modern Art San Fransisco."],
     "id": "simpleArt",
     "href": "https://giphy.com/embed/5nnxdroX2lm4iLvCnc"
+  },
+  {
+    "name": "Sin Words",
+    "description": ["Just a cool way to show words moving in a sin wave"],
+    "id": "sin_words",
+    "href": "https://giphy.com/embed/pB0NbkebsIAXYQcjBM"
+  },
+  {
+    "name": "Pointer",
+    "description": ["Cool way to emphasize the cursor"],
+    "id": "pointer",
+    "href": ""
   }
 ]

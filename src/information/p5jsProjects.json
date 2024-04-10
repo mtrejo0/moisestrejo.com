@@ -300,5 +300,11 @@
     "description": ["Cool way to emphasize the cursor"],
     "id": "pointer",
     "href": ""
+  },
+  {
+    "name": "Grafitti",
+    "description": ["Brick graffiti maker!"],
+    "id": "graffiti",
+    "href": ""
   }
 ]

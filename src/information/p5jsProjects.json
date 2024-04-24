@@ -302,9 +302,15 @@
     "href": ""
   },
   {
-    "name": "Grafitti",
-    "description": ["Brick graffiti maker!"],
+    "name": "Graffitti",
+    "description": ["Brick graffitti maker!"],
     "id": "graffiti",
+    "href": ""
+  },
+  {
+    "name": "Fireworks",
+    "description": ["Toggle your firework show!"],
+    "id": "fireworks",
     "href": ""
   }
 ]

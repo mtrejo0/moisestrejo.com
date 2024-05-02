@@ -312,5 +312,11 @@
     "description": ["Toggle your firework show!"],
     "id": "fireworks",
     "href": ""
+  },
+  {
+    "name": "Turtles all the way down!",
+    "description": ["Do we have free will?"],
+    "id": "turtles",
+    "href": ""
   }
 ]

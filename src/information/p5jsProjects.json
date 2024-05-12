@@ -183,7 +183,7 @@
   {
     "name": "Angle PID",
     "description": [
-      "Three turrets use PID to lock onto your cursor to be able to shoot at "
+      "Test your agility! Dodge as three turrets use advanced PID control to target and hit your cursor. Can you outmaneuver them and survive?"
     ],
     "id": "anglePID",
     "href": "https://giphy.com/embed/1cuKntmipdD0FKFLze"

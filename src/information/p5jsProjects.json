@@ -299,30 +299,36 @@
     "name": "Pointer",
     "description": ["Cool way to emphasize the cursor"],
     "id": "pointer",
-    "href": ""
+    "href": "https://giphy.com/embed/wl9eZLRtmgE6lNkHlZ"
   },
   {
     "name": "Graffitti",
     "description": ["Brick graffitti maker!"],
     "id": "graffiti",
-    "href": ""
+    "href": "https://giphy.com/embed/3FNUFncpOTFSCPgaHt"
   },
   {
     "name": "Fireworks",
     "description": ["Toggle your firework show!"],
     "id": "fireworks",
-    "href": ""
+    "href": "https://giphy.com/embed/mcvjed6xNz6xusR95a"
   },
   {
     "name": "Turtles all the way down!",
     "description": ["Do we have free will?"],
     "id": "turtles",
-    "href": ""
+    "href": "https://giphy.com/embed/SjgWeyFOx0uSIQYpv6"
   },
   {
     "name": "Get bigger after every collision",
     "description": ["I made the tiktok video where the ball gets bigger after every collision"],
     "id": "bumpBigger",
-    "href": ""
+    "href": "https://giphy.com/embed/rhYDjtLYQSkUUKID3E"
+  },
+  {
+    "name": "3D Cubes",
+    "description": ["test project to learn webgl in p5"],
+    "id": "3dcubes",
+    "href": "https://giphy.com/embed/5Mmbqe39nduWnlt7HA"
   }
 ]

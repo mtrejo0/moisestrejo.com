@@ -330,5 +330,11 @@
     "description": ["test project to learn webgl in p5"],
     "id": "3dcubes",
     "href": "https://giphy.com/embed/5Mmbqe39nduWnlt7HA"
+  },
+  {
+    "name": "Towers of Hanoi!",
+    "description": ["Recursion at its finest"],
+    "id": "hanoi",
+    "href": "https://giphy.com/embed/U6MGXaoobKQ0iOr3dG"
   }
 ]

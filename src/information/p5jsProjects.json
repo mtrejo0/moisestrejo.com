@@ -336,5 +336,11 @@
     "description": ["Recursion at its finest"],
     "id": "hanoi",
     "href": "https://giphy.com/embed/U6MGXaoobKQ0iOr3dG"
+  },
+  {
+    "name": "Star Wars Hyper Drive!",
+    "description": ["What it feels like to be in the millenium falcon and hit hyperdrive"],
+    "id": "starwars",
+    "href": "https://giphy.com/embed/OsG3kWnZn7DjnlUT9Y"
   }
 ]

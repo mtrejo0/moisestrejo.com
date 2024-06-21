@@ -70,7 +70,7 @@ function App() {
                   path={`/${webapp.id}`}
                   element={
                     <GoTo
-                      link={`https://mtrejo0.github.io/p5/${webapp.id}/index.html`}
+                      link={`https://p5moises-27cba0c96786.herokuapp.com/${webapp.id}`}
                     />
                   }
                 />

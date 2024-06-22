@@ -42,7 +42,7 @@ function App() {
         <BrowserRouter>
           <NavigationBar></NavigationBar>
           <Routes>
-            <Route path="/" element={<Navigate to="/portolio" />} />
+            <Route path="/" element={<Navigate to="/portfolio" />} />
             <Route path="/about" element={<Home />}></Route>
             <Route path="/resume" element={<Resume />} />
             <Route path="/resume++" element={<ResumePlusPlus />} />

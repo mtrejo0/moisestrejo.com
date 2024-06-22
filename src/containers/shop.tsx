@@ -64,18 +64,18 @@ const Shop = () => {
         "Offers from: Instacart, Twitter, Facebook, Google, Snapchat",
     },
     { label: "Business Counseling", price: "$50/hr" },
-    { label: "Dance Lessons - In Person", price: "$50/hr" },
-    { label: "Boxing Lessons - In Person", price: "$50/hr" },
-    { label: "Brazilian Jiu Jitsu Lessons - In Person", price: "$50/hr" },
+    // { label: "Dance Lessons - In Person", price: "$50/hr" },
+    // { label: "Boxing Lessons - In Person", price: "$50/hr" },
+    // { label: "Brazilian Jiu Jitsu Lessons - In Person", price: "$50/hr" },
     { label: "Yoga and Meditation Classes", price: "$50/hr" },
-    { label: "Music Lessons", price: "$50/hr" },
+    // { label: "Music Lessons", price: "$50/hr" },
   ];
 
   const creatingItems: any = [
     { label: "Single Page Website", price: "$100" },
     { label: "p5.js Art Piece", price: "$100" },
-    { label: "Custom Candle", price: "$25/pc" },
-    { label: "Instrumental/Beat", price: "$50" },
+    // { label: "Custom Candle", price: "$25/pc" },
+    // { label: "Instrumental/Beat", price: "$50" },
   ];
 
   return (

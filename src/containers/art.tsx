@@ -23,6 +23,7 @@ const Art = () => {
         apps={artList}
         displayApp={(app: any) => <ArtDisplay app={app} />}
         subRoute="art"
+        skipRoute
       />
     </div>
   );

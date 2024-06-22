@@ -71,6 +71,7 @@ const ResumePlusPlus = () => {
         </div>
       )}
       subRoute="resume++"
+      skipRoute
     />
   );
 };

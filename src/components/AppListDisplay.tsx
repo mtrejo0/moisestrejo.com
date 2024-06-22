@@ -16,22 +16,26 @@ const AppListDisplay = ({
   apps,
   displayApp,
   subRoute,
+  skipRoute,
 }: {
   apps: any;
   displayApp: (app: any) => React.ReactNode;
   subRoute: string;
+  skipRoute?: boolean;
 }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const { id } = useParams();
   const navigate = useNavigate();
-  const initialApp = apps.find((app: any) => app.id === id) || apps[0];
+  const initialApp =
+    apps.find((app: any) => app.id === id) ||
+    apps[Math.floor(Math.random() * apps.length)];
 
   const [activeApp, setActiveApp] = useState(initialApp);
 
   const setActiveAppAndRoute = (app: any) => {
     setActiveApp(app);
-    navigate(`/${subRoute}/${app.id}`);
+    if (!skipRoute) navigate(`/${subRoute}/${app.id}`);
   };
 
   const setActiveAppDropdown = (appName: string) => {

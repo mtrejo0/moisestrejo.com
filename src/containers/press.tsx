@@ -6,12 +6,20 @@ const PressItem = ({ item }: { item: any }) => {
   return (
     <div className="nice-border blog-item">
       <p>
-        <strong>{item.name}</strong>
+        <strong>
+          {item.name}, {item.year}
+        </strong>
       </p>
 
-      <a href={item.link} target="_blank" rel="noopener noreferrer">
-        {item.link}
-      </a>
+      <ul>
+        {item.links.map((link: any, index: number) => (
+          <li key={index}>
+            <a href={link.link} target="_blank" rel="noopener noreferrer">
+              {link.name}
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

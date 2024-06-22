@@ -15,6 +15,8 @@ const Resume = () => {
         <p>Download Here</p>
       </a>
       <iframe title={"resume"} className={"pdf"} src={preview} />
+
+      <ResumePlusPlus />
     </div>
   );
 };

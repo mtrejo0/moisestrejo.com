@@ -1,6 +1,5 @@
 export const MailChimpForm = () => {
-
-    const htmlFile = `
+  const htmlFile = `
     
     <div id="mc_embed_shell">
       <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
@@ -34,10 +33,11 @@ export const MailChimpForm = () => {
 </div>
 
 
-    `
-    return (
-        <div className="content" dangerouslySetInnerHTML={{__html: htmlFile}}></div>
-    );
-
-
-}
+    `;
+  return (
+    <div
+      className="content"
+      dangerouslySetInnerHTML={{ __html: htmlFile }}
+    ></div>
+  );
+};

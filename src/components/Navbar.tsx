@@ -70,15 +70,6 @@ const NavigationBar = () => {
           className="nav-li"
           style={{
             textDecoration:
-              location.pathname === "/resume++" ? "underline" : "none",
-          }}
-        >
-          <NavLink to="/resume++">Resume++</NavLink>
-        </div>
-        <div
-          className="nav-li"
-          style={{
-            textDecoration:
               location.pathname === "/p5art" ? "underline" : "none",
           }}
         >
@@ -87,23 +78,12 @@ const NavigationBar = () => {
         <div
           className="nav-li"
           style={{
-            textDecoration: location.pathname === "/art" ? "underline" : "none",
-          }}
-        >
-          <NavLink to="/art">Art</NavLink>
-        </div>
-        <div
-          className="nav-li"
-          style={{
             textDecoration:
               location.pathname === "/blog" ? "underline" : "none",
           }}
         >
-          <NavLink to="/blog">Blog</NavLink>
+          <NavLink to="/blog">Medium</NavLink>
         </div>
-        {/* <div className="nav-li">
-            <NavLink to="/press">Press</NavLink>
-          </div> */}
         <div
           className="nav-li"
           style={{
@@ -112,15 +92,6 @@ const NavigationBar = () => {
           }}
         >
           <NavLink to="/shop">Shop</NavLink>
-        </div>
-        <div
-          className="nav-li"
-          style={{
-            textDecoration:
-              location.pathname === "/contact" ? "underline" : "none",
-          }}
-        >
-          <NavLink to="/contact">Contact</NavLink>
         </div>
         <div
           className="nav-li"

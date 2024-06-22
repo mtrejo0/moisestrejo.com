@@ -2,6 +2,9 @@ import { ReactNode, useEffect, useState } from "react";
 import axios from "axios";
 import { Grid } from "@mui/material";
 import { MailChimpForm } from "../components/MailChimpForm";
+import Contact from "./contact";
+import Art from "./art";
+import Press from "./press";
 
 export const borderStyle = {
   border: "2px black solid",
@@ -82,91 +85,95 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="center">
-      <div className={"paragraph"}>
-        <p>
-          You are the {loading ? "Loading..." : users.toLocaleString()}th person
-          to visit this page!
-        </p>
-      </div>
+    <div>
+      <div className="center">
+        <div className={"paragraph"}>
+          <p>
+            You are the {loading ? "Loading..." : users.toLocaleString()}th
+            person to visit this page!
+          </p>
+        </div>
 
-      {/* <div>
+        {/* <div>
         <MailChimpForm/>
       </div> */}
 
+        <div className={"paragraph"}>
+          <p>
+            Currently im a Software Engineer at Instacart on the Catalog
+            Enrichment Team! I post DJ mixes on my YouTube in my free time. I
+            like cooking Mexican food and working out. I live in Dallas, Texas
+            where I am from and I love it very much. I love making generative
+            art using P5.js. I make web apps that are fun and useful. I am
+            recent graduate of MIT 22 where I studied Computer Science. I am
+            passionate about using technology to give everyone the same
+            opportunity to live happy and succeed.
+          </p>
+        </div>
 
-      <div className={"paragraph"}>
-        <p>
-          Currently im a Software Engineer at Instacart on the Catalog
-          Enrichment Team! I post DJ mixes on my YouTube in my free time. I like
-          cooking Mexican food and working out. I live in Dallas, Texas where I
-          am from and I love it very much. I love making generative art using
-          P5.js. I make web apps that are fun and useful. I am recent graduate
-          of MIT 22 where I studied Computer Science. I am passionate about
-          using technology to give everyone the same opportunity to live happy
-          and succeed.
-        </p>
+        <div className={"paragraph"}>
+          <p>I love all of the following:</p>
+          <p>{interests.join(", ")}</p>
+        </div>
+
+        <h1 className="title" style={{ marginBottom: "-16px" }}>
+          About Me
+        </h1>
+
+        <Grid
+          container
+          pl={{ xs: "32px", md: "10%" }}
+          pr={{ xs: "32px", md: "10%" }}
+        >
+          <Grid item xs={12} md={4}>
+            <ImageWithText
+              info={"The handsome devil in question: Moises Trejo"}
+              img={`profile_picture.jpg`}
+            />
+          </Grid>
+
+          <Grid item xs={12} md={4}>
+            <ImageWithText
+              info={"Born and raised in Dallas, TX  🤠"}
+              img="dallas.jpg"
+            />
+          </Grid>
+
+          <Grid item xs={12} md={4}>
+            {" "}
+            <ImageWithText
+              info={"MIT Class of 2022, BS in Computer Science"}
+              img="mit_dome.jpg"
+            />
+          </Grid>
+          <Grid item xs={12} md={4}>
+            {" "}
+            <ImageWithText
+              info={"Roots from Tlaltenango, Zacatecas 🇲🇽"}
+              img="mexico.jpg"
+            />{" "}
+          </Grid>
+          <Grid item xs={12} md={4}>
+            {" "}
+            <ImageWithText
+              info={<p>FGLI - First generation low income student</p>}
+              img="fam.jpg"
+            />
+          </Grid>
+          <Grid item xs={12} md={4}>
+            {" "}
+            <ImageWithText
+              info={<p>I love the mavericks</p>}
+              img="moi_mavs.png"
+            />
+          </Grid>
+        </Grid>
       </div>
-
-      <div className={"paragraph"}>
-        <p>I love all of the following:</p>
-        <p>{interests.join(", ")}</p>
-      </div>
-
-      
-
-      <h1 className="title" style={{ marginBottom: "-16px" }}>
-        About Me
+      <Contact />
+      <h1 className="title" style={{ marginBottom: "64px" }}>
+        My Art
       </h1>
-
-      <Grid
-        container
-        pl={{ xs: "32px", md: "10%" }}
-        pr={{ xs: "32px", md: "10%" }}
-      >
-        <Grid item xs={12} md={4}>
-          <ImageWithText
-            info={"The handsome devil in question: Moises Trejo"}
-            img={`profile_picture.jpg`}
-          />
-        </Grid>
-
-        <Grid item xs={12} md={4}>
-          <ImageWithText
-            info={"Born and raised in Dallas, TX  🤠"}
-            img="dallas.jpg"
-          />
-        </Grid>
-
-        <Grid item xs={12} md={4}>
-          {" "}
-          <ImageWithText
-            info={"MIT Class of 2022, BS in Computer Science"}
-            img="mit_dome.jpg"
-          />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          {" "}
-          <ImageWithText
-            info={"Roots from Tlaltenango, Zacatecas 🇲🇽"}
-            img="mexico.jpg"
-          />{" "}
-        </Grid>
-        <Grid item xs={12} md={4}>
-          {" "}
-          <ImageWithText
-            info={<p>FGLI - First generation low income student</p>}
-            img="fam.jpg"
-          />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          {" "}
-          <ImageWithText
-            info={<p>I love the mavericks</p>}
-            img="moi_mavs.png"
-          />
-        </Grid>
-      </Grid>
+      <Art />
     </div>
   );
 };

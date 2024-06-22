@@ -73,7 +73,7 @@
   },
   {
     "name": "Sheps :)",
-    "description": ["What it is like to kiss with my current girlfriend <3"],
+    "description": ["What it is like to kiss with my girlfriend"],
     "id": "sheps",
     "href": "https://giphy.com/embed/nKqTRiYPU25FeOgUkF"
   },
@@ -183,7 +183,7 @@
   {
     "name": "Angle PID",
     "description": [
-      "Three turrets use PID to lock onto your cursor to be able to shoot at "
+      "Test your agility! Dodge as three turrets use advanced PID control to target and hit your cursor. Can you outmaneuver them and survive?"
     ],
     "id": "anglePID",
     "href": "https://giphy.com/embed/1cuKntmipdD0FKFLze"
@@ -237,7 +237,7 @@
       "A simulation of infections where one can change the infection, recovery, and creation rates"
     ],
     "id": "simulations2D",
-    "href": "https://giphy.com/embed/pWPszGOhnwVh8Mg76m"
+    "href": "http://www.giphy.com/gifs/hCgFIbHQ1P9QYFN64Y"
   },
   {
     "name": "Rocket Orbit",
@@ -299,12 +299,54 @@
     "name": "Pointer",
     "description": ["Cool way to emphasize the cursor"],
     "id": "pointer",
-    "href": ""
+    "href": "https://giphy.com/embed/wl9eZLRtmgE6lNkHlZ"
   },
   {
-    "name": "Grafitti",
-    "description": ["Brick graffiti maker!"],
+    "name": "Graffitti",
+    "description": ["Brick graffitti maker!"],
     "id": "graffiti",
-    "href": ""
+    "href": "https://giphy.com/embed/3FNUFncpOTFSCPgaHt"
+  },
+  {
+    "name": "Fireworks",
+    "description": ["Toggle your firework show!"],
+    "id": "fireworks",
+    "href": "https://giphy.com/embed/mcvjed6xNz6xusR95a"
+  },
+  {
+    "name": "Turtles all the way down!",
+    "description": ["Do we have free will?"],
+    "id": "turtles",
+    "href": "https://giphy.com/embed/SjgWeyFOx0uSIQYpv6"
+  },
+  {
+    "name": "Get bigger after every collision",
+    "description": ["I made the tiktok video where the ball gets bigger after every collision"],
+    "id": "bumpBigger",
+    "href": "https://giphy.com/embed/rhYDjtLYQSkUUKID3E"
+  },
+  {
+    "name": "3D Cubes",
+    "description": ["test project to learn webgl in p5"],
+    "id": "3dcubes",
+    "href": "https://giphy.com/embed/5Mmbqe39nduWnlt7HA"
+  },
+  {
+    "name": "Towers of Hanoi!",
+    "description": ["Recursion at its finest"],
+    "id": "hanoi",
+    "href": "https://giphy.com/embed/U6MGXaoobKQ0iOr3dG"
+  },
+  {
+    "name": "Star Wars Hyper Drive!",
+    "description": ["What it feels like to be in the millenium falcon and hit hyperdrive"],
+    "id": "starwars",
+    "href": "https://giphy.com/embed/OsG3kWnZn7DjnlUT9Y"
+  },
+  {
+    "name": "Universal Entity",
+    "description": ["Rozzi Roomian inspired art. What it feels to be in the universe. My interpretation: What it feels like to be god."],
+    "id": "universal",
+    "href": "https://giphy.com/embed/Fggo9nTETtZ407hoA8"
   }
 ]

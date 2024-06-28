@@ -69,7 +69,7 @@ export const P5App = ({ app }: { app: any }) => {
 
 const P5Art = () => {
   return (
-    <div>
+    <div style={{marginTop: '-32px'}}>
       <AppListDisplay
         apps={p5jsProjects}
         displayApp={(app: any) => <P5App app={app} />}

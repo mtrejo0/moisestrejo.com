@@ -168,8 +168,23 @@ body {
 
 :root {
   --main-color: #b9fb9c;
-  /* --main-color: #fbd0c0; */
-  background-color: var(--main-color);
+  --secondary-color: #a0e6ff;
+  background: linear-gradient(
+    0deg,
+    var(--main-color) 0%,
+    var(--secondary-color) 100%
+  );
+  background-size: 100% 100%;
+  animation: wavyBackground 10s ease infinite;
+}
+
+@keyframes wavyBackground {
+  0%, 100% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
 }
 
 iframe {

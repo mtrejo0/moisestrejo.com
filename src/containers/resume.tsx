@@ -7,6 +7,8 @@ const Resume = () => {
   let view = `https://drive.google.com/file/d/${id}/view`;
   return (
     <div className="center">
+      <iframe title={"resume"} className={"pdf"} src={preview} />
+
       <a
         href={view}
         target="_blank"
@@ -14,7 +16,7 @@ const Resume = () => {
       >
         <p>Download Here</p>
       </a>
-      <iframe title={"resume"} className={"pdf"} src={preview} />
+
 
       <ResumePlusPlus />
     </div>

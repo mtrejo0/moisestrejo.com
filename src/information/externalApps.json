@@ -146,5 +146,12 @@
     "resources": "React.JS",
     "link": "https://mtrejo0.github.io/2gstudio/",
     "id": "2gstudio"
+  },
+  {
+    "name": "Build your bowl!",
+    "description": "I want to make ordering at chipotle much faster! Here is a simple to use app to show a preparer what you want visually with 0 words needed",
+    "resources": "Next JS",
+    "link": "https://bowl-builder-max.vercel.app/",
+    "id": "bowl-builder"
   }
 ]

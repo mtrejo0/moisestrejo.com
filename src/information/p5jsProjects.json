@@ -348,5 +348,11 @@
     "description": ["Rozzi Roomian inspired art. What it feels to be in the universe. My interpretation: What it feels like to be god."],
     "id": "universal",
     "href": "https://giphy.com/embed/Fggo9nTETtZ407hoA8"
+  },
+  {
+    "name": "PI estimation",
+    "description": ["Generate random points and check if they lie within a circle, use this to approximate PI"],
+    "id": "pi_graph",
+    "href": "https://giphy.com/embed/SR6VqebMz6zuIRBE8o"
   }
 ]

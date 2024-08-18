@@ -153,5 +153,12 @@
     "resources": "Next JS",
     "link": "https://bowl-builder-max.vercel.app/",
     "id": "bowl-builder"
+  },
+  {
+    "name": "TODOs!",
+    "description": "I wanted to learn how to make a next.js app with mong db and clerk auth. Here it is!",
+    "resources": "Next JS, Mongo DB, Clerk Auth, Tailwind",
+    "link": "https://mongo-todo-next.vercel.app/",
+    "id": "mongo-todo"
   }
 ]

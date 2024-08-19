@@ -354,5 +354,11 @@
     "description": ["Generate random points and check if they lie within a circle, use this to approximate PI"],
     "id": "pi_graph",
     "href": "https://giphy.com/embed/SR6VqebMz6zuIRBE8o"
+  },
+  {
+    "name": "Mandelbrot Set Explorer",
+    "description": ["See this simple and complex mathematical wonder!"],
+    "id": "mandelbrot",
+    "href": "https://giphy.com/embed/SRl8VF0XjpgRR7U2FZ"
   }
 ]

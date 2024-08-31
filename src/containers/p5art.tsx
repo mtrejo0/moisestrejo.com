@@ -5,7 +5,7 @@ import { Box, Grid, useMediaQuery, useTheme } from "@mui/material";
 import AppListDisplay from "../components/AppListDisplay";
 
 export const P5App = ({ app }: { app: any }) => {
-  const link = `https://mtrejo0.github.io/p5/${app.id}/index.html`;
+  const link = `https://moisestrejo.com/${app.id}`;
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 

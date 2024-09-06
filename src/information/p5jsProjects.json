@@ -384,5 +384,11 @@
     "description": ["Upload an image and see what the image classifiers guess for what it is."],
     "id": "image_classifier",
     "href": "https://giphy.com/embed/NtSHnY9nXlj1BjCbYt"
+  },
+  {
+    "name": "Circle Bounce Music",
+    "description": ["Ball bounces and every bounce it plays twinkle twinkle little star aye"],
+    "id": "music_bounce",
+    "href": "https://giphy.com/embed/aYDnUgweHO9SPL0U5B"
   }
 ]

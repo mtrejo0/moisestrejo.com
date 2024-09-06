@@ -360,5 +360,17 @@
     "description": ["See this simple and complex mathematical wonder!"],
     "id": "mandelbrot",
     "href": "https://giphy.com/embed/SRl8VF0XjpgRR7U2FZ"
+  },
+  {
+    "name": "Three Body Problem",
+    "description": ["An un solvable problem. How do you create a stable orbit with 3 objects of roughly the same size? Turns out you cant."],
+    "id": "three_body",
+    "href": "https://giphy.com/embed/WrALL9lo7XJ9IoBHZN"
+  },
+  {
+    "name": "Linear Regression",
+    "description": ["Use least squares to find a line that can make a linear regression of some points I generate!"],
+    "id": "linear_regression",
+    "href": "https://giphy.com/embed/8WlTq81B1W43pXWgOl"
   }
 ]

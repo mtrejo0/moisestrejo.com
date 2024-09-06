@@ -390,5 +390,11 @@
     "description": ["Ball bounces and every bounce it plays twinkle twinkle little star aye"],
     "id": "music_bounce",
     "href": "https://giphy.com/embed/aYDnUgweHO9SPL0U5B"
+  },
+  {
+    "name": "Theramin",
+    "description": ["Use your hand position to change the freqency of the instrument!"],
+    "id": "theramin",
+    "href": "https://giphy.com/embed/NDgqCApijP3ghU4vql"
   }
 ]

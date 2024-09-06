@@ -372,5 +372,17 @@
     "description": ["Use least squares to find a line that can make a linear regression of some points I generate!"],
     "id": "linear_regression",
     "href": "https://giphy.com/embed/8WlTq81B1W43pXWgOl"
+  },
+  {
+    "name": "Draw Classifier",
+    "description": ["Draw an image and press C to see what the image classifiers guess for what it is. Disclaimer this is pretty bad."],
+    "id": "draw_classifier",
+    "href": "https://giphy.com/embed/vqOcsoENrWDMVzWa0y"
+  },
+  {
+    "name": "Image Classifier",
+    "description": ["Upload an image and see what the image classifiers guess for what it is."],
+    "id": "image_regression",
+    "href": "https://giphy.com/embed/NtSHnY9nXlj1BjCbYt"
   }
 ]

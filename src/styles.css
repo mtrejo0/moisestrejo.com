@@ -17,6 +17,7 @@ body {
   border: 2px black solid;
   margin: 16px;
   border-radius: 8px;
+  background-color: white;
 }
 
 @media (max-width: 1100px) {
@@ -167,13 +168,6 @@ body {
 /* NAVBAR */
 
 :root {
-  --main-color: #b9fb9c;
-  --secondary-color: #a0e6ff;
-  background: linear-gradient(
-    0deg,
-    var(--main-color) 0%,
-    var(--secondary-color) 100%
-  );
   background-size: 100% 100%;
   animation: wavyBackground 10s ease infinite;
 }
@@ -268,7 +262,7 @@ iframe {
   .paragraph {
     width: 80%;
     margin: auto;
-    text-align: center;
+    text-align: left;
   }
 }
 

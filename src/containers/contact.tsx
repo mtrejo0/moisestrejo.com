@@ -35,7 +35,7 @@ const Contact = () => {
     <Stack sx={{ alignItems: "center" }}>
       <Grid container>
         <Grid xs={isMobile ? 12 : 6}>
-          <h2 style={{ textAlign: "center" }}>Lets talk!</h2>
+          <h2 style={{ textAlign: "center" }}>Connect</h2>
           <Stack spacing={2} mb={8} alignItems={"center"}>
             <ListItems items={contact} />
           </Stack>

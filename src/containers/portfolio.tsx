@@ -89,14 +89,11 @@ const ExternalApp = ({ app }: { app: any }) => {
 
 const Porfolio = () => {
   return (
-    <div>
-      <p style={{textAlign: "center", marginTop: '32px'}}>I make lots of apps. What should I make next? <a href="https://forms.gle/AGTP7TgTpfxtXeK48" target="_blank" rel="noopener noreferrer">Let me know here.</a></p>
       <AppListDisplay
         apps={externalApps}
         displayApp={(app: any) => <ExternalApp app={app} />}
         subRoute="portfolio"
       />
-    </div>
   );
 };
 

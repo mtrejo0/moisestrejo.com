@@ -10,7 +10,7 @@ export const P5App = ({ app }: { app: any }) => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Box className="nice-border" height="100%">
+    <Box className="nice-border" height="100%" style={{ background: "white" }}>
       <Grid container>
         <Grid xs={12}>
           {" "}
@@ -69,7 +69,7 @@ export const P5App = ({ app }: { app: any }) => {
 
 const P5Art = () => {
   return (
-    <div style={{marginTop: '-32px'}}>
+    <div>
       <AppListDisplay
         apps={p5jsProjects}
         displayApp={(app: any) => <P5App app={app} />}

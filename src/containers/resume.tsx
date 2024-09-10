@@ -1,12 +1,18 @@
 import React from "react";
 import ResumePlusPlus from "./resume++";
+import { useMediaQuery, useTheme } from "@mui/material";
 
 const Resume = () => {
   let id = "17BKQrfpLi5IcTNLteQFf-x9ryXTra822";
   let preview = `https://drive.google.com/file/d/${id}/preview`;
   let view = `https://drive.google.com/file/d/${id}/view`;
+
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
-    <div className="center">
+    <div className="nice-border" style={{ maxWidth: isMobile ? '80%' : '50%', margin: '0 auto'}}>
+      <div className="center">
       <iframe title={"resume"} className={"pdf"} src={preview} />
 
       <a
@@ -18,7 +24,8 @@ const Resume = () => {
       </a>
 
 
-      <ResumePlusPlus />
+      {/* <ResumePlusPlus /> */}
+    </div>
     </div>
   );
 };

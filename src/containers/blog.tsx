@@ -16,7 +16,8 @@ const Blog = () => {
       {articles.map((article: any, index) => (
         <div
           key={index}
-          style={{ width: "100%", maxWidth: "50%", margin: "0 auto" }}
+          style={{ width: "100%", maxWidth: "50%", margin: "0 auto", marginBottom: "16px" }}
+          className="nice-border"
         >
           <h2 style={{ marginBottom: "0.5rem" }}>{article.title}</h2>
           <p style={{ marginBottom: "1rem" }}>

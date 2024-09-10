@@ -376,13 +376,13 @@
   {
     "name": "Draw Classifier",
     "description": ["Draw an image and press C to see what the image classifiers guess for what it is. Disclaimer this is pretty bad."],
-    "id": "draw_classifier",
+    "id": "draw_classify",
     "href": "https://giphy.com/embed/vqOcsoENrWDMVzWa0y"
   },
   {
     "name": "Image Classifier",
     "description": ["Upload an image and see what the image classifiers guess for what it is."],
-    "id": "image_classifier",
+    "id": "image_classify",
     "href": "https://giphy.com/embed/NtSHnY9nXlj1BjCbYt"
   },
   {

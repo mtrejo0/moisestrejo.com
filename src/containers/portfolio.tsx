@@ -51,9 +51,7 @@ const ExternalApp = ({ app }: { app: any }) => {
 
           <p style={{ marginBottom: "32px" }}>{app.resources}</p>
         </Grid>
-        <Grid xs={8}>
-          
-
+        <Grid xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
           {app.video && (
             <iframe
               src={"https://www.youtube.com/embed/" + app.video}
@@ -62,12 +60,9 @@ const ExternalApp = ({ app }: { app: any }) => {
               title={app.video}
               width={"300px"}
               height="200px"
+              style={{ marginBottom: '32px' }}
             />
           )}
-        </Grid>
-
-        <Grid xs={isMobile ? 12 : 4}>
-            
         </Grid>
 
         <Grid xs={12}>

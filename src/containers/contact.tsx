@@ -1,5 +1,4 @@
-import { Box, Grid, Stack, useMediaQuery, useTheme } from "@mui/material";
-import React from "react";
+import { Grid, Stack, useMediaQuery, useTheme } from "@mui/material";
 
 import contact from "../information/contact.json";
 import links from "../information/links.json";
@@ -32,7 +31,7 @@ const Contact = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Stack sx={{ alignItems: "center" }}>
+    <Stack sx={{ alignItems: "center", marginTop: "64px" }}>
       <Grid container>
         <Grid xs={isMobile ? 12 : 6}>
           <h2 style={{ textAlign: "center" }}>Connect</h2>

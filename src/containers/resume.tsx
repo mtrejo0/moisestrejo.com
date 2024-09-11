@@ -11,10 +11,9 @@ const Resume = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <div className="nice-border" style={{ maxWidth: isMobile ? '80%' : '50%', margin: '0 auto'}}>
+    <div style={{ maxWidth: isMobile ? '100%' : '50%', margin: '0 auto'}}>
       <div className="center">
       <iframe title={"resume"} className={"pdf"} src={preview} />
-
       <a
         href={view}
         target="_blank"
@@ -22,8 +21,6 @@ const Resume = () => {
       >
         <p>Download Here</p>
       </a>
-
-
       {/* <ResumePlusPlus /> */}
     </div>
     </div>

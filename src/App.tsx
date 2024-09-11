@@ -76,7 +76,7 @@ const App = () => {
       for (let j = i + 1; j < dots.length; j++) {
         let other = dots[j];
         let d = p5.dist(dot.x, dot.y, other.x, other.y);
-        if (d < 100) {
+        if (d < 150) {
           let alpha = p5.map(d, 0, 100, 255, 0); // Map distance to alpha value
           p5.stroke(0, alpha); // Set stroke color with calculated alpha
           p5.line(dot.x, dot.y, other.x, other.y);

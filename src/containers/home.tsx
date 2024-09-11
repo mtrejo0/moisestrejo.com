@@ -1,6 +1,6 @@
 import { ReactNode, useEffect, useState } from "react";
 import axios from "axios";
-import { Grid, useMediaQuery, useTheme } from "@mui/material";
+import { Avatar, Box, Grid, useMediaQuery, useTheme } from "@mui/material";
 import { MailChimpForm } from "../components/MailChimpForm";
 import Contact from "./contact";
 import Art from "./art";
@@ -89,9 +89,37 @@ const Home = () => {
 
   return (
     <div className="nice-border" style={{ maxWidth: isMobile ? '80%' : '50%', margin: '0 auto'}}>
-      <div style={{ marginLeft: "32px" }}>
+      <div style={{ marginLeft: isMobile ? '0px' : '32px' }}> 
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginBottom: '20px',
+            marginTop: '40px',
+          }}
+        >
+          <Avatar
+            alt="Moises Trejo"
+            src={`${process.env.PUBLIC_URL}/images/portrait.png`}
+            sx={{
+              width: 200,
+              height: 200,
+              border: '3px solid #fff',
+              boxShadow: '0 0 10px rgba(0,0,0,0.2)',
+            }}
+          />
+        </Box>
+
+
         <div>
-          <p>
+          <p style={{ fontSize: '24px', fontWeight: 'bold', textAlign: 'center'}}>
+            Moises Trejo
+          </p>
+        </div>
+
+        <div>
+          <p style={{ fontSize: '16px', textAlign: 'center', marginBottom: '40px'}}>
             You are the {loading ? "Loading..." : users.toLocaleString()}th
             person to visit this page!
           </p>

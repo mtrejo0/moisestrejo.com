@@ -55,7 +55,7 @@ const Footer = () => {
           })}
         </Box>
       </Box>
-      <p>© Moises Trejo Industries</p>
+      <p>© Trejo Consulting Systems LLC</p>
     </Box>
   );
 };

@@ -41,9 +41,8 @@ const ExternalApp = ({ app }: { app: any }) => {
           <h1>{app.name}</h1>
         </Grid>
         <Grid xs={8}>
-          <a
+          <a  
             href={app.link}
-            style={{ textDecoration: "none", color: "inherit" }}
             target="_blank"
             rel="noreferrer"
           >
@@ -73,7 +72,7 @@ const ExternalApp = ({ app }: { app: any }) => {
         </Grid>
 
         <Grid xs={12}>
-          {includesKeyword ? null : (
+          {includesKeyword || app.hide ? null : (
             <iframe
               src={app.link}
               title={app.id}

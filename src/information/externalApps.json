@@ -1,5 +1,13 @@
 [
   {
+    "name": "Fit Check",
+    "description": "Upload your fits, rank them, see how your firs rank",
+    "resources": "Mongo DB, Next JS, Tailwind",
+    "link": "https://fit-check-lime.vercel.app/",
+    "id": "fit-check",
+    "hide": true
+  },
+  {
     "name": "Grassroots",
     "description": "The fastest way to figure out who your representatives are and what they are saying!",
     "resources": "React.JS, Twitter API, Google Maps API, Material UI, Typescript",
@@ -159,6 +167,7 @@
     "description": "I wanted to learn how to make a next.js app with mong db and clerk auth. Here it is!",
     "resources": "Next JS, Mongo DB, Clerk Auth, Tailwind",
     "link": "https://mongo-todo-next.vercel.app/",
-    "id": "mongo-todo"
+    "id": "mongo-todo",
+    "hide": true
   }
 ]

@@ -19,7 +19,6 @@ export const P5App = ({ app }: { app: any }) => {
         <Grid xs={12}>
           <a
             href={link}
-            style={{ textDecoration: "none", color: "inherit" }}
             target="_blank"
             rel="noreferrer"
           >

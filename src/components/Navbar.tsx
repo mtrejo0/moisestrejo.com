@@ -26,7 +26,7 @@ const NavigationBar = () => {
         marginBottom: isMobile ? '16px' : '0',
         alignSelf: isMobile ? 'center' : 'flex-start'
       }}>
-        Moises Trejo
+        <NavLink to="/" style={{ textDecoration: 'none', color: 'inherit' }}>Moises Trejo</NavLink>
       </div>
       <div
         style={{

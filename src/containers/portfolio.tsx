@@ -37,19 +37,22 @@ const ExternalApp = ({ app }: { app: any }) => {
       sx={{ backgroundColor: "white" }}
     >
       <Grid container>
-        <Grid xs={12}>
-          <h1>{app.name}</h1>
+        <Grid xs={12} sx={{ textAlign: 'center' }}>
+          <h1>
+            <a
+              href={app.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {app.name}
+            </a>
+          </h1>
+          <p><b>{app.description}</b></p>
+
+          <p style={{ marginBottom: "32px" }}>{app.resources}</p>
         </Grid>
         <Grid xs={8}>
-          <a  
-            href={app.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <b>moisestrejo.com/{app.id}</b>
-          </a>
-
-          <p>{app.description}</p>
+          
 
           {app.video && (
             <iframe
@@ -64,11 +67,7 @@ const ExternalApp = ({ app }: { app: any }) => {
         </Grid>
 
         <Grid xs={isMobile ? 12 : 4}>
-          <ul>
-            {app.resources.split(", ").map((each: any) => (
-              <li>{each}</li>
-            ))}
-          </ul>
+            
         </Grid>
 
         <Grid xs={12}>

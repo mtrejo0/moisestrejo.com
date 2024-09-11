@@ -47,13 +47,13 @@ const AppListDisplay = ({
     <div>
       <Box
         display={"flex"}
-        mt={"32px"}
+        mt={!isMobile ? "32px" : "0px"}
         mb={"100px"}
         flexDirection={isMobile ? "column" : "row"}
         alignItems={isMobile ? "center" : "unset"}
       >
         {isMobile ? (
-          <FormControl sx={{ width: "90vw", mt: "32px", borderColor: "black" }}>
+          <FormControl sx={{ width: "90vw", borderColor: "black" }}>
             <InputLabel id="app-dropdown-label">Select</InputLabel>
             <Select
               labelId="app-dropdown-label"

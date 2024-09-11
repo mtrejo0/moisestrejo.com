@@ -12,22 +12,24 @@ export const P5App = ({ app }: { app: any }) => {
   return (
     <Box className="nice-border" height="100%" style={{ background: "white" }}>
       <Grid container>
-        <Grid xs={12}>
-          {" "}
-          <h1>{app.name}</h1>
-        </Grid>
-        <Grid xs={12}>
-          <a
-            href={link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <b>moisestrejo.com/{app.id}</b>
-          </a>
-
+        <Grid xs={12} marginBottom={4} sx={{ textAlign: 'center' }}>
+          <h1>
+            <a
+              href={link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {app.name}
+            </a>
+          </h1>
           {app.description.map((each: any) => (
             <p style={{ color: "black" }}>{each}</p>
           ))}
+          
+        </Grid>
+        <Grid xs={12}>
+
+          
 
           {app.youtubeLink && <a href={app.youtubeLink}>Youtube Video</a>}
         </Grid>

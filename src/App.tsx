@@ -142,6 +142,7 @@ const App = () => {
               })}
               <Route path="/randomNumbers" element={<RandomNumbers />} />
               <Route path="/wordFrequency" element={<WordFrequency />} />
+              <Route path="/college" element={<GoTo link="https://medium.com/@moises.trejo0/how-to-apply-to-college-b9084219ffc1"/>}/>
 
               <Route path="*" element={<ErrorPage />} />
             </Routes>

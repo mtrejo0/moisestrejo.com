@@ -21,7 +21,7 @@ const Resume = () => {
       >
         <p>Download Here</p>
       </a>
-      {/* <ResumePlusPlus /> */}
+      <ResumePlusPlus />
     </div>
     </div>
   );

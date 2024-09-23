@@ -177,6 +177,9 @@ const WordFinderGenerator = () => {
           </Grid>
         </Grid>
       )}
+      <Typography variant="body2" style={{ marginTop: 20, fontStyle: 'italic' }}>
+        Inspired by my role model George Apostol
+      </Typography>
     </div>
   );
 };

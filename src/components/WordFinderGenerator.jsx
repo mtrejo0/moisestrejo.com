@@ -150,7 +150,18 @@ const WordFinderGenerator = () => {
               <Typography variant="h6" gutterBottom>
                 Vocabulary Puzzle!
               </Typography>
-              <Typography variant="subtitle1" gutterBottom>
+              <Typography 
+                variant="subtitle1" 
+                gutterBottom 
+                sx={{
+                  wordBreak: 'break-word',
+                  overflowWrap: 'break-word',
+                  maxWidth: '100%',
+                  '@media (max-width: 600px)': {
+                    fontSize: '0.9rem',
+                  },
+                }}
+              >
                 {words}
               </Typography>
               <pre style={{ 

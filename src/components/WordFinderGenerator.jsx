@@ -17,6 +17,13 @@ const WordFinderGenerator = () => {
     }
   }, [location]);
 
+  // Add console logs for debugging
+  useEffect(() => {
+    console.log("Location changed:", location);
+    console.log("Current words:", words);
+    console.log("Current puzzle:", puzzle);
+  }, [location, words, puzzle]);
+
   const generatePuzzle = (inputWords = words) => {
     const wordList = inputWords.split(",").map(word => word.trim().toUpperCase());
     const size = 15; // Puzzle size (15x15 grid)
@@ -95,8 +102,18 @@ const WordFinderGenerator = () => {
     const wordsToFind = wordsArray.join(" ");
     const textWidth = doc.getStringUnitWidth(wordsToFind) * fontSize / doc.internal.scaleFactor;
     const centerX = (doc.internal.pageSize.width - textWidth) / 2;
-    doc.text(wordsToFind, centerX, y);
-    y += lineHeight * 2;
+    
+    if (textWidth > doc.internal.pageSize.width - 40) {
+      // If text is too wide, wrap it
+      const maxWidth = doc.internal.pageSize.width - 40;
+      const lines = doc.splitTextToSize(wordsToFind, maxWidth);
+      doc.text(lines, 20, y);
+      y += lineHeight * (lines.length + 1);
+    } else {
+      // If text fits, center it
+      doc.text(wordsToFind, centerX, y);
+      y += lineHeight * 2;
+    }
 
     doc.setFont("courier", "normal");
     lines.forEach(line => {

@@ -26,6 +26,7 @@ import Footer from "./components/Footer";
 import LogRocket from "logrocket";
 import setupLogRocketReact from "logrocket-react";
 import Sketch from "react-p5";
+import WordFinderGenerator from "./components/WordFinderGenerator";
 
 LogRocket.init("5ynwnu/moisestrejocom");
 // after calling LogRocket.init()
@@ -143,6 +144,7 @@ const App = () => {
               <Route path="/randomNumbers" element={<RandomNumbers />} />
               <Route path="/wordFrequency" element={<WordFrequency />} />
               <Route path="/college" element={<GoTo link="https://medium.com/@moises.trejo0/how-to-apply-to-college-b9084219ffc1"/>}/>
+              <Route path="/wordFinderGenerator" element={<WordFinderGenerator />}/>
               <Route path="*" element={<ErrorPage />} />
             </Routes>
           </BrowserRouter>

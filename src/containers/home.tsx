@@ -11,39 +11,6 @@ export const borderStyle = {
   borderRadius: "8px",
 };
 
-const ImageWithText = ({
-  info,
-  img,
-  src,
-  small = false,
-}: {
-  info: string | ReactNode;
-  img?: string;
-  src?: string;
-  small?: boolean;
-}) => {
-  return (
-    <div style={{ padding: "16px", margin: "32px", textAlign: "center" }}>
-      <p>{info}</p>
-      {img ? (
-        <img
-          className={small ? "small-image" : "image"}
-          style={{ width: "100%", ...borderStyle }}
-          src={process.env.PUBLIC_URL + `/images/${img}`}
-          alt={img}
-        ></img>
-      ) : null}
-      {src ? (
-        <img
-          className={small ? "small-image" : "image"}
-          style={{ width: "100%", border: "2px black solid" }}
-          src={src}
-          alt={img}
-        ></img>
-      ) : null}
-    </div>
-  );
-};
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
